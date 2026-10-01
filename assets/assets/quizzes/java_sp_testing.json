@@ -1,0 +1,813 @@
+{
+  "metadata": {
+    "quiz_id": "java_sp_testing",
+    "title": "Java Testing",
+    "subject": "java",
+    "level": "Intermediate",
+    "kind": "special",
+    "pack_id": "java-special-testing",
+    "topic_id": "technology",
+    "language": "java",
+    "difficulty": "medium",
+    "time_limit_minutes": 25,
+    "total_questions": 20,
+    "pass_percentage": 70,
+    "timer_mode": "global",
+    "per_question_time_seconds": 0,
+    "negative_marking": false,
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "strict_mode": false,
+    "tags": [
+      "java",
+      "special",
+      "testing",
+      "l2"
+    ],
+    "created_by": "TN Club Quiz",
+    "created_at": "2026-09-06T00:00:00Z",
+    "version": "1.0.0"
+  },
+  "questions": [
+    {
+      "id": "java_sp_testing_q001",
+      "area": "testing",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: JUnit Jupiter dùng @Test cho test method?",
+      "options": [
+        {
+          "key": "A",
+          "text": "JUnit Jupiter dùng @Test cho test method"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: JUnit Jupiter dùng @Test cho test method. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    },
+    {
+      "id": "java_sp_testing_q002",
+      "area": "testing",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: AssertJ/JUnit assertion nên kiểm tra hành vi quan sát được?",
+      "options": [
+        {
+          "key": "A",
+          "text": "AssertJ/JUnit assertion nên kiểm tra hành vi quan sát được"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: AssertJ/JUnit assertion nên kiểm tra hành vi quan sát được. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    },
+    {
+      "id": "java_sp_testing_q003",
+      "area": "testing",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Mockito mock mô phỏng collaborator bên ngoài unit?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mockito mock mô phỏng collaborator bên ngoài unit"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Mockito mock mô phỏng collaborator bên ngoài unit. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    },
+    {
+      "id": "java_sp_testing_q004",
+      "area": "testing",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: verify kiểm tra tương tác đã xảy ra?",
+      "options": [
+        {
+          "key": "A",
+          "text": "verify kiểm tra tương tác đã xảy ra"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: verify kiểm tra tương tác đã xảy ra. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    },
+    {
+      "id": "java_sp_testing_q005",
+      "area": "testing",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: stub xác định giá trị trả về của dependency?",
+      "options": [
+        {
+          "key": "A",
+          "text": "stub xác định giá trị trả về của dependency"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: stub xác định giá trị trả về của dependency. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    },
+    {
+      "id": "java_sp_testing_q006",
+      "area": "testing",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: test double gồm stub, mock, fake và spy?",
+      "options": [
+        {
+          "key": "A",
+          "text": "test double gồm stub, mock, fake và spy"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: test double gồm stub, mock, fake và spy. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    },
+    {
+      "id": "java_sp_testing_q007",
+      "area": "testing",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: integration test kiểm tra nhiều thành phần thật phối hợp?",
+      "options": [
+        {
+          "key": "A",
+          "text": "integration test kiểm tra nhiều thành phần thật phối hợp"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: integration test kiểm tra nhiều thành phần thật phối hợp. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    },
+    {
+      "id": "java_sp_testing_q008",
+      "area": "testing",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: property-based test kiểm tra invariant trên nhiều input?",
+      "options": [
+        {
+          "key": "A",
+          "text": "property-based test kiểm tra invariant trên nhiều input"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: property-based test kiểm tra invariant trên nhiều input. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    },
+    {
+      "id": "java_sp_testing_q009",
+      "area": "testing",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh Java về: @BeforeEach chạy trước mỗi test method.",
+      "options": [
+        {
+          "key": "A",
+          "text": "@BeforeEach chạy trước mỗi test method"
+        },
+        {
+          "key": "B",
+          "text": "test độc lập không phụ thuộc thứ tự chạy"
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: @BeforeEach chạy trước mỗi test method. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    },
+    {
+      "id": "java_sp_testing_q010",
+      "area": "testing",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh Java về: parameterized test chạy cùng logic với nhiều dữ liệu.",
+      "options": [
+        {
+          "key": "A",
+          "text": "parameterized test chạy cùng logic với nhiều dữ liệu"
+        },
+        {
+          "key": "B",
+          "text": "mock static nên dùng thận trọng vì tăng coupling"
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: parameterized test chạy cùng logic với nhiều dữ liệu. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    },
+    {
+      "id": "java_sp_testing_q011",
+      "area": "testing",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh Java về: assertThrows kiểm tra exception mong đợi.",
+      "options": [
+        {
+          "key": "A",
+          "text": "assertThrows kiểm tra exception mong đợi"
+        },
+        {
+          "key": "B",
+          "text": "fake repository thường hữu ích hơn mock cho contract đơn giản"
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: assertThrows kiểm tra exception mong đợi. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    },
+    {
+      "id": "java_sp_testing_q012",
+      "area": "testing",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đúng hay sai: test độc lập không phụ thuộc thứ tự chạy.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ đúng trên hệ điều hành cụ thể"
+        },
+        {
+          "key": "D",
+          "text": "Không thể kết luận từ Java API"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: test độc lập không phụ thuộc thứ tự chạy. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    },
+    {
+      "id": "java_sp_testing_q013",
+      "area": "testing",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đúng hay sai: mock static nên dùng thận trọng vì tăng coupling.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ đúng trên hệ điều hành cụ thể"
+        },
+        {
+          "key": "D",
+          "text": "Không thể kết luận từ Java API"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: mock static nên dùng thận trọng vì tăng coupling. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    },
+    {
+      "id": "java_sp_testing_q014",
+      "area": "testing",
+      "challenge_type": "predict_output",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Khi chạy hoặc thiết kế đoạn mã liên quan đến fake repository thường hữu ích hơn mock cho contract đơn giản, kết luận nào chính xác nhất?",
+      "code_snippet": {
+        "language": "java",
+        "code": "// Minh họa khái niệm: fake repository thường hữu ích hơn mock cho contract đơn giản"
+      },
+      "options": [
+        {
+          "key": "A",
+          "text": "fake repository thường hữu ích hơn mock cho contract đơn giản"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: fake repository thường hữu ích hơn mock cho contract đơn giản. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    },
+    {
+      "id": "java_sp_testing_q015",
+      "area": "testing",
+      "challenge_type": "predict_output",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Khi chạy hoặc thiết kế đoạn mã liên quan đến mutation testing đo khả năng test bắt lỗi, kết luận nào chính xác nhất?",
+      "code_snippet": {
+        "language": "java",
+        "code": "// Minh họa khái niệm: mutation testing đo khả năng test bắt lỗi"
+      },
+      "options": [
+        {
+          "key": "A",
+          "text": "mutation testing đo khả năng test bắt lỗi"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: mutation testing đo khả năng test bắt lỗi. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    },
+    {
+      "id": "java_sp_testing_q016",
+      "area": "testing",
+      "challenge_type": "predict_output",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Khi chạy hoặc thiết kế đoạn mã liên quan đến test naming nên mô tả điều kiện và kết quả, kết luận nào chính xác nhất?",
+      "code_snippet": {
+        "language": "java",
+        "code": "// Minh họa khái niệm: test naming nên mô tả điều kiện và kết quả"
+      },
+      "options": [
+        {
+          "key": "A",
+          "text": "test naming nên mô tả điều kiện và kết quả"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: test naming nên mô tả điều kiện và kết quả. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    },
+    {
+      "id": "java_sp_testing_q017",
+      "area": "testing",
+      "challenge_type": "spot_bug",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Một code review phát hiện lỗi liên quan đến không nên sleep để chờ async test. Nguyên nhân và hướng xử lý đúng là gì?",
+      "code_snippet": {
+        "language": "java",
+        "code": "// Minh họa khái niệm: không nên sleep để chờ async test"
+      },
+      "options": [
+        {
+          "key": "A",
+          "text": "không nên sleep để chờ async test"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: không nên sleep để chờ async test. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    },
+    {
+      "id": "java_sp_testing_q018",
+      "area": "testing",
+      "challenge_type": "spot_bug",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Một code review phát hiện lỗi liên quan đến test slice giảm phạm vi context khi kiểm tra web layer. Nguyên nhân và hướng xử lý đúng là gì?",
+      "code_snippet": {
+        "language": "java",
+        "code": "// Minh họa khái niệm: test slice giảm phạm vi context khi kiểm tra web layer"
+      },
+      "options": [
+        {
+          "key": "A",
+          "text": "test slice giảm phạm vi context khi kiểm tra web layer"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: test slice giảm phạm vi context khi kiểm tra web layer. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    },
+    {
+      "id": "java_sp_testing_q019",
+      "area": "testing",
+      "challenge_type": "best_practice",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Lựa chọn thiết kế tốt nhất khi áp dụng coverage cao không đồng nghĩa test đúng là gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "coverage cao không đồng nghĩa test đúng"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: coverage cao không đồng nghĩa test đúng. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    },
+    {
+      "id": "java_sp_testing_q020",
+      "area": "testing",
+      "challenge_type": "best_practice",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Lựa chọn thiết kế tốt nhất khi áp dụng deterministic clock giúp test thời gian ổn định là gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "deterministic clock giúp test thời gian ổn định"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: deterministic clock giúp test thời gian ổn định. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://junit.org/junit5/docs/current/user-guide/"
+    }
+  ]
+}

@@ -1,0 +1,793 @@
+{
+  "metadata": {
+    "quiz_id": "java_sp_build_tools",
+    "title": "Java Build Tools",
+    "subject": "java",
+    "level": "Intermediate",
+    "kind": "special",
+    "pack_id": "java-special-build-tools",
+    "topic_id": "technology",
+    "language": "java",
+    "difficulty": "medium",
+    "time_limit_minutes": 25,
+    "total_questions": 20,
+    "pass_percentage": 70,
+    "timer_mode": "global",
+    "per_question_time_seconds": 0,
+    "negative_marking": false,
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "strict_mode": false,
+    "tags": [
+      "java",
+      "special",
+      "build_tools",
+      "l2"
+    ],
+    "created_by": "TN Club Quiz",
+    "created_at": "2026-09-06T00:00:00Z",
+    "version": "1.0.0"
+  },
+  "questions": [
+    {
+      "id": "java_sp_build_tools_q001",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Maven sử dụng tập tin pom.xml để cấu hình dự án.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Maven sử dụng tập tin pom.xml để cấu hình dự án."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Maven sử dụng tập tin pom.xml để cấu hình dự án. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    },
+    {
+      "id": "java_sp_build_tools_q002",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Gradle sử dụng tập tin build.gradle hoặc build.gradle.kts.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Gradle sử dụng tập tin build.gradle hoặc build.gradle.kts."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Gradle sử dụng tập tin build.gradle hoặc build.gradle.kts. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    },
+    {
+      "id": "java_sp_build_tools_q003",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Vòng đời Maven gồm các phase: validate, compile, test, package, verify, install, deploy.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Vòng đời Maven gồm các phase: validate, compile, test, package, verify, install, deploy."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Vòng đời Maven gồm các phase: validate, compile, test, package, verify, install, deploy. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    },
+    {
+      "id": "java_sp_build_tools_q004",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Gradle tổ chức công việc dưới dạng các task có thể phụ thuộc nhau tạo thành DAG.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Gradle tổ chức công việc dưới dạng các task có thể phụ thuộc nhau tạo thành DAG."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Gradle tổ chức công việc dưới dạng các task có thể phụ thuộc nhau tạo thành DAG. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    },
+    {
+      "id": "java_sp_build_tools_q005",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Maven Central là kho lưu trữ mặc định cho các dependency.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Maven Central là kho lưu trữ mặc định cho các dependency."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Maven Central là kho lưu trữ mặc định cho các dependency. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    },
+    {
+      "id": "java_sp_build_tools_q006",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Gradle Wrapper cho phép build mà không cần cài Gradle sẵn trên máy.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Gradle Wrapper cho phép build mà không cần cài Gradle sẵn trên máy."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Gradle Wrapper cho phép build mà không cần cài Gradle sẵn trên máy. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    },
+    {
+      "id": "java_sp_build_tools_q007",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Maven plugin mở rộng chức năng của vòng đời build.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Maven plugin mở rộng chức năng của vòng đời build."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Maven plugin mở rộng chức năng của vòng đời build. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    },
+    {
+      "id": "java_sp_build_tools_q008",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Gradle hỗ trợ cả Groovy DSL và Kotlin DSL cho tập tin build.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Gradle hỗ trợ cả Groovy DSL và Kotlin DSL cho tập tin build."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Gradle hỗ trợ cả Groovy DSL và Kotlin DSL cho tập tin build. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    },
+    {
+      "id": "java_sp_build_tools_q009",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Tập tin settings.gradle trong Gradle khai báo các dự án con được include.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tập tin settings.gradle trong Gradle khai báo các dự án con được include."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Tập tin settings.gradle trong Gradle khai báo các dự án con được include. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    },
+    {
+      "id": "java_sp_build_tools_q010",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Maven dependencyManagement giúp quản lý phiên bản tập trung trong dự án đa mô-đun.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Maven dependencyManagement giúp quản lý phiên bản tập trung trong dự án đa mô-đun."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Maven dependencyManagement giúp quản lý phiên bản tập trung trong dự án đa mô-đun. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    },
+    {
+      "id": "java_sp_build_tools_q011",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: BOM (Bill of Materials) trong Maven giúp kiểm soát phiên bản của nhiều thư viện liên quan.",
+      "options": [
+        {
+          "key": "A",
+          "text": "BOM (Bill of Materials) trong Maven giúp kiểm soát phiên bản của nhiều thư viện liên quan."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: BOM (Bill of Materials) trong Maven giúp kiểm soát phiên bản của nhiều thư viện liên quan. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    },
+    {
+      "id": "java_sp_build_tools_q012",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Gradle build cache cho phép tái sử dụng kết quả build từ các build trước đó.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Gradle build cache cho phép tái sử dụng kết quả build từ các build trước đó."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Gradle build cache cho phép tái sử dụng kết quả build từ các build trước đó. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    },
+    {
+      "id": "java_sp_build_tools_q013",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Maven SNAPSHOT đánh dấu phiên bản đang phát triển và chưa ổn định.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Maven SNAPSHOT đánh dấu phiên bản đang phát triển và chưa ổn định."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Maven SNAPSHOT đánh dấu phiên bản đang phát triển và chưa ổn định. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    },
+    {
+      "id": "java_sp_build_tools_q014",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Gradle daemon giữ một tiến trình nền để giảm thời gian khởi động cho các build sau.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Gradle daemon giữ một tiến trình nền để giảm thời gian khởi động cho các build sau."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Gradle daemon giữ một tiến trình nền để giảm thời gian khởi động cho các build sau. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    },
+    {
+      "id": "java_sp_build_tools_q015",
+      "area": "tooling",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh Java về: Maven hỗ trợ đa mô-đun thông qua cấu trúc pom cha/con. và Gradle cấu hình đa dự án thông qua settings.gradle và allprojects.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Maven hỗ trợ đa mô-đun thông qua cấu trúc pom cha/con."
+        },
+        {
+          "key": "B",
+          "text": "Gradle cấu hình đa dự án thông qua settings.gradle và allprojects."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: Maven hỗ trợ đa mô-đun thông qua cấu trúc pom cha/con. và Gradle cấu hình đa dự án thông qua settings.gradle và allprojects.. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    },
+    {
+      "id": "java_sp_build_tools_q016",
+      "area": "tooling",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh Java về: Maven dependency scope compile có sẵn trong classpath biên dịch và runtime. và Gradle configuration api xuất dependency cho các module phụ thuộc.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Maven dependency scope compile có sẵn trong classpath biên dịch và runtime."
+        },
+        {
+          "key": "B",
+          "text": "Gradle configuration api xuất dependency cho các module phụ thuộc."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: Maven dependency scope compile có sẵn trong classpath biên dịch và runtime. và Gradle configuration api xuất dependency cho các module phụ thuộc.. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    },
+    {
+      "id": "java_sp_build_tools_q017",
+      "area": "tooling",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh Java về: Maven packaging jar là kiểu mặc định cho thư viện Java. và Gradle plugin java-library tạo ra tập tin JAR từ mã nguồn Java.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Maven packaging jar là kiểu mặc định cho thư viện Java."
+        },
+        {
+          "key": "B",
+          "text": "Gradle plugin java-library tạo ra tập tin JAR từ mã nguồn Java."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: Maven packaging jar là kiểu mặc định cho thư viện Java. và Gradle plugin java-library tạo ra tập tin JAR từ mã nguồn Java.. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    },
+    {
+      "id": "java_sp_build_tools_q018",
+      "area": "tooling",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh Java về: Maven exclusions ngăn dependency truyền vòng một cách có chọn lọc. và Gradle có thể exclude transitive dependency trong khối dependencies.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Maven exclusions ngăn dependency truyền vòng một cách có chọn lọc."
+        },
+        {
+          "key": "B",
+          "text": "Gradle có thể exclude transitive dependency trong khối dependencies."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: Maven exclusions ngăn dependency truyền vòng một cách có chọn lọc. và Gradle có thể exclude transitive dependency trong khối dependencies.. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    },
+    {
+      "id": "java_sp_build_tools_q019",
+      "area": "tooling",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đúng hay sai: Maven có thể build offline khi các dependency đã tồn tại trong local repository.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ đúng trên hệ điều hành cụ thể"
+        },
+        {
+          "key": "D",
+          "text": "Không thể kết luận từ Java API"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Maven có thể build offline khi các dependency đã tồn tại trong local repository. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    },
+    {
+      "id": "java_sp_build_tools_q020",
+      "area": "tooling",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đúng hay sai: Gradle incremental build chỉ thực hiện lại các task bị ảnh hưởng bởi thay đổi.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ đúng trên hệ điều hành cụ thể"
+        },
+        {
+          "key": "D",
+          "text": "Không thể kết luận từ Java API"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Gradle incremental build chỉ thực hiện lại các task bị ảnh hưởng bởi thay đổi. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://maven.apache.org/"
+    }
+  ]
+}

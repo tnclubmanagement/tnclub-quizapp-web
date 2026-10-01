@@ -1,0 +1,792 @@
+{
+  "metadata": {
+    "quiz_id": "javascript_l1_foundations",
+    "title": "JavaScript Foundations",
+    "subject": "javascript",
+    "level": "Beginner",
+    "kind": "standard",
+    "pack_id": "javascript-l1-foundations",
+    "topic_id": "technology",
+    "language": "javascript",
+    "difficulty": "easy",
+    "tags": [
+      "javascript",
+      "l1",
+      "technology"
+    ],
+    "pass_percentage": 70,
+    "time_limit_minutes": 20,
+    "total_questions": 20,
+    "created_by": "TN Club Quiz",
+    "created_at": "2026-09-06T00:00:00Z",
+    "version": "1.0.0",
+    "timer_mode": "global",
+    "per_question_time_seconds": 0,
+    "negative_marking": false,
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "strict_mode": false
+  },
+  "questions": [
+    {
+      "id": "javascript_l1_foundations_q001",
+      "type": "single_choice",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Binding có thể gán lại khai báo bằng gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "let"
+        },
+        {
+          "key": "B",
+          "text": "const"
+        },
+        {
+          "key": "C",
+          "text": "static"
+        },
+        {
+          "key": "D",
+          "text": "varonly"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "let là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc javascript về syntax.",
+        "C": "Phương án C không đúng với quy tắc javascript về syntax.",
+        "D": "Phương án D không đúng với quy tắc javascript về syntax."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types"
+    },
+    {
+      "id": "javascript_l1_foundations_q002",
+      "type": "single_choice",
+      "area": "types",
+      "challenge_type": "recall",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "typeof null trả về gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "\"object\""
+        },
+        {
+          "key": "B",
+          "text": "\"null\""
+        },
+        {
+          "key": "C",
+          "text": "\"undefined\""
+        },
+        {
+          "key": "D",
+          "text": "null"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "\"object\" là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc javascript về types.",
+        "C": "Phương án C không đúng với quy tắc javascript về types.",
+        "D": "Phương án D không đúng với quy tắc javascript về types."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures"
+    },
+    {
+      "id": "javascript_l1_foundations_q003",
+      "type": "single_choice",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Strict equality dùng toán tử nào?",
+      "options": [
+        {
+          "key": "A",
+          "text": "==="
+        },
+        {
+          "key": "B",
+          "text": "=="
+        },
+        {
+          "key": "C",
+          "text": "=!=="
+        },
+        {
+          "key": "D",
+          "text": "equals"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "=== là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc javascript về syntax.",
+        "C": "Phương án C không đúng với quy tắc javascript về syntax.",
+        "D": "Phương án D không đúng với quy tắc javascript về syntax."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types"
+    },
+    {
+      "id": "javascript_l1_foundations_q004",
+      "type": "single_choice",
+      "area": "types",
+      "challenge_type": "recall",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Giá trị biểu diễn số không hợp lệ?",
+      "options": [
+        {
+          "key": "A",
+          "text": "NaN"
+        },
+        {
+          "key": "B",
+          "text": "None"
+        },
+        {
+          "key": "C",
+          "text": "void0only"
+        },
+        {
+          "key": "D",
+          "text": "Number.empty"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "NaN là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc javascript về types.",
+        "C": "Phương án C không đúng với quy tắc javascript về types.",
+        "D": "Phương án D không đúng với quy tắc javascript về types."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures"
+    },
+    {
+      "id": "javascript_l1_foundations_q005",
+      "type": "single_choice",
+      "area": "functions",
+      "challenge_type": "recall",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Arrow function trả về x+1?",
+      "options": [
+        {
+          "key": "A",
+          "text": "x => x + 1"
+        },
+        {
+          "key": "B",
+          "text": "x -> x + 1"
+        },
+        {
+          "key": "C",
+          "text": "function => x+1"
+        },
+        {
+          "key": "D",
+          "text": "(x) return x+1"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "x => x + 1 là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc javascript về functions.",
+        "C": "Phương án C không đúng với quy tắc javascript về functions.",
+        "D": "Phương án D không đúng với quy tắc javascript về functions."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions"
+    },
+    {
+      "id": "javascript_l1_foundations_q006",
+      "type": "single_choice",
+      "area": "collections",
+      "challenge_type": "recall",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Thêm phần tử cuối Array?",
+      "options": [
+        {
+          "key": "A",
+          "text": "push"
+        },
+        {
+          "key": "B",
+          "text": "append"
+        },
+        {
+          "key": "C",
+          "text": "addLast"
+        },
+        {
+          "key": "D",
+          "text": "insertEnd"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "push là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc javascript về collections.",
+        "C": "Phương án C không đúng với quy tắc javascript về collections.",
+        "D": "Phương án D không đúng với quy tắc javascript về collections."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+    },
+    {
+      "id": "javascript_l1_foundations_q007",
+      "type": "single_choice",
+      "area": "collections",
+      "challenge_type": "recall",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Object lưu dữ liệu dạng gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "property key-value"
+        },
+        {
+          "key": "B",
+          "text": "chỉ index"
+        },
+        {
+          "key": "C",
+          "text": "tuple"
+        },
+        {
+          "key": "D",
+          "text": "class field"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "property key-value là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc javascript về collections.",
+        "C": "Phương án C không đúng với quy tắc javascript về collections.",
+        "D": "Phương án D không đúng với quy tắc javascript về collections."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+    },
+    {
+      "id": "javascript_l1_foundations_q008",
+      "type": "single_choice",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Template literal dùng dấu nào?",
+      "options": [
+        {
+          "key": "A",
+          "text": "backtick `"
+        },
+        {
+          "key": "B",
+          "text": "single quote"
+        },
+        {
+          "key": "C",
+          "text": "double quote"
+        },
+        {
+          "key": "D",
+          "text": "parentheses"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "backtick ` là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc javascript về syntax.",
+        "C": "Phương án C không đúng với quy tắc javascript về syntax.",
+        "D": "Phương án D không đúng với quy tắc javascript về syntax."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types"
+    },
+    {
+      "id": "javascript_l1_foundations_q009",
+      "type": "single_choice",
+      "area": "types",
+      "challenge_type": "recall",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Giá trị falsy nào?",
+      "options": [
+        {
+          "key": "A",
+          "text": "0"
+        },
+        {
+          "key": "B",
+          "text": "[]"
+        },
+        {
+          "key": "C",
+          "text": "{}"
+        },
+        {
+          "key": "D",
+          "text": "\"false\""
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "0 là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc javascript về types.",
+        "C": "Phương án C không đúng với quy tắc javascript về types.",
+        "D": "Phương án D không đúng với quy tắc javascript về types."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures"
+    },
+    {
+      "id": "javascript_l1_foundations_q010",
+      "type": "single_choice",
+      "area": "functions",
+      "challenge_type": "recall",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Chuyển JSON string thành object?",
+      "options": [
+        {
+          "key": "A",
+          "text": "JSON.parse"
+        },
+        {
+          "key": "B",
+          "text": "JSON.decode"
+        },
+        {
+          "key": "C",
+          "text": "parse.JSON"
+        },
+        {
+          "key": "D",
+          "text": "Object.fromJSON"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "JSON.parse là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc javascript về functions.",
+        "C": "Phương án C không đúng với quy tắc javascript về functions.",
+        "D": "Phương án D không đúng với quy tắc javascript về functions."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions"
+    },
+    {
+      "id": "javascript_l1_foundations_q011",
+      "type": "multiple_choice",
+      "area": "collections",
+      "challenge_type": "multi",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Array.isArray([]) trả về?",
+      "options": [
+        {
+          "key": "A",
+          "text": "true"
+        },
+        {
+          "key": "B",
+          "text": "Một điều kiện/đặc điểm đúng liên quan"
+        },
+        {
+          "key": "C",
+          "text": "false"
+        },
+        {
+          "key": "D",
+          "text": "[]"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "true là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "C": "Phương án C không đúng với quy tắc javascript về collections.",
+        "D": "Phương án D không đúng với quy tắc javascript về collections."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+    },
+    {
+      "id": "javascript_l1_foundations_q012",
+      "type": "multiple_choice",
+      "area": "syntax",
+      "challenge_type": "multi",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Duyệt giá trị Array bằng?",
+      "options": [
+        {
+          "key": "A",
+          "text": "for...of"
+        },
+        {
+          "key": "B",
+          "text": "Một điều kiện/đặc điểm đúng liên quan"
+        },
+        {
+          "key": "C",
+          "text": "for...in only"
+        },
+        {
+          "key": "D",
+          "text": "foreach keyword"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "for...of là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "C": "Phương án C không đúng với quy tắc javascript về syntax.",
+        "D": "Phương án D không đúng với quy tắc javascript về syntax."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types"
+    },
+    {
+      "id": "javascript_l1_foundations_q013",
+      "type": "true_false",
+      "area": "types",
+      "challenge_type": "true_false",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "const ngăn điều gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Không xác định"
+        },
+        {
+          "key": "D",
+          "text": "Không áp dụng"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "gán lại binding là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc javascript về types.",
+        "C": "Phương án C không đúng với quy tắc javascript về types.",
+        "D": "Phương án D không đúng với quy tắc javascript về types."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures"
+    },
+    {
+      "id": "javascript_l1_foundations_q014",
+      "type": "true_false",
+      "area": "functions",
+      "challenge_type": "true_false",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Function không return rõ ràng trả?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Không xác định"
+        },
+        {
+          "key": "D",
+          "text": "Không áp dụng"
+        }
+      ],
+      "correct_keys": [
+        "B"
+      ],
+      "explanation": "undefined là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "A": "Phương án A không đúng với quy tắc javascript về functions.",
+        "C": "Phương án C không đúng với quy tắc javascript về functions.",
+        "D": "Phương án D không đúng với quy tắc javascript về functions."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions"
+    },
+    {
+      "id": "javascript_l1_foundations_q015",
+      "type": "true_false",
+      "area": "syntax",
+      "challenge_type": "true_false",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "ES module default export?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Không xác định"
+        },
+        {
+          "key": "D",
+          "text": "Không áp dụng"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "export default là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc javascript về syntax.",
+        "C": "Phương án C không đúng với quy tắc javascript về syntax.",
+        "D": "Phương án D không đúng với quy tắc javascript về syntax."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types"
+    },
+    {
+      "id": "javascript_l1_foundations_q016",
+      "type": "single_choice",
+      "area": "collections",
+      "challenge_type": "predict_output",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Biến đổi từng phần tử tạo Array mới?",
+      "options": [
+        {
+          "key": "A",
+          "text": "map"
+        },
+        {
+          "key": "B",
+          "text": "filter"
+        },
+        {
+          "key": "C",
+          "text": "reduceOnly"
+        },
+        {
+          "key": "D",
+          "text": "each"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "map là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc javascript về collections.",
+        "C": "Phương án C không đúng với quy tắc javascript về collections.",
+        "D": "Phương án D không đúng với quy tắc javascript về collections."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+    },
+    {
+      "id": "javascript_l1_foundations_q017",
+      "type": "single_choice",
+      "area": "collections",
+      "challenge_type": "predict_output",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Giữ phần tử thỏa điều kiện?",
+      "options": [
+        {
+          "key": "A",
+          "text": "filter"
+        },
+        {
+          "key": "B",
+          "text": "selectOnly"
+        },
+        {
+          "key": "C",
+          "text": "where"
+        },
+        {
+          "key": "D",
+          "text": "retainIf"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "filter là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc javascript về collections.",
+        "C": "Phương án C không đúng với quy tắc javascript về collections.",
+        "D": "Phương án D không đúng với quy tắc javascript về collections."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+    },
+    {
+      "id": "javascript_l1_foundations_q018",
+      "type": "single_choice",
+      "area": "functions",
+      "challenge_type": "predict_output",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Rest parameter viết?",
+      "options": [
+        {
+          "key": "A",
+          "text": "...args"
+        },
+        {
+          "key": "B",
+          "text": "args..."
+        },
+        {
+          "key": "C",
+          "text": "rest args"
+        },
+        {
+          "key": "D",
+          "text": "..args"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "...args là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc javascript về functions.",
+        "C": "Phương án C không đúng với quy tắc javascript về functions.",
+        "D": "Phương án D không đúng với quy tắc javascript về functions."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions"
+    },
+    {
+      "id": "javascript_l1_foundations_q019",
+      "type": "single_choice",
+      "area": "types",
+      "challenge_type": "predict_output",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Nullish coalescing?",
+      "options": [
+        {
+          "key": "A",
+          "text": "??"
+        },
+        {
+          "key": "B",
+          "text": "||?"
+        },
+        {
+          "key": "C",
+          "text": "??=only"
+        },
+        {
+          "key": "D",
+          "text": "null:"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "?? là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc javascript về types.",
+        "C": "Phương án C không đúng với quy tắc javascript về types.",
+        "D": "Phương án D không đúng với quy tắc javascript về types."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures"
+    },
+    {
+      "id": "javascript_l1_foundations_q020",
+      "type": "single_choice",
+      "area": "syntax",
+      "challenge_type": "spot_bug",
+      "language": "javascript",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Câu lệnh điều kiện?",
+      "options": [
+        {
+          "key": "A",
+          "text": "if"
+        },
+        {
+          "key": "B",
+          "text": "when"
+        },
+        {
+          "key": "C",
+          "text": "choose"
+        },
+        {
+          "key": "D",
+          "text": "case-only"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "if là đáp án đúng theo ngữ nghĩa và quy tắc của javascript; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc javascript về syntax.",
+        "C": "Phương án C không đúng với quy tắc javascript về syntax.",
+        "D": "Phương án D không đúng với quy tắc javascript về syntax."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types"
+    }
+  ]
+}

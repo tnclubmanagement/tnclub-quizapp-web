@@ -1,0 +1,803 @@
+{
+  "metadata": {
+    "quiz_id": "flutter_l1_foundations",
+    "title": "Flutter Foundations",
+    "subject": "flutter",
+    "level": "Beginner",
+    "kind": "standard",
+    "pack_id": "flutter-l1-foundations",
+    "topic_id": "technology",
+    "language": "vi",
+    "difficulty": "easy",
+    "time_limit_minutes": 20,
+    "total_questions": 20,
+    "pass_percentage": 70,
+    "timer_mode": "global",
+    "per_question_time_seconds": 0,
+    "negative_marking": false,
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "strict_mode": false,
+    "tags": [
+      "flutter",
+      "foundations",
+      "widgets",
+      "l1"
+    ],
+    "created_by": "TN Club Quiz",
+    "created_at": "2026-09-06T00:00:00Z",
+    "version": "1.0.0",
+    "focus": "widget tree, StatelessWidget/StatefulWidget, BuildContext, Material, basic layout"
+  },
+  "questions": [
+    {
+      "id": "flutter_l1_foundations_q001",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Widget nào không giữ mutable state riêng?",
+      "image": {
+        "asset": "assets/images/flutter_layout_question.svg",
+        "alt_text": "Minh họa layout cơ bản trong Flutter",
+        "fit": "contain"
+      },
+      "options": [
+        {
+          "key": "A",
+          "text": "StatelessWidget",
+          "image": {
+            "asset": "assets/images/flutter_layout_question.svg",
+            "alt_text": "Minh họa widget layout Flutter"
+          }
+        },
+        {
+          "key": "B",
+          "text": "StatefulWidget"
+        },
+        {
+          "key": "C",
+          "text": "State"
+        },
+        {
+          "key": "D",
+          "text": "BuildContext"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "StatelessWidget dựng UI từ input bất biến.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả statelesswidget.",
+        "C": "Lựa chọn này không đúng vì không mô tả statelesswidget.",
+        "D": "Lựa chọn này không đúng vì không mô tả statelesswidget."
+      },
+      "reference_url": "https://docs.flutter.dev/ui"
+    },
+    {
+      "id": "flutter_l1_foundations_q002",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "BuildContext đại diện cho gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Vị trí của widget trong cây"
+        },
+        {
+          "key": "B",
+          "text": "Database"
+        },
+        {
+          "key": "C",
+          "text": "Isolate"
+        },
+        {
+          "key": "D",
+          "text": "HTTP client"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Context gắn với Element và cho phép tìm ancestor.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả vị trí của widget trong cây.",
+        "C": "Lựa chọn này không đúng vì không mô tả vị trí của widget trong cây.",
+        "D": "Lựa chọn này không đúng vì không mô tả vị trí của widget trong cây."
+      },
+      "reference_url": "https://docs.flutter.dev/ui"
+    },
+    {
+      "id": "flutter_l1_foundations_q003",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "StatelessWidget dựng giao diện bằng API nào?",
+      "options": [
+        {
+          "key": "A",
+          "text": "build(BuildContext context)"
+        },
+        {
+          "key": "B",
+          "text": "initState()"
+        },
+        {
+          "key": "C",
+          "text": "dispose()"
+        },
+        {
+          "key": "D",
+          "text": "setState()"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "build trả về widget tree.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả build(buildcontext context).",
+        "C": "Lựa chọn này không đúng vì không mô tả build(buildcontext context).",
+        "D": "Lựa chọn này không đúng vì không mô tả build(buildcontext context)."
+      },
+      "reference_url": "https://docs.flutter.dev/ui"
+    },
+    {
+      "id": "flutter_l1_foundations_q004",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "MaterialApp cấu hình gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Theme và Navigator"
+        },
+        {
+          "key": "B",
+          "text": "SQLite"
+        },
+        {
+          "key": "C",
+          "text": "Canvas duy nhất"
+        },
+        {
+          "key": "D",
+          "text": "HTTP client"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "MaterialApp cung cấp cấu hình Material, route và theme.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả theme và navigator.",
+        "C": "Lựa chọn này không đúng vì không mô tả theme và navigator.",
+        "D": "Lựa chọn này không đúng vì không mô tả theme và navigator."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/widgets/material"
+    },
+    {
+      "id": "flutter_l1_foundations_q005",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Widget nào tạo khoảng đệm quanh child?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Padding"
+        },
+        {
+          "key": "B",
+          "text": "Column"
+        },
+        {
+          "key": "C",
+          "text": "Stack"
+        },
+        {
+          "key": "D",
+          "text": "Expanded"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Padding áp dụng EdgeInsets quanh child.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả padding.",
+        "C": "Lựa chọn này không đúng vì không mô tả padding.",
+        "D": "Lựa chọn này không đúng vì không mô tả padding."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/layout"
+    },
+    {
+      "id": "flutter_l1_foundations_q006",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Row căn theo trục ngang bằng thuộc tính nào?",
+      "options": [
+        {
+          "key": "A",
+          "text": "mainAxisAlignment"
+        },
+        {
+          "key": "B",
+          "text": "crossAxisAlignment"
+        },
+        {
+          "key": "C",
+          "text": "clipBehavior"
+        },
+        {
+          "key": "D",
+          "text": "textDirection"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Row có trục chính ngang.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả mainaxisalignment.",
+        "C": "Lựa chọn này không đúng vì không mô tả mainaxisalignment.",
+        "D": "Lựa chọn này không đúng vì không mô tả mainaxisalignment."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/layout"
+    },
+    {
+      "id": "flutter_l1_foundations_q007",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Child chiếm phần còn lại trong Column dùng gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Expanded"
+        },
+        {
+          "key": "B",
+          "text": "Align"
+        },
+        {
+          "key": "C",
+          "text": "SizedBox"
+        },
+        {
+          "key": "D",
+          "text": "Padding"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Expanded nhận không gian còn lại của Flex.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả expanded.",
+        "C": "Lựa chọn này không đúng vì không mô tả expanded.",
+        "D": "Lựa chọn này không đúng vì không mô tả expanded."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/layout"
+    },
+    {
+      "id": "flutter_l1_foundations_q008",
+      "type": "single_choice",
+      "area": "patterns",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Key giúp gì khi list reorder?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ghép đúng Element và State"
+        },
+        {
+          "key": "B",
+          "text": "Biên dịch nhanh hơn"
+        },
+        {
+          "key": "C",
+          "text": "Tự gọi API"
+        },
+        {
+          "key": "D",
+          "text": "Tăng cache ảnh"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Key ổn định giữ State đúng item.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả ghép đúng element và state.",
+        "C": "Lựa chọn này không đúng vì không mô tả ghép đúng element và state.",
+        "D": "Lựa chọn này không đúng vì không mô tả ghép đúng element và state."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/interactivity"
+    },
+    {
+      "id": "flutter_l1_foundations_q009",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Scaffold thường có vùng nào?",
+      "options": [
+        {
+          "key": "A",
+          "text": "appBar, body và floatingActionButton"
+        },
+        {
+          "key": "B",
+          "text": "Isolate"
+        },
+        {
+          "key": "C",
+          "text": "Server route"
+        },
+        {
+          "key": "D",
+          "text": "SQLite"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Scaffold là khung Material screen.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả appbar, body và floatingactionbutton.",
+        "C": "Lựa chọn này không đúng vì không mô tả appbar, body và floatingactionbutton.",
+        "D": "Lựa chọn này không đúng vì không mô tả appbar, body và floatingactionbutton."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/widgets/material"
+    },
+    {
+      "id": "flutter_l1_foundations_q010",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Lấy theme gần nhất bằng gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Theme.of(context)"
+        },
+        {
+          "key": "B",
+          "text": "Theme.read(context)"
+        },
+        {
+          "key": "C",
+          "text": "context.theme()"
+        },
+        {
+          "key": "D",
+          "text": "BuildContext.themeOf()"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Theme.of tìm InheritedTheme gần nhất.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả theme.of(context).",
+        "C": "Lựa chọn này không đúng vì không mô tả theme.of(context).",
+        "D": "Lựa chọn này không đúng vì không mô tả theme.of(context)."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/widgets/material"
+    },
+    {
+      "id": "flutter_l1_foundations_q011",
+      "type": "multiple_choice",
+      "area": "types",
+      "challenge_type": "multi",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Chọn đặc điểm của const widget: canonicalize và giảm tạo object?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Có thể canonicalize object"
+        },
+        {
+          "key": "B",
+          "text": "Luôn mutable"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ Android"
+        },
+        {
+          "key": "D",
+          "text": "Tự tải mạng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Const cho phép Dart canonicalize object. Hai lựa chọn đầu tiên là các đặc điểm đúng theo tài liệu.",
+      "distractor_explanations": {
+        "C": "Lựa chọn này không đúng vì không mô tả có thể canonicalize object.",
+        "D": "Lựa chọn này không đúng vì không mô tả có thể canonicalize object."
+      },
+      "reference_url": "https://dart.dev/language/concurrency"
+    },
+    {
+      "id": "flutter_l1_foundations_q012",
+      "type": "multiple_choice",
+      "area": "oop",
+      "challenge_type": "multi",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Widget nào truyền constraints kích thước?",
+      "options": [
+        {
+          "key": "A",
+          "text": "SizedBox"
+        },
+        {
+          "key": "B",
+          "text": "TextEditingController"
+        },
+        {
+          "key": "C",
+          "text": "Navigator"
+        },
+        {
+          "key": "D",
+          "text": "FutureBuilder"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "SizedBox truyền ràng buộc cho child. Hai lựa chọn đầu tiên là các đặc điểm đúng theo tài liệu.",
+      "distractor_explanations": {
+        "C": "Lựa chọn này không đúng vì không mô tả sizedbox.",
+        "D": "Lựa chọn này không đúng vì không mô tả sizedbox."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/layout"
+    },
+    {
+      "id": "flutter_l1_foundations_q013",
+      "type": "true_false",
+      "area": "oop",
+      "challenge_type": "true_false",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "StatelessWidget tự đổi field sau build thì UI tự cập nhật?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Không đủ thông tin"
+        },
+        {
+          "key": "D",
+          "text": "Phụ thuộc nền tảng"
+        }
+      ],
+      "correct_keys": [
+        "B"
+      ],
+      "explanation": "StatelessWidget không có State lifecycle.",
+      "distractor_explanations": {
+        "A": "Lựa chọn này không đúng vì không mô tả sai.",
+        "C": "Lựa chọn này không đúng vì không mô tả sai.",
+        "D": "Lựa chọn này không đúng vì không mô tả sai."
+      },
+      "reference_url": "https://docs.flutter.dev/data-and-backend/state-mgmt/intro"
+    },
+    {
+      "id": "flutter_l1_foundations_q014",
+      "type": "true_false",
+      "area": "oop",
+      "challenge_type": "true_false",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Element tree dùng để làm gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Không đủ thông tin"
+        },
+        {
+          "key": "D",
+          "text": "Phụ thuộc nền tảng"
+        }
+      ],
+      "correct_keys": [
+        "B"
+      ],
+      "explanation": "Element hỗ trợ tái sử dụng State và RenderObject.",
+      "distractor_explanations": {
+        "A": "Lựa chọn này không đúng vì không mô tả giữ vị trí và lifecycle.",
+        "C": "Lựa chọn này không đúng vì không mô tả giữ vị trí và lifecycle.",
+        "D": "Lựa chọn này không đúng vì không mô tả giữ vị trí và lifecycle."
+      },
+      "reference_url": "https://docs.flutter.dev/ui"
+    },
+    {
+      "id": "flutter_l1_foundations_q015",
+      "type": "true_false",
+      "area": "oop",
+      "challenge_type": "true_false",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "setState vô điều kiện trong build là đúng?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Không đủ thông tin"
+        },
+        {
+          "key": "D",
+          "text": "Phụ thuộc nền tảng"
+        }
+      ],
+      "correct_keys": [
+        "B"
+      ],
+      "explanation": "Có thể tạo vòng rebuild hoặc rebuild thừa.",
+      "distractor_explanations": {
+        "A": "Lựa chọn này không đúng vì không mô tả sai.",
+        "C": "Lựa chọn này không đúng vì không mô tả sai.",
+        "D": "Lựa chọn này không đúng vì không mô tả sai."
+      },
+      "reference_url": "https://docs.flutter.dev/data-and-backend/state-mgmt/intro"
+    },
+    {
+      "id": "flutter_l1_foundations_q016",
+      "type": "single_choice",
+      "area": "syntax",
+      "challenge_type": "predict_output",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Đoạn 4 ~/ 2 cho kết quả?",
+      "options": [
+        {
+          "key": "A",
+          "text": "2"
+        },
+        {
+          "key": "B",
+          "text": "1.5"
+        },
+        {
+          "key": "C",
+          "text": "1"
+        },
+        {
+          "key": "D",
+          "text": "6"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "~/ là chia lấy phần nguyên.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả 2.",
+        "C": "Lựa chọn này không đúng vì không mô tả 2.",
+        "D": "Lựa chọn này không đúng vì không mô tả 2."
+      },
+      "reference_url": "https://dart.dev/language/concurrency"
+    },
+    {
+      "id": "flutter_l1_foundations_q017",
+      "type": "single_choice",
+      "area": "errors",
+      "challenge_type": "predict_output",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Navigator.of trong initState thường sai vì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Context chưa sẵn sàng cho inherited lookup"
+        },
+        {
+          "key": "B",
+          "text": "Navigator luôn null"
+        },
+        {
+          "key": "C",
+          "text": "initState trên StatelessWidget"
+        },
+        {
+          "key": "D",
+          "text": "Navigator nhận String"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "initState trước build; nên trì hoãn thao tác phụ thuộc cây.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả context chưa sẵn sàng cho inherited lookup.",
+        "C": "Lựa chọn này không đúng vì không mô tả context chưa sẵn sàng cho inherited lookup.",
+        "D": "Lựa chọn này không đúng vì không mô tả context chưa sẵn sàng cho inherited lookup."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l1_foundations_q018",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "predict_output",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Nội dung dài cần cuộn nên dùng gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ListView"
+        },
+        {
+          "key": "B",
+          "text": "Column trần"
+        },
+        {
+          "key": "C",
+          "text": "Row trần"
+        },
+        {
+          "key": "D",
+          "text": "SizedBox vô hạn"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "ListView là scrollable, Column không tự cuộn.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả listview.",
+        "C": "Lựa chọn này không đúng vì không mô tả listview.",
+        "D": "Lựa chọn này không đúng vì không mô tả listview."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/layout"
+    },
+    {
+      "id": "flutter_l1_foundations_q019",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "predict_output",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Material button nên đặt trong vùng nào để có semantics?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Scaffold body"
+        },
+        {
+          "key": "B",
+          "text": "Isolate"
+        },
+        {
+          "key": "C",
+          "text": "SQLite"
+        },
+        {
+          "key": "D",
+          "text": "Dart isolate"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "body là vùng nội dung chính của Scaffold.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả scaffold body.",
+        "C": "Lựa chọn này không đúng vì không mô tả scaffold body.",
+        "D": "Lựa chọn này không đúng vì không mô tả scaffold body."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/widgets/material"
+    },
+    {
+      "id": "flutter_l1_foundations_q020",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "spot_bug",
+      "language": "vi",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Flexible khác Expanded chủ yếu ở đâu?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Có thể dùng FlexFit.loose"
+        },
+        {
+          "key": "B",
+          "text": "Luôn ép child đầy đủ"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ dùng với Stack"
+        },
+        {
+          "key": "D",
+          "text": "Tạo route mới"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Flexible cho phép child dùng ít hơn không gian được phân bổ.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả có thể dùng flexfit.loose.",
+        "C": "Lựa chọn này không đúng vì không mô tả có thể dùng flexfit.loose.",
+        "D": "Lựa chọn này không đúng vì không mô tả có thể dùng flexfit.loose."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/layout"
+    }
+  ]
+}

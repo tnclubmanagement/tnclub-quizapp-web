@@ -1,0 +1,813 @@
+{
+  "metadata": {
+    "quiz_id": "java_sp_networking",
+    "title": "Java Networking and I/O",
+    "subject": "java",
+    "level": "Intermediate",
+    "kind": "special",
+    "pack_id": "java-special-networking",
+    "topic_id": "technology",
+    "language": "java",
+    "difficulty": "medium",
+    "time_limit_minutes": 25,
+    "total_questions": 20,
+    "pass_percentage": 70,
+    "timer_mode": "global",
+    "per_question_time_seconds": 0,
+    "negative_marking": false,
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "strict_mode": false,
+    "tags": [
+      "java",
+      "special",
+      "networking",
+      "l2"
+    ],
+    "created_by": "TN Club Quiz",
+    "created_at": "2026-09-06T00:00:00Z",
+    "version": "1.0.0"
+  },
+  "questions": [
+    {
+      "id": "java_sp_networking_q001",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: HttpClient có thể tái sử dụng cho nhiều request?",
+      "options": [
+        {
+          "key": "A",
+          "text": "HttpClient có thể tái sử dụng cho nhiều request"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: HttpClient có thể tái sử dụng cho nhiều request. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    },
+    {
+      "id": "java_sp_networking_q002",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: URI biểu diễn địa chỉ tài nguyên, URL là dạng truy cập legacy?",
+      "options": [
+        {
+          "key": "A",
+          "text": "URI biểu diễn địa chỉ tài nguyên, URL là dạng truy cập legacy"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: URI biểu diễn địa chỉ tài nguyên, URL là dạng truy cập legacy. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    },
+    {
+      "id": "java_sp_networking_q003",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Socket TCP cung cấp byte stream có thứ tự?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Socket TCP cung cấp byte stream có thứ tự"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Socket TCP cung cấp byte stream có thứ tự. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    },
+    {
+      "id": "java_sp_networking_q004",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: DatagramSocket dùng UDP không đảm bảo giao hàng?",
+      "options": [
+        {
+          "key": "A",
+          "text": "DatagramSocket dùng UDP không đảm bảo giao hàng"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: DatagramSocket dùng UDP không đảm bảo giao hàng. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    },
+    {
+      "id": "java_sp_networking_q005",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: NIO Channel và Buffer tách nguồn dữ liệu khỏi vùng đệm?",
+      "options": [
+        {
+          "key": "A",
+          "text": "NIO Channel và Buffer tách nguồn dữ liệu khỏi vùng đệm"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: NIO Channel và Buffer tách nguồn dữ liệu khỏi vùng đệm. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    },
+    {
+      "id": "java_sp_networking_q006",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Selector multiplex nhiều channel non-blocking?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Selector multiplex nhiều channel non-blocking"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Selector multiplex nhiều channel non-blocking. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    },
+    {
+      "id": "java_sp_networking_q007",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: try-with-resources đóng AutoCloseable?",
+      "options": [
+        {
+          "key": "A",
+          "text": "try-with-resources đóng AutoCloseable"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: try-with-resources đóng AutoCloseable. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    },
+    {
+      "id": "java_sp_networking_q008",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: read có thể trả ít byte hơn buffer còn trống?",
+      "options": [
+        {
+          "key": "A",
+          "text": "read có thể trả ít byte hơn buffer còn trống"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: read có thể trả ít byte hơn buffer còn trống. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    },
+    {
+      "id": "java_sp_networking_q009",
+      "area": "tooling",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh Java về: charset phải chỉ định khi chuyển byte và text.",
+      "options": [
+        {
+          "key": "A",
+          "text": "charset phải chỉ định khi chuyển byte và text"
+        },
+        {
+          "key": "B",
+          "text": "Path và Files thuộc java.nio.file"
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: charset phải chỉ định khi chuyển byte và text. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    },
+    {
+      "id": "java_sp_networking_q010",
+      "area": "tooling",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh Java về: HTTP timeout tránh request treo vô hạn.",
+      "options": [
+        {
+          "key": "A",
+          "text": "HTTP timeout tránh request treo vô hạn"
+        },
+        {
+          "key": "B",
+          "text": "Files.move có thể atomic tùy filesystem"
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: HTTP timeout tránh request treo vô hạn. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    },
+    {
+      "id": "java_sp_networking_q011",
+      "area": "tooling",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh Java về: ObjectOutputStream không an toàn với dữ liệu không tin cậy.",
+      "options": [
+        {
+          "key": "A",
+          "text": "ObjectOutputStream không an toàn với dữ liệu không tin cậy"
+        },
+        {
+          "key": "B",
+          "text": "backpressure ngăn producer vượt consumer"
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: ObjectOutputStream không an toàn với dữ liệu không tin cậy. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    },
+    {
+      "id": "java_sp_networking_q012",
+      "area": "tooling",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đúng hay sai: Path và Files thuộc java.nio.file.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ đúng trên hệ điều hành cụ thể"
+        },
+        {
+          "key": "D",
+          "text": "Không thể kết luận từ Java API"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Path và Files thuộc java.nio.file. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    },
+    {
+      "id": "java_sp_networking_q013",
+      "area": "tooling",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đúng hay sai: Files.move có thể atomic tùy filesystem.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ đúng trên hệ điều hành cụ thể"
+        },
+        {
+          "key": "D",
+          "text": "Không thể kết luận từ Java API"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Files.move có thể atomic tùy filesystem. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    },
+    {
+      "id": "java_sp_networking_q014",
+      "area": "tooling",
+      "challenge_type": "predict_output",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Khi chạy hoặc thiết kế đoạn mã liên quan đến backpressure ngăn producer vượt consumer, kết luận nào chính xác nhất?",
+      "code_snippet": {
+        "language": "java",
+        "code": "// Minh họa khái niệm: backpressure ngăn producer vượt consumer"
+      },
+      "options": [
+        {
+          "key": "A",
+          "text": "backpressure ngăn producer vượt consumer"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: backpressure ngăn producer vượt consumer. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    },
+    {
+      "id": "java_sp_networking_q015",
+      "area": "tooling",
+      "challenge_type": "predict_output",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Khi chạy hoặc thiết kế đoạn mã liên quan đến InputStream.read trả -1 khi EOF, kết luận nào chính xác nhất?",
+      "code_snippet": {
+        "language": "java",
+        "code": "// Minh họa khái niệm: InputStream.read trả -1 khi EOF"
+      },
+      "options": [
+        {
+          "key": "A",
+          "text": "InputStream.read trả -1 khi EOF"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: InputStream.read trả -1 khi EOF. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    },
+    {
+      "id": "java_sp_networking_q016",
+      "area": "tooling",
+      "challenge_type": "predict_output",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Khi chạy hoặc thiết kế đoạn mã liên quan đến ByteBuffer cần flip trước khi đọc dữ liệu vừa ghi, kết luận nào chính xác nhất?",
+      "code_snippet": {
+        "language": "java",
+        "code": "// Minh họa khái niệm: ByteBuffer cần flip trước khi đọc dữ liệu vừa ghi"
+      },
+      "options": [
+        {
+          "key": "A",
+          "text": "ByteBuffer cần flip trước khi đọc dữ liệu vừa ghi"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: ByteBuffer cần flip trước khi đọc dữ liệu vừa ghi. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    },
+    {
+      "id": "java_sp_networking_q017",
+      "area": "tooling",
+      "challenge_type": "spot_bug",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Một code review phát hiện lỗi liên quan đến DNS có thể cache và ảnh hưởng failover. Nguyên nhân và hướng xử lý đúng là gì?",
+      "code_snippet": {
+        "language": "java",
+        "code": "// Minh họa khái niệm: DNS có thể cache và ảnh hưởng failover"
+      },
+      "options": [
+        {
+          "key": "A",
+          "text": "DNS có thể cache và ảnh hưởng failover"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: DNS có thể cache và ảnh hưởng failover. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    },
+    {
+      "id": "java_sp_networking_q018",
+      "area": "tooling",
+      "challenge_type": "spot_bug",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Một code review phát hiện lỗi liên quan đến TLS xác thực certificate chain. Nguyên nhân và hướng xử lý đúng là gì?",
+      "code_snippet": {
+        "language": "java",
+        "code": "// Minh họa khái niệm: TLS xác thực certificate chain"
+      },
+      "options": [
+        {
+          "key": "A",
+          "text": "TLS xác thực certificate chain"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: TLS xác thực certificate chain. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    },
+    {
+      "id": "java_sp_networking_q019",
+      "area": "tooling",
+      "challenge_type": "best_practice",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Lựa chọn thiết kế tốt nhất khi áp dụng connection pooling giảm handshake overhead là gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "connection pooling giảm handshake overhead"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: connection pooling giảm handshake overhead. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    },
+    {
+      "id": "java_sp_networking_q020",
+      "area": "tooling",
+      "challenge_type": "best_practice",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Lựa chọn thiết kế tốt nhất khi áp dụng resource leak làm cạn file descriptor là gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "resource leak làm cạn file descriptor"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: resource leak làm cạn file descriptor. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html"
+    }
+  ]
+}

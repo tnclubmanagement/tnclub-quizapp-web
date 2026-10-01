@@ -1,0 +1,793 @@
+{
+  "metadata": {
+    "quiz_id": "javascript_sp_async",
+    "title": "JavaScript Asynchronous Programming",
+    "subject": "javascript",
+    "level": "Intermediate",
+    "kind": "special",
+    "pack_id": "javascript-special-async",
+    "topic_id": "technology",
+    "language": "javascript",
+    "difficulty": "medium",
+    "time_limit_minutes": 25,
+    "total_questions": 20,
+    "pass_percentage": 70,
+    "timer_mode": "global",
+    "per_question_time_seconds": 0,
+    "negative_marking": false,
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "strict_mode": false,
+    "tags": [
+      "javascript",
+      "special",
+      "async",
+      "l2"
+    ],
+    "created_by": "TN Club Quiz",
+    "created_at": "2026-09-06T00:00:00Z",
+    "version": "1.0.0"
+  },
+  "questions": [
+    {
+      "id": "javascript_sp_async_q001",
+      "area": "async",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: JavaScript chạy đơn luồng (single-threaded) với một call stack chính.",
+      "options": [
+        {
+          "key": "A",
+          "text": "JavaScript chạy đơn luồng (single-threaded) với một call stack chính."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: JavaScript chạy đơn luồng (single-threaded) với một call stack chính. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": "javascript_sp_async_q002",
+      "area": "async",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Event loop điều phối việc thực thi các callback từ task queue vào call stack.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Event loop điều phối việc thực thi các callback từ task queue vào call stack."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Event loop điều phối việc thực thi các callback từ task queue vào call stack. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": "javascript_sp_async_q003",
+      "area": "async",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Promise đại diện cho một giá trị có thể chưa tồn tại nhưng sẽ có trong tương lai.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Promise đại diện cho một giá trị có thể chưa tồn tại nhưng sẽ có trong tương lai."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Promise đại diện cho một giá trị có thể chưa tồn tại nhưng sẽ có trong tương lai. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": "javascript_sp_async_q004",
+      "area": "async",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: async function luôn trả về một Promise.",
+      "options": [
+        {
+          "key": "A",
+          "text": "async function luôn trả về một Promise."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: async function luôn trả về một Promise. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": "javascript_sp_async_q005",
+      "area": "async",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: await chỉ có thể sử dụng bên trong async function hoặc ở top-level module.",
+      "options": [
+        {
+          "key": "A",
+          "text": "await chỉ có thể sử dụng bên trong async function hoặc ở top-level module."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: await chỉ có thể sử dụng bên trong async function hoặc ở top-level module. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": "javascript_sp_async_q006",
+      "area": "async",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Promise.all chờ tất cả Promise hoàn thành và trả về mảng kết quả theo thứ tự đầu vào.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Promise.all chờ tất cả Promise hoàn thành và trả về mảng kết quả theo thứ tự đầu vào."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Promise.all chờ tất cả Promise hoàn thành và trả về mảng kết quả theo thứ tự đầu vào. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": "javascript_sp_async_q007",
+      "area": "async",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Promise.race trả về kết quả của Promise hoàn thành đầu tiên hoặc lỗi đầu tiên.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Promise.race trả về kết quả của Promise hoàn thành đầu tiên hoặc lỗi đầu tiên."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Promise.race trả về kết quả của Promise hoàn thành đầu tiên hoặc lỗi đầu tiên. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": "javascript_sp_async_q008",
+      "area": "async",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: setTimeout đưa callback vào Web APIs rồi chuyển sang task queue sau hết thời gian chờ.",
+      "options": [
+        {
+          "key": "A",
+          "text": "setTimeout đưa callback vào Web APIs rồi chuyển sang task queue sau hết thời gian chờ."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: setTimeout đưa callback vào Web APIs rồi chuyển sang task queue sau hết thời gian chờ. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": "javascript_sp_async_q009",
+      "area": "async",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Microtask queue được ưu tiên hơn task queue trong mỗi lượt event loop.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Microtask queue được ưu tiên hơn task queue trong mỗi lượt event loop."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Microtask queue được ưu tiên hơn task queue trong mỗi lượt event loop. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": "javascript_sp_async_q010",
+      "area": "async",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Promise.then thêm một microtask vào microtask queue.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Promise.then thêm một microtask vào microtask queue."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Promise.then thêm một microtask vào microtask queue. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": "javascript_sp_async_q011",
+      "area": "async",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Callback là hàm được truyền như đối số để gọi lại sau khi một tác vụ hoàn thành.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Callback là hàm được truyền như đối số để gọi lại sau khi một tác vụ hoàn thành."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Callback là hàm được truyền như đối số để gọi lại sau khi một tác vụ hoàn thành. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": "javascript_sp_async_q012",
+      "area": "async",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Promise.catch bắt lỗi từ một Promise bị rejected.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Promise.catch bắt lỗi từ một Promise bị rejected."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Promise.catch bắt lỗi từ một Promise bị rejected. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": "javascript_sp_async_q013",
+      "area": "async",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Promise.finally luôn chạy sau khi Promise hoàn thành, bất kể thành công hay thất bại.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Promise.finally luôn chạy sau khi Promise hoàn thành, bất kể thành công hay thất bại."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Promise.finally luôn chạy sau khi Promise hoàn thành, bất kể thành công hay thất bại. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": "javascript_sp_async_q014",
+      "area": "async",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: async/await giúp viết code bất đồng bộ trông gần giống code đồng bộ hơn.",
+      "options": [
+        {
+          "key": "A",
+          "text": "async/await giúp viết code bất đồng bộ trông gần giống code đồng bộ hơn."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: async/await giúp viết code bất đồng bộ trông gần giống code đồng bộ hơn. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": "javascript_sp_async_q015",
+      "area": "async",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh JavaScript về: Promise.allSettled chờ tất cả Promise kết thúc và không dừng khi một Promise bị reject. và Promise.any trả về Promise đầu tiên fulfilled hoặc AggregateError nếu tất cả reject.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Promise.allSettled chờ tất cả Promise kết thúc và không dừng khi một Promise bị reject."
+        },
+        {
+          "key": "B",
+          "text": "Promise.any trả về Promise đầu tiên fulfilled hoặc AggregateError nếu tất cả reject."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: Promise.allSettled chờ tất cả Promise kết thúc và không dừng khi một Promise bị reject. và Promise.any trả về Promise đầu tiên fulfilled hoặc AggregateError nếu tất cả reject.. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": "javascript_sp_async_q016",
+      "area": "async",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh JavaScript về: Microtasks từ Promise.then và queueMicrotask chạy trước macrotasks như setTimeout. và RequestAnimationFrame callback chạy trước repaint trong vòng đời khung hình của trình duyệt.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Microtasks từ Promise.then và queueMicrotask chạy trước macrotasks như setTimeout."
+        },
+        {
+          "key": "B",
+          "text": "RequestAnimationFrame callback chạy trước repaint trong vòng đời khung hình của trình duyệt."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: Microtasks từ Promise.then và queueMicrotask chạy trước macrotasks như setTimeout. và RequestAnimationFrame callback chạy trước repaint trong vòng đời khung hình của trình duyệt.. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": "javascript_sp_async_q017",
+      "area": "async",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh JavaScript về: Async generator function kết hợp async và generator để tạo luồng bất đồng bộ. và for await...of cho phép lặp qua async iterable hoặc async generator.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Async generator function kết hợp async và generator để tạo luồng bất đồng bộ."
+        },
+        {
+          "key": "B",
+          "text": "for await...of cho phép lặp qua async iterable hoặc async generator."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: Async generator function kết hợp async và generator để tạo luồng bất đồng bộ. và for await...of cho phép lặp qua async iterable hoặc async generator.. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": "javascript_sp_async_q018",
+      "area": "async",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh JavaScript về: setTimeout(fn, 0) đưa callback vào task queue, không chạy ngay lập tức. và zero-delay timeout vẫn phải chờ call stack rỗng và microtask queue xử lý xong.",
+      "options": [
+        {
+          "key": "A",
+          "text": "setTimeout(fn, 0) đưa callback vào task queue, không chạy ngay lập tức."
+        },
+        {
+          "key": "B",
+          "text": "zero-delay timeout vẫn phải chờ call stack rỗng và microtask queue xử lý xong."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: setTimeout(fn, 0) đưa callback vào task queue, không chạy ngay lập tức. và zero-delay timeout vẫn phải chờ call stack rỗng và microtask queue xử lý xong.. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": "javascript_sp_async_q019",
+      "area": "async",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đúng hay sai: Promise.reject tạo một Promise ở trạng thái rejected với lý do đã cho.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ đúng trên hệ điều hành cụ thể"
+        },
+        {
+          "key": "D",
+          "text": "Không thể kết luận từ JavaScript API"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Promise.reject tạo một Promise ở trạng thái rejected với lý do đã cho. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": "javascript_sp_async_q020",
+      "area": "async",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đúng hay sai: await chỉ tạm dừng hàm async hiện tại, không chặn luồng chính của JavaScript.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ đúng trên hệ điều hành cụ thể"
+        },
+        {
+          "key": "D",
+          "text": "Không thể kết luận từ JavaScript API"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: await chỉ tạm dừng hàm async hiện tại, không chặn luồng chính của JavaScript. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    }
+  ]
+}

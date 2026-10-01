@@ -1,0 +1,793 @@
+{
+  "metadata": {
+    "quiz_id": "javascript_sp_nodejs",
+    "title": "Node.js Fundamentals",
+    "subject": "javascript",
+    "level": "Intermediate",
+    "kind": "special",
+    "pack_id": "javascript-special-nodejs",
+    "topic_id": "technology",
+    "language": "javascript",
+    "difficulty": "medium",
+    "time_limit_minutes": 25,
+    "total_questions": 20,
+    "pass_percentage": 70,
+    "timer_mode": "global",
+    "per_question_time_seconds": 0,
+    "negative_marking": false,
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "strict_mode": false,
+    "tags": [
+      "javascript",
+      "special",
+      "nodejs",
+      "l2"
+    ],
+    "created_by": "TN Club Quiz",
+    "created_at": "2026-09-06T00:00:00Z",
+    "version": "1.0.0"
+  },
+  "questions": [
+    {
+      "id": "javascript_sp_nodejs_q001",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Node.js cho phép chạy JavaScript bên ngoài trình duyệt, phía server hoặc desktop.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Node.js cho phép chạy JavaScript bên ngoài trình duyệt, phía server hoặc desktop."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Node.js cho phép chạy JavaScript bên ngoài trình duyệt, phía server hoặc desktop. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    },
+    {
+      "id": "javascript_sp_nodejs_q002",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: npm (Node Package Manager) là công cụ quản lý package mặc định của Node.js.",
+      "options": [
+        {
+          "key": "A",
+          "text": "npm (Node Package Manager) là công cụ quản lý package mặc định của Node.js."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: npm (Node Package Manager) là công cụ quản lý package mặc định của Node.js. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    },
+    {
+      "id": "javascript_sp_nodejs_q003",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: package.json lưu metadata dự án, dependencies, scripts và cấu hình.",
+      "options": [
+        {
+          "key": "A",
+          "text": "package.json lưu metadata dự án, dependencies, scripts và cấu hình."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: package.json lưu metadata dự án, dependencies, scripts và cấu hình. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    },
+    {
+      "id": "javascript_sp_nodejs_q004",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: node_modules là thư mục chứa các package đã cài đặt cục bộ.",
+      "options": [
+        {
+          "key": "A",
+          "text": "node_modules là thư mục chứa các package đã cài đặt cục bộ."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: node_modules là thư mục chứa các package đã cài đặt cục bộ. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    },
+    {
+      "id": "javascript_sp_nodejs_q005",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: require là hàm đồng bộ để load module trong CommonJS.",
+      "options": [
+        {
+          "key": "A",
+          "text": "require là hàm đồng bộ để load module trong CommonJS."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: require là hàm đồng bộ để load module trong CommonJS. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    },
+    {
+      "id": "javascript_sp_nodejs_q006",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: module.exports xuất một giá trị từ module CommonJS để module khác require.",
+      "options": [
+        {
+          "key": "A",
+          "text": "module.exports xuất một giá trị từ module CommonJS để module khác require."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: module.exports xuất một giá trị từ module CommonJS để module khác require. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    },
+    {
+      "id": "javascript_sp_nodejs_q007",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: exports.x là cách viết tắt để xuất nhiều thuộc tính từ một module.",
+      "options": [
+        {
+          "key": "A",
+          "text": "exports.x là cách viết tắt để xuất nhiều thuộc tính từ một module."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: exports.x là cách viết tắt để xuất nhiều thuộc tính từ một module. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    },
+    {
+      "id": "javascript_sp_nodejs_q008",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: import/export là cú pháp module ES6, yêu cầu cấu hình type module hoặc đuôi .mjs.",
+      "options": [
+        {
+          "key": "A",
+          "text": "import/export là cú pháp module ES6, yêu cầu cấu hình type module hoặc đuôi .mjs."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: import/export là cú pháp module ES6, yêu cầu cấu hình type module hoặc đuôi .mjs. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    },
+    {
+      "id": "javascript_sp_nodejs_q009",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: npm install cài đặt tất cả dependencies được liệt kê trong package.json.",
+      "options": [
+        {
+          "key": "A",
+          "text": "npm install cài đặt tất cả dependencies được liệt kê trong package.json."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: npm install cài đặt tất cả dependencies được liệt kê trong package.json. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    },
+    {
+      "id": "javascript_sp_nodejs_q010",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: npm install --save-dev cài đặt package chỉ dùng trong quá trình phát triển.",
+      "options": [
+        {
+          "key": "A",
+          "text": "npm install --save-dev cài đặt package chỉ dùng trong quá trình phát triển."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: npm install --save-dev cài đặt package chỉ dùng trong quá trình phát triển. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    },
+    {
+      "id": "javascript_sp_nodejs_q011",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: package-lock.json khóa phiên bản chính xác của các dependency đã cài.",
+      "options": [
+        {
+          "key": "A",
+          "text": "package-lock.json khóa phiên bản chính xác của các dependency đã cài."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: package-lock.json khóa phiên bản chính xác của các dependency đã cài. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    },
+    {
+      "id": "javascript_sp_nodejs_q012",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Node.js EventEmitter cung cấp pattern publish-subscribe cho các sự kiện tùy chỉnh.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Node.js EventEmitter cung cấp pattern publish-subscribe cho các sự kiện tùy chỉnh."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Node.js EventEmitter cung cấp pattern publish-subscribe cho các sự kiện tùy chỉnh. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    },
+    {
+      "id": "javascript_sp_nodejs_q013",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Buffer trong Node.js đại diện cho dữ liệu nhị phân thô, hữu ích khi xử lý I/O.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Buffer trong Node.js đại diện cho dữ liệu nhị phân thô, hữu ích khi xử lý I/O."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Buffer trong Node.js đại diện cho dữ liệu nhị phân thô, hữu ích khi xử lý I/O. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    },
+    {
+      "id": "javascript_sp_nodejs_q014",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Stream trong Node.js cho phép xử lý dữ liệu theo từng phần thay vì toàn bộ.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Stream trong Node.js cho phép xử lý dữ liệu theo từng phần thay vì toàn bộ."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Stream trong Node.js cho phép xử lý dữ liệu theo từng phần thay vì toàn bộ. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    },
+    {
+      "id": "javascript_sp_nodejs_q015",
+      "area": "tooling",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh JavaScript về: process.argv chứa mảng các đối số dòng lệnh truyền vào khi khởi động Node.js. và process.env truy cập các biến môi trường của hệ điều hành.",
+      "options": [
+        {
+          "key": "A",
+          "text": "process.argv chứa mảng các đối số dòng lệnh truyền vào khi khởi động Node.js."
+        },
+        {
+          "key": "B",
+          "text": "process.env truy cập các biến môi trường của hệ điều hành."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: process.argv chứa mảng các đối số dòng lệnh truyền vào khi khởi động Node.js. và process.env truy cập các biến môi trường của hệ điều hành.. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    },
+    {
+      "id": "javascript_sp_nodejs_q016",
+      "area": "tooling",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh JavaScript về: fs.readFile đọc toàn bộ nội dung file và trả về callback hoặc Promise. và fs.createReadStream đọc file theo luồng, phù hợp với file lớn.",
+      "options": [
+        {
+          "key": "A",
+          "text": "fs.readFile đọc toàn bộ nội dung file và trả về callback hoặc Promise."
+        },
+        {
+          "key": "B",
+          "text": "fs.createReadStream đọc file theo luồng, phù hợp với file lớn."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: fs.readFile đọc toàn bộ nội dung file và trả về callback hoặc Promise. và fs.createReadStream đọc file theo luồng, phù hợp với file lớn.. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    },
+    {
+      "id": "javascript_sp_nodejs_q017",
+      "area": "tooling",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh JavaScript về: http.createServer tạo một HTTP server cơ bản trong Node.js. và Express.js là framework phổ biến giúp định nghĩa route và middleware.",
+      "options": [
+        {
+          "key": "A",
+          "text": "http.createServer tạo một HTTP server cơ bản trong Node.js."
+        },
+        {
+          "key": "B",
+          "text": "Express.js là framework phổ biến giúp định nghĩa route và middleware."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: http.createServer tạo một HTTP server cơ bản trong Node.js. và Express.js là framework phổ biến giúp định nghĩa route và middleware.. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    },
+    {
+      "id": "javascript_sp_nodejs_q018",
+      "area": "tooling",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh JavaScript về: npm scripts định nghĩa các lệnh tự động hóa trong package.json. và npx thực thi một package từ registry mà không cần cài đặt toàn cục.",
+      "options": [
+        {
+          "key": "A",
+          "text": "npm scripts định nghĩa các lệnh tự động hóa trong package.json."
+        },
+        {
+          "key": "B",
+          "text": "npx thực thi một package từ registry mà không cần cài đặt toàn cục."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: npm scripts định nghĩa các lệnh tự động hóa trong package.json. và npx thực thi một package từ registry mà không cần cài đặt toàn cục.. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    },
+    {
+      "id": "javascript_sp_nodejs_q019",
+      "area": "tooling",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đúng hay sai: Node.js sử dụng libuv để cung cấp event loop và xử lý I/O không đồng bộ.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ đúng trên hệ điều hành cụ thể"
+        },
+        {
+          "key": "D",
+          "text": "Không thể kết luận từ JavaScript API"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Node.js sử dụng libuv để cung cấp event loop và xử lý I/O không đồng bộ. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    },
+    {
+      "id": "javascript_sp_nodejs_q020",
+      "area": "tooling",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đúng hay sai: require và import/export có thể trộn lẫn tùy ý trong cùng một file .js.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ đúng trên hệ điều hành cụ thể"
+        },
+        {
+          "key": "D",
+          "text": "Không thể kết luận từ JavaScript API"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: require và import/export có thể trộn lẫn tùy ý trong cùng một file .js. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://nodejs.org/en/docs/"
+    }
+  ]
+}

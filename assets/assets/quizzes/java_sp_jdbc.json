@@ -1,0 +1,793 @@
+{
+  "metadata": {
+    "quiz_id": "java_sp_jdbc",
+    "title": "Java Database Connectivity",
+    "subject": "java",
+    "level": "Intermediate",
+    "kind": "special",
+    "pack_id": "java-special-jdbc",
+    "topic_id": "technology",
+    "language": "java",
+    "difficulty": "medium",
+    "time_limit_minutes": 25,
+    "total_questions": 20,
+    "pass_percentage": 70,
+    "timer_mode": "global",
+    "per_question_time_seconds": 0,
+    "negative_marking": false,
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "strict_mode": false,
+    "tags": [
+      "java",
+      "special",
+      "jdbc",
+      "l2"
+    ],
+    "created_by": "TN Club Quiz",
+    "created_at": "2026-09-06T00:00:00Z",
+    "version": "1.0.0"
+  },
+  "questions": [
+    {
+      "id": "java_sp_jdbc_q001",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: JDBC cung cấp API chuẩn để Java kết nối và thao tác với cơ sở dữ liệu quan hệ.",
+      "options": [
+        {
+          "key": "A",
+          "text": "JDBC cung cấp API chuẩn để Java kết nối và thao tác với cơ sở dữ liệu quan hệ."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: JDBC cung cấp API chuẩn để Java kết nối và thao tác với cơ sở dữ liệu quan hệ. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    },
+    {
+      "id": "java_sp_jdbc_q002",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: DriverManager.getConnection trả về một đối tượng Connection.",
+      "options": [
+        {
+          "key": "A",
+          "text": "DriverManager.getConnection trả về một đối tượng Connection."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: DriverManager.getConnection trả về một đối tượng Connection. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    },
+    {
+      "id": "java_sp_jdbc_q003",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: PreparedStatement sử dụng tham số hóa để giảm nguy cơ SQL injection.",
+      "options": [
+        {
+          "key": "A",
+          "text": "PreparedStatement sử dụng tham số hóa để giảm nguy cơ SQL injection."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: PreparedStatement sử dụng tham số hóa để giảm nguy cơ SQL injection. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    },
+    {
+      "id": "java_sp_jdbc_q004",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: ResultSet cho phép duyệt qua các dòng dữ liệu trả về từ truy vấn.",
+      "options": [
+        {
+          "key": "A",
+          "text": "ResultSet cho phép duyệt qua các dòng dữ liệu trả về từ truy vấn."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: ResultSet cho phép duyệt qua các dòng dữ liệu trả về từ truy vấn. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    },
+    {
+      "id": "java_sp_jdbc_q005",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Connection.setAutoCommit(false) bật chế độ quản lý transaction thủ công.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Connection.setAutoCommit(false) bật chế độ quản lý transaction thủ công."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Connection.setAutoCommit(false) bật chế độ quản lý transaction thủ công. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    },
+    {
+      "id": "java_sp_jdbc_q006",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: try-with-resources tự động đóng Connection, Statement và ResultSet.",
+      "options": [
+        {
+          "key": "A",
+          "text": "try-with-resources tự động đóng Connection, Statement và ResultSet."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: try-with-resources tự động đóng Connection, Statement và ResultSet. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    },
+    {
+      "id": "java_sp_jdbc_q007",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: CallableStatement dùng để gọi stored procedure trong cơ sở dữ liệu.",
+      "options": [
+        {
+          "key": "A",
+          "text": "CallableStatement dùng để gọi stored procedure trong cơ sở dữ liệu."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: CallableStatement dùng để gọi stored procedure trong cơ sở dữ liệu. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    },
+    {
+      "id": "java_sp_jdbc_q008",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: SQLException là ngoại lệ cơ sở báo lỗi trong các thao tác JDBC.",
+      "options": [
+        {
+          "key": "A",
+          "text": "SQLException là ngoại lệ cơ sở báo lỗi trong các thao tác JDBC."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: SQLException là ngoại lệ cơ sở báo lỗi trong các thao tác JDBC. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    },
+    {
+      "id": "java_sp_jdbc_q009",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: DataSource được ưu tiên hơn DriverManager trong ứng dụng production.",
+      "options": [
+        {
+          "key": "A",
+          "text": "DataSource được ưu tiên hơn DriverManager trong ứng dụng production."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: DataSource được ưu tiên hơn DriverManager trong ứng dụng production. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    },
+    {
+      "id": "java_sp_jdbc_q010",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Connection pool tái sử dụng các kết nối, ví dụ HikariCP có hiệu năng cao.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Connection pool tái sử dụng các kết nối, ví dụ HikariCP có hiệu năng cao."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Connection pool tái sử dụng các kết nối, ví dụ HikariCP có hiệu năng cao. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    },
+    {
+      "id": "java_sp_jdbc_q011",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: executeUpdate trả về số dòng bị ảnh hưởng bởi INSERT, UPDATE hoặc DELETE.",
+      "options": [
+        {
+          "key": "A",
+          "text": "executeUpdate trả về số dòng bị ảnh hưởng bởi INSERT, UPDATE hoặc DELETE."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: executeUpdate trả về số dòng bị ảnh hưởng bởi INSERT, UPDATE hoặc DELETE. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    },
+    {
+      "id": "java_sp_jdbc_q012",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: executeQuery trả về ResultSet cho các câu lệnh SELECT.",
+      "options": [
+        {
+          "key": "A",
+          "text": "executeQuery trả về ResultSet cho các câu lệnh SELECT."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: executeQuery trả về ResultSet cho các câu lệnh SELECT. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    },
+    {
+      "id": "java_sp_jdbc_q013",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Statement đơn giản không tham số hóa nên kém an toàn hơn PreparedStatement.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Statement đơn giản không tham số hóa nên kém an toàn hơn PreparedStatement."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Statement đơn giản không tham số hóa nên kém an toàn hơn PreparedStatement. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    },
+    {
+      "id": "java_sp_jdbc_q014",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Connection.commit xác nhận và lưu vĩnh viễn các thay đổi trong transaction.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Connection.commit xác nhận và lưu vĩnh viễn các thay đổi trong transaction."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Connection.commit xác nhận và lưu vĩnh viễn các thay đổi trong transaction. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    },
+    {
+      "id": "java_sp_jdbc_q015",
+      "area": "tooling",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh Java về: Connection.rollback hoàn tác các thay đổi chưa commit trong transaction. và DatabaseMetaData cung cấp thông tin về cấu trúc cơ sở dữ liệu và driver.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Connection.rollback hoàn tác các thay đổi chưa commit trong transaction."
+        },
+        {
+          "key": "B",
+          "text": "DatabaseMetaData cung cấp thông tin về cấu trúc cơ sở dữ liệu và driver."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: Connection.rollback hoàn tác các thay đổi chưa commit trong transaction. và DatabaseMetaData cung cấp thông tin về cấu trúc cơ sở dữ liệu và driver.. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    },
+    {
+      "id": "java_sp_jdbc_q016",
+      "area": "tooling",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh Java về: ResultSetMetaData mô tả tên, kiểu và số cột của tập kết quả. và JDBC URL có dạng jdbc:vendor://host:port/database tùy theo driver.",
+      "options": [
+        {
+          "key": "A",
+          "text": "ResultSetMetaData mô tả tên, kiểu và số cột của tập kết quả."
+        },
+        {
+          "key": "B",
+          "text": "JDBC URL có dạng jdbc:vendor://host:port/database tùy theo driver."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: ResultSetMetaData mô tả tên, kiểu và số cột của tập kết quả. và JDBC URL có dạng jdbc:vendor://host:port/database tùy theo driver.. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    },
+    {
+      "id": "java_sp_jdbc_q017",
+      "area": "tooling",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh Java về: Transaction isolation level kiểm soát mức độ nhìn thấy dữ liệu chưa commit. và HikariCP là một connection pool nổi tiếng với hiệu năng và khởi động nhanh.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Transaction isolation level kiểm soát mức độ nhìn thấy dữ liệu chưa commit."
+        },
+        {
+          "key": "B",
+          "text": "HikariCP là một connection pool nổi tiếng với hiệu năng và khởi động nhanh."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: Transaction isolation level kiểm soát mức độ nhìn thấy dữ liệu chưa commit. và HikariCP là một connection pool nổi tiếng với hiệu năng và khởi động nhanh.. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    },
+    {
+      "id": "java_sp_jdbc_q018",
+      "area": "tooling",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh Java về: Savepoint cho phép rollback một phần transaction thay vì toàn bộ. và Batch update gửi nhiều câu lệnh cùng lúc để giảm số lần giao tiếp với DB.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Savepoint cho phép rollback một phần transaction thay vì toàn bộ."
+        },
+        {
+          "key": "B",
+          "text": "Batch update gửi nhiều câu lệnh cùng lúc để giảm số lần giao tiếp với DB."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: Savepoint cho phép rollback một phần transaction thay vì toàn bộ. và Batch update gửi nhiều câu lệnh cùng lúc để giảm số lần giao tiếp với DB.. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    },
+    {
+      "id": "java_sp_jdbc_q019",
+      "area": "tooling",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đúng hay sai: CallableStatement hỗ trợ gọi cả stored procedure và function trong cơ sở dữ liệu.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ đúng trên hệ điều hành cụ thể"
+        },
+        {
+          "key": "D",
+          "text": "Không thể kết luận từ Java API"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: CallableStatement hỗ trợ gọi cả stored procedure và function trong cơ sở dữ liệu. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    },
+    {
+      "id": "java_sp_jdbc_q020",
+      "area": "tooling",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đúng hay sai: JDBC drivers phải được đăng ký hoặc load trước khi tạo kết nối.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ đúng trên hệ điều hành cụ thể"
+        },
+        {
+          "key": "D",
+          "text": "Không thể kết luận từ Java API"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: JDBC drivers phải được đăng ký hoặc load trước khi tạo kết nối. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/"
+    }
+  ]
+}

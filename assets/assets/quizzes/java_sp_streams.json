@@ -1,0 +1,813 @@
+{
+  "metadata": {
+    "quiz_id": "java_sp_streams",
+    "title": "Java Streams and Lambdas",
+    "subject": "java",
+    "level": "Intermediate",
+    "kind": "special",
+    "pack_id": "java-special-streams",
+    "topic_id": "technology",
+    "language": "java",
+    "difficulty": "medium",
+    "time_limit_minutes": 25,
+    "total_questions": 20,
+    "pass_percentage": 70,
+    "timer_mode": "global",
+    "per_question_time_seconds": 0,
+    "negative_marking": false,
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "strict_mode": false,
+    "tags": [
+      "java",
+      "special",
+      "streams",
+      "l2"
+    ],
+    "created_by": "TN Club Quiz",
+    "created_at": "2026-09-06T00:00:00Z",
+    "version": "1.0.0"
+  },
+  "questions": [
+    {
+      "id": "java_sp_streams_q001",
+      "area": "streams",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Lambda phù hợp Predicate có một tham số và trả boolean?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Lambda phù hợp Predicate có một tham số và trả boolean"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Lambda phù hợp Predicate có một tham số và trả boolean. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    },
+    {
+      "id": "java_sp_streams_q002",
+      "area": "streams",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Stream pipeline gồm source, intermediate và terminal operation?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Stream pipeline gồm source, intermediate và terminal operation"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Stream pipeline gồm source, intermediate và terminal operation. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    },
+    {
+      "id": "java_sp_streams_q003",
+      "area": "streams",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: filter giữ phần tử thỏa điều kiện?",
+      "options": [
+        {
+          "key": "A",
+          "text": "filter giữ phần tử thỏa điều kiện"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: filter giữ phần tử thỏa điều kiện. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    },
+    {
+      "id": "java_sp_streams_q004",
+      "area": "streams",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: map biến đổi từng phần tử một-một?",
+      "options": [
+        {
+          "key": "A",
+          "text": "map biến đổi từng phần tử một-một"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: map biến đổi từng phần tử một-một. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    },
+    {
+      "id": "java_sp_streams_q005",
+      "area": "streams",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: flatMap làm phẳng stream con?",
+      "options": [
+        {
+          "key": "A",
+          "text": "flatMap làm phẳng stream con"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: flatMap làm phẳng stream con. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    },
+    {
+      "id": "java_sp_streams_q006",
+      "area": "streams",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: collect là terminal operation?",
+      "options": [
+        {
+          "key": "A",
+          "text": "collect là terminal operation"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: collect là terminal operation. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    },
+    {
+      "id": "java_sp_streams_q007",
+      "area": "streams",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Collectors.groupingBy tạo Map theo classifier?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Collectors.groupingBy tạo Map theo classifier"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Collectors.groupingBy tạo Map theo classifier. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    },
+    {
+      "id": "java_sp_streams_q008",
+      "area": "streams",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong Java: Optional mô tả kết quả có thể vắng mặt?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Optional mô tả kết quả có thể vắng mặt"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Optional mô tả kết quả có thể vắng mặt. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    },
+    {
+      "id": "java_sp_streams_q009",
+      "area": "streams",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh Java về: orElseGet lazy hơn orElse.",
+      "options": [
+        {
+          "key": "A",
+          "text": "orElseGet lazy hơn orElse"
+        },
+        {
+          "key": "B",
+          "text": "reduce yêu cầu accumulator phù hợp và thường associative"
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: orElseGet lazy hơn orElse. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    },
+    {
+      "id": "java_sp_streams_q010",
+      "area": "streams",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh Java về: Stream chỉ consume một lần.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Stream chỉ consume một lần"
+        },
+        {
+          "key": "B",
+          "text": "distinct dựa trên equals"
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: Stream chỉ consume một lần. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    },
+    {
+      "id": "java_sp_streams_q011",
+      "area": "streams",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh Java về: parallelStream không được dùng shared mutable state.",
+      "options": [
+        {
+          "key": "A",
+          "text": "parallelStream không được dùng shared mutable state"
+        },
+        {
+          "key": "B",
+          "text": "limit là short-circuiting operation"
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: parallelStream không được dùng shared mutable state. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    },
+    {
+      "id": "java_sp_streams_q012",
+      "area": "streams",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đúng hay sai: reduce yêu cầu accumulator phù hợp và thường associative.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ đúng trên hệ điều hành cụ thể"
+        },
+        {
+          "key": "D",
+          "text": "Không thể kết luận từ Java API"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: reduce yêu cầu accumulator phù hợp và thường associative. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    },
+    {
+      "id": "java_sp_streams_q013",
+      "area": "streams",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đúng hay sai: distinct dựa trên equals.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ đúng trên hệ điều hành cụ thể"
+        },
+        {
+          "key": "D",
+          "text": "Không thể kết luận từ Java API"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: distinct dựa trên equals. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    },
+    {
+      "id": "java_sp_streams_q014",
+      "area": "streams",
+      "challenge_type": "predict_output",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Khi chạy hoặc thiết kế đoạn mã liên quan đến limit là short-circuiting operation, kết luận nào chính xác nhất?",
+      "code_snippet": {
+        "language": "java",
+        "code": "// Minh họa khái niệm: limit là short-circuiting operation"
+      },
+      "options": [
+        {
+          "key": "A",
+          "text": "limit là short-circuiting operation"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: limit là short-circuiting operation. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    },
+    {
+      "id": "java_sp_streams_q015",
+      "area": "streams",
+      "challenge_type": "predict_output",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Khi chạy hoặc thiết kế đoạn mã liên quan đến toUnmodifiableList tạo kết quả không sửa được, kết luận nào chính xác nhất?",
+      "code_snippet": {
+        "language": "java",
+        "code": "// Minh họa khái niệm: toUnmodifiableList tạo kết quả không sửa được"
+      },
+      "options": [
+        {
+          "key": "A",
+          "text": "toUnmodifiableList tạo kết quả không sửa được"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: toUnmodifiableList tạo kết quả không sửa được. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    },
+    {
+      "id": "java_sp_streams_q016",
+      "area": "streams",
+      "challenge_type": "predict_output",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Khi chạy hoặc thiết kế đoạn mã liên quan đến peek chủ yếu dùng quan sát/debug, không phải business mutation, kết luận nào chính xác nhất?",
+      "code_snippet": {
+        "language": "java",
+        "code": "// Minh họa khái niệm: peek chủ yếu dùng quan sát/debug, không phải business mutation"
+      },
+      "options": [
+        {
+          "key": "A",
+          "text": "peek chủ yếu dùng quan sát/debug, không phải business mutation"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: peek chủ yếu dùng quan sát/debug, không phải business mutation. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    },
+    {
+      "id": "java_sp_streams_q017",
+      "area": "streams",
+      "challenge_type": "spot_bug",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Một code review phát hiện lỗi liên quan đến IntStream.sum tránh boxing khi cộng số nguyên. Nguyên nhân và hướng xử lý đúng là gì?",
+      "code_snippet": {
+        "language": "java",
+        "code": "// Minh họa khái niệm: IntStream.sum tránh boxing khi cộng số nguyên"
+      },
+      "options": [
+        {
+          "key": "A",
+          "text": "IntStream.sum tránh boxing khi cộng số nguyên"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: IntStream.sum tránh boxing khi cộng số nguyên. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    },
+    {
+      "id": "java_sp_streams_q018",
+      "area": "streams",
+      "challenge_type": "spot_bug",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Một code review phát hiện lỗi liên quan đến Collectors.partitioningBy chia thành hai nhóm boolean. Nguyên nhân và hướng xử lý đúng là gì?",
+      "code_snippet": {
+        "language": "java",
+        "code": "// Minh họa khái niệm: Collectors.partitioningBy chia thành hai nhóm boolean"
+      },
+      "options": [
+        {
+          "key": "A",
+          "text": "Collectors.partitioningBy chia thành hai nhóm boolean"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Collectors.partitioningBy chia thành hai nhóm boolean. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    },
+    {
+      "id": "java_sp_streams_q019",
+      "area": "streams",
+      "challenge_type": "best_practice",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Lựa chọn thiết kế tốt nhất khi áp dụng method reference có thể thay lambda tương đương là gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "method reference có thể thay lambda tương đương"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: method reference có thể thay lambda tương đương. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    },
+    {
+      "id": "java_sp_streams_q020",
+      "area": "streams",
+      "challenge_type": "best_practice",
+      "type": "single_choice",
+      "language": "java",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Lựa chọn thiết kế tốt nhất khi áp dụng checked exception cần policy rõ trong mapper là gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "checked exception cần policy rõ trong mapper"
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: checked exception cần policy rõ trong mapper. Đây là hành vi/khuyến nghị cụ thể của Java và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của Java trong tình huống đã nêu."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html"
+    }
+  ]
+}

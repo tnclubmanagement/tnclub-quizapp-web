@@ -1,0 +1,984 @@
+{
+  "metadata": {
+    "quiz_id": "flutter_l2_state",
+    "title": "Flutter State and Lifecycle",
+    "difficulty": "medium",
+    "language": "vi",
+    "topic_id": "technology",
+    "level": "Intermediate",
+    "subject": "flutter",
+    "kind": "standard",
+    "pack_id": "flutter-l2-state",
+    "tags": [
+      "flutter",
+      "state",
+      "lifecycle",
+      "l2"
+    ],
+    "pass_percentage": 70,
+    "time_limit_minutes": 30,
+    "total_questions": 25,
+    "created_by": "TN Club Quiz",
+    "created_at": "2026-09-06T00:00:00Z",
+    "version": "1.0.0",
+    "timer_mode": "global",
+    "per_question_time_seconds": 0,
+    "negative_marking": false,
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "strict_mode": false,
+    "focus": "state, lifecycle, forms, controllers, setState, inherited data"
+  },
+  "questions": [
+    {
+      "id": "flutter_l2_state_q001",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Mutable data của StatefulWidget nằm ở đâu?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Lớp State"
+        },
+        {
+          "key": "B",
+          "text": "BuildContext"
+        },
+        {
+          "key": "C",
+          "text": "StatelessWidget"
+        },
+        {
+          "key": "D",
+          "text": "ThemeData"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "State giữ dữ liệu thay đổi và lifecycle.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả lớp state.",
+        "C": "Lựa chọn này không đúng vì không mô tả lớp state.",
+        "D": "Lựa chọn này không đúng vì không mô tả lớp state."
+      },
+      "reference_url": "https://docs.flutter.dev/data-and-backend/state-mgmt/intro"
+    },
+    {
+      "id": "flutter_l2_state_q002",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "setState làm gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đánh dấu State dirty để gọi build lại"
+        },
+        {
+          "key": "B",
+          "text": "Lưu SQLite"
+        },
+        {
+          "key": "C",
+          "text": "Tạo isolate"
+        },
+        {
+          "key": "D",
+          "text": "Đẩy route"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "setState thông báo framework state đã đổi.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả đánh dấu state dirty để gọi build lại.",
+        "C": "Lựa chọn này không đúng vì không mô tả đánh dấu state dirty để gọi build lại.",
+        "D": "Lựa chọn này không đúng vì không mô tả đánh dấu state dirty để gọi build lại."
+      },
+      "reference_url": "https://docs.flutter.dev/data-and-backend/state-mgmt/intro"
+    },
+    {
+      "id": "flutter_l2_state_q003",
+      "type": "single_choice",
+      "area": "errors",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "TextEditingController dispose ở đâu?",
+      "options": [
+        {
+          "key": "A",
+          "text": "dispose"
+        },
+        {
+          "key": "B",
+          "text": "build"
+        },
+        {
+          "key": "C",
+          "text": "didUpdateWidget"
+        },
+        {
+          "key": "D",
+          "text": "deactivate"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Controller cần được giải phóng khi State hủy.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả dispose.",
+        "C": "Lựa chọn này không đúng vì không mô tả dispose.",
+        "D": "Lựa chọn này không đúng vì không mô tả dispose."
+      },
+      "reference_url": "https://docs.flutter.dev/cookbook/forms"
+    },
+    {
+      "id": "flutter_l2_state_q004",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "initState gọi khi nào?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Một lần khi State gắn vào cây"
+        },
+        {
+          "key": "B",
+          "text": "Sau mọi build"
+        },
+        {
+          "key": "C",
+          "text": "Mỗi lần đổi theme"
+        },
+        {
+          "key": "D",
+          "text": "Khi route pop"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "initState trước build đầu tiên.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả một lần khi state gắn vào cây.",
+        "C": "Lựa chọn này không đúng vì không mô tả một lần khi state gắn vào cây.",
+        "D": "Lựa chọn này không đúng vì không mô tả một lần khi state gắn vào cây."
+      },
+      "reference_url": "https://docs.flutter.dev/data-and-backend/state-mgmt/intro"
+    },
+    {
+      "id": "flutter_l2_state_q005",
+      "type": "single_choice",
+      "area": "patterns",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "InheritedWidget truyền dữ liệu hướng nào?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ancestor xuống descendant"
+        },
+        {
+          "key": "B",
+          "text": "Child lên tự động"
+        },
+        {
+          "key": "C",
+          "text": "Qua HTTP"
+        },
+        {
+          "key": "D",
+          "text": "Qua JSON"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Descendant đọc inherited data từ ancestor.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả ancestor xuống descendant.",
+        "C": "Lựa chọn này không đúng vì không mô tả ancestor xuống descendant.",
+        "D": "Lựa chọn này không đúng vì không mô tả ancestor xuống descendant."
+      },
+      "reference_url": "https://docs.flutter.dev/data-and-backend/state-mgmt/intro"
+    },
+    {
+      "id": "flutter_l2_state_q006",
+      "type": "single_choice",
+      "area": "errors",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "FormState.validate làm gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Chạy validator và trả kết quả"
+        },
+        {
+          "key": "B",
+          "text": "Gửi server"
+        },
+        {
+          "key": "C",
+          "text": "Xóa controller"
+        },
+        {
+          "key": "D",
+          "text": "Đổi route"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "null từ validator biểu thị hợp lệ.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả chạy validator và trả kết quả.",
+        "C": "Lựa chọn này không đúng vì không mô tả chạy validator và trả kết quả.",
+        "D": "Lựa chọn này không đúng vì không mô tả chạy validator và trả kết quả."
+      },
+      "reference_url": "https://docs.flutter.dev/cookbook/forms"
+    },
+    {
+      "id": "flutter_l2_state_q007",
+      "type": "multiple_choice",
+      "area": "patterns",
+      "challenge_type": "multi",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "GlobalKey phù hợp để?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Truy cập State cụ thể"
+        },
+        {
+          "key": "B",
+          "text": "Tăng tốc mọi Text"
+        },
+        {
+          "key": "C",
+          "text": "Thay Provider"
+        },
+        {
+          "key": "D",
+          "text": "Lưu mật khẩu"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "GlobalKey có currentState nhưng nên tiết chế. Hai lựa chọn đầu tiên là các đặc điểm đúng theo tài liệu.",
+      "distractor_explanations": {
+        "C": "Lựa chọn này không đúng vì không mô tả truy cập state cụ thể.",
+        "D": "Lựa chọn này không đúng vì không mô tả truy cập state cụ thể."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/interactivity"
+    },
+    {
+      "id": "flutter_l2_state_q008",
+      "type": "multiple_choice",
+      "area": "oop",
+      "challenge_type": "multi",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "didChangeDependencies hữu ích khi?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Inherited dependency thay đổi"
+        },
+        {
+          "key": "B",
+          "text": "Giải phóng controller"
+        },
+        {
+          "key": "C",
+          "text": "Parse JSON"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ StatelessWidget"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Callback chạy khi dependency inherited đổi. Hai lựa chọn đầu tiên là các đặc điểm đúng theo tài liệu.",
+      "distractor_explanations": {
+        "C": "Lựa chọn này không đúng vì không mô tả inherited dependency thay đổi.",
+        "D": "Lựa chọn này không đúng vì không mô tả inherited dependency thay đổi."
+      },
+      "reference_url": "https://docs.flutter.dev/data-and-backend/state-mgmt/intro"
+    },
+    {
+      "id": "flutter_l2_state_q009",
+      "type": "multiple_choice",
+      "area": "oop",
+      "challenge_type": "multi",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "AnimationController nên tạo ở đâu?",
+      "options": [
+        {
+          "key": "A",
+          "text": "initState"
+        },
+        {
+          "key": "B",
+          "text": "Mỗi build"
+        },
+        {
+          "key": "C",
+          "text": "const"
+        },
+        {
+          "key": "D",
+          "text": "validator"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Tạo một lần và dispose đúng lifecycle. Hai lựa chọn đầu tiên là các đặc điểm đúng theo tài liệu.",
+      "distractor_explanations": {
+        "C": "Lựa chọn này không đúng vì không mô tả initstate.",
+        "D": "Lựa chọn này không đúng vì không mô tả initstate."
+      },
+      "reference_url": "https://docs.flutter.dev/data-and-backend/state-mgmt/intro"
+    },
+    {
+      "id": "flutter_l2_state_q010",
+      "type": "multiple_choice",
+      "area": "oop",
+      "challenge_type": "multi",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đọc Theme inherited bằng gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Theme.of(context)"
+        },
+        {
+          "key": "B",
+          "text": "File.readAsStringSync"
+        },
+        {
+          "key": "C",
+          "text": "setState"
+        },
+        {
+          "key": "D",
+          "text": "Navigator.push"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Theme.of đăng ký dependency. Hai lựa chọn đầu tiên là các đặc điểm đúng theo tài liệu.",
+      "distractor_explanations": {
+        "C": "Lựa chọn này không đúng vì không mô tả theme.of(context).",
+        "D": "Lựa chọn này không đúng vì không mô tả theme.of(context)."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/widgets/material"
+    },
+    {
+      "id": "flutter_l2_state_q011",
+      "type": "true_false",
+      "area": "oop",
+      "challenge_type": "true_false",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Controller nên có listener khi nào?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Không đủ thông tin"
+        },
+        {
+          "key": "D",
+          "text": "Phụ thuộc nền tảng"
+        }
+      ],
+      "correct_keys": [
+        "B"
+      ],
+      "explanation": "Listener nhận thay đổi text và vẫn phải dispose.",
+      "distractor_explanations": {
+        "A": "Lựa chọn này không đúng vì không mô tả khi cần phản ứng text.",
+        "C": "Lựa chọn này không đúng vì không mô tả khi cần phản ứng text.",
+        "D": "Lựa chọn này không đúng vì không mô tả khi cần phản ứng text."
+      },
+      "reference_url": "https://docs.flutter.dev/cookbook/forms"
+    },
+    {
+      "id": "flutter_l2_state_q012",
+      "type": "true_false",
+      "area": "errors",
+      "challenge_type": "true_false",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "validator trả null nghĩa là?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Không đủ thông tin"
+        },
+        {
+          "key": "D",
+          "text": "Phụ thuộc nền tảng"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "null là hợp lệ trong FormField validator.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả đúng.",
+        "C": "Lựa chọn này không đúng vì không mô tả đúng.",
+        "D": "Lựa chọn này không đúng vì không mô tả đúng."
+      },
+      "reference_url": "https://docs.flutter.dev/cookbook/forms"
+    },
+    {
+      "id": "flutter_l2_state_q013",
+      "type": "single_choice",
+      "area": "errors",
+      "challenge_type": "predict_output",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "setState sau dispose an toàn?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sai"
+        },
+        {
+          "key": "B",
+          "text": "Đúng"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ web"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ GlobalKey"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "State đã unmounted không được cập nhật.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả sai.",
+        "C": "Lựa chọn này không đúng vì không mô tả sai.",
+        "D": "Lựa chọn này không đúng vì không mô tả sai."
+      },
+      "reference_url": "https://docs.flutter.dev/data-and-backend/state-mgmt/intro"
+    },
+    {
+      "id": "flutter_l2_state_q014",
+      "type": "single_choice",
+      "area": "patterns",
+      "challenge_type": "predict_output",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "InheritedWidget tự làm object immutable?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sai"
+        },
+        {
+          "key": "B",
+          "text": "Đúng"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ MaterialApp"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ controller"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Truyền dữ liệu không quyết định mutability.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả sai.",
+        "C": "Lựa chọn này không đúng vì không mô tả sai.",
+        "D": "Lựa chọn này không đúng vì không mô tả sai."
+      },
+      "reference_url": "https://docs.flutter.dev/data-and-backend/state-mgmt/intro"
+    },
+    {
+      "id": "flutter_l2_state_q015",
+      "type": "single_choice",
+      "area": "errors",
+      "challenge_type": "predict_output",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Async callback trước setState nên kiểm tra gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "mounted"
+        },
+        {
+          "key": "B",
+          "text": "hasFocus"
+        },
+        {
+          "key": "C",
+          "text": "brightness"
+        },
+        {
+          "key": "D",
+          "text": "textScaler"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Sau await State có thể đã bị dispose.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả mounted.",
+        "C": "Lựa chọn này không đúng vì không mô tả mounted.",
+        "D": "Lựa chọn này không đúng vì không mô tả mounted."
+      },
+      "reference_url": "https://docs.flutter.dev/data-and-backend/state-mgmt/intro"
+    },
+    {
+      "id": "flutter_l2_state_q016",
+      "type": "single_choice",
+      "area": "errors",
+      "challenge_type": "predict_output",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Controller tạo trong build gây gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tạo lại mỗi rebuild"
+        },
+        {
+          "key": "B",
+          "text": "Tự dispose"
+        },
+        {
+          "key": "C",
+          "text": "TextField không nhận"
+        },
+        {
+          "key": "D",
+          "text": "build một lần"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Mất text/listener và có thể leak.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả tạo lại mỗi rebuild.",
+        "C": "Lựa chọn này không đúng vì không mô tả tạo lại mỗi rebuild.",
+        "D": "Lựa chọn này không đúng vì không mô tả tạo lại mỗi rebuild."
+      },
+      "reference_url": "https://docs.flutter.dev/cookbook/forms"
+    },
+    {
+      "id": "flutter_l2_state_q017",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "predict_output",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Sau validate thành công, save làm gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Chạy onSaved"
+        },
+        {
+          "key": "B",
+          "text": "Dispose controller"
+        },
+        {
+          "key": "C",
+          "text": "didUpdateWidget"
+        },
+        {
+          "key": "D",
+          "text": "Tự push route"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "save gọi callback onSaved.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả chạy onsaved.",
+        "C": "Lựa chọn này không đúng vì không mô tả chạy onsaved.",
+        "D": "Lựa chọn này không đúng vì không mô tả chạy onsaved."
+      },
+      "reference_url": "https://docs.flutter.dev/cookbook/forms"
+    },
+    {
+      "id": "flutter_l2_state_q018",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "predict_output",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Scope đổi value 1 thành 2 thì descendant đọc?",
+      "options": [
+        {
+          "key": "A",
+          "text": "2"
+        },
+        {
+          "key": "B",
+          "text": "1"
+        },
+        {
+          "key": "C",
+          "text": "null"
+        },
+        {
+          "key": "D",
+          "text": "Compile error"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Inherited notification khiến descendant đọc giá trị mới.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả 2.",
+        "C": "Lựa chọn này không đúng vì không mô tả 2.",
+        "D": "Lựa chọn này không đúng vì không mô tả 2."
+      },
+      "reference_url": "https://docs.flutter.dev/data-and-backend/state-mgmt/intro"
+    },
+    {
+      "id": "flutter_l2_state_q019",
+      "type": "single_choice",
+      "area": "errors",
+      "challenge_type": "predict_output",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "setState trong didChangeDependencies vô điều kiện gây?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Rebuild thừa hoặc vòng lặp"
+        },
+        {
+          "key": "B",
+          "text": "Tự submit"
+        },
+        {
+          "key": "C",
+          "text": "Route pop"
+        },
+        {
+          "key": "D",
+          "text": "Compile error"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Callback có thể chạy nhiều lần.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả rebuild thừa hoặc vòng lặp.",
+        "C": "Lựa chọn này không đúng vì không mô tả rebuild thừa hoặc vòng lặp.",
+        "D": "Lựa chọn này không đúng vì không mô tả rebuild thừa hoặc vòng lặp."
+      },
+      "reference_url": "https://docs.flutter.dev/data-and-backend/state-mgmt/intro"
+    },
+    {
+      "id": "flutter_l2_state_q020",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "spot_bug",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Cú pháp cập nhật count đúng?",
+      "options": [
+        {
+          "key": "A",
+          "text": "setState(() { count++; });"
+        },
+        {
+          "key": "B",
+          "text": "setState(count++);"
+        },
+        {
+          "key": "C",
+          "text": "build(() { count++; });"
+        },
+        {
+          "key": "D",
+          "text": "State.update(count++);"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "setState nhận closure.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả setstate(() { count++; });.",
+        "C": "Lựa chọn này không đúng vì không mô tả setstate(() { count++; });.",
+        "D": "Lựa chọn này không đúng vì không mô tả setstate(() { count++; });."
+      },
+      "reference_url": "https://docs.flutter.dev/data-and-backend/state-mgmt/intro"
+    },
+    {
+      "id": "flutter_l2_state_q021",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "spot_bug",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Controller nên là field kiểu nào?",
+      "options": [
+        {
+          "key": "A",
+          "text": "late final trong State"
+        },
+        {
+          "key": "B",
+          "text": "final trong build"
+        },
+        {
+          "key": "C",
+          "text": "const controller"
+        },
+        {
+          "key": "D",
+          "text": "Tạo trong validator"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Field giữ controller xuyên rebuild.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả late final trong state.",
+        "C": "Lựa chọn này không đúng vì không mô tả late final trong state.",
+        "D": "Lựa chọn này không đúng vì không mô tả late final trong state."
+      },
+      "reference_url": "https://docs.flutter.dev/cookbook/forms"
+    },
+    {
+      "id": "flutter_l2_state_q022",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "spot_bug",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "GlobalKey<FormState> dùng để?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Gọi currentState.validate()"
+        },
+        {
+          "key": "B",
+          "text": "Đọc Theme"
+        },
+        {
+          "key": "C",
+          "text": "Tạo isolate"
+        },
+        {
+          "key": "D",
+          "text": "Đổi font"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Key truy cập FormState của Form.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả gọi currentstate.validate().",
+        "C": "Lựa chọn này không đúng vì không mô tả gọi currentstate.validate().",
+        "D": "Lựa chọn này không đúng vì không mô tả gọi currentstate.validate()."
+      },
+      "reference_url": "https://docs.flutter.dev/cookbook/forms"
+    },
+    {
+      "id": "flutter_l2_state_q023",
+      "type": "single_choice",
+      "area": "patterns",
+      "challenge_type": "fix_code",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Giữ input khi list reorder nên?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Key ổn định theo id"
+        },
+        {
+          "key": "B",
+          "text": "Key theo index"
+        },
+        {
+          "key": "C",
+          "text": "Controller mỗi frame"
+        },
+        {
+          "key": "D",
+          "text": "Bỏ State"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Key theo id giữ đúng Element.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả key ổn định theo id.",
+        "C": "Lựa chọn này không đúng vì không mô tả key ổn định theo id.",
+        "D": "Lựa chọn này không đúng vì không mô tả key ổn định theo id."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/interactivity"
+    },
+    {
+      "id": "flutter_l2_state_q024",
+      "type": "single_choice",
+      "area": "errors",
+      "challenge_type": "fix_code",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "dispose nên gọi controller.dispose bao nhiêu lần?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Một lần khi State hủy"
+        },
+        {
+          "key": "B",
+          "text": "Mỗi build"
+        },
+        {
+          "key": "C",
+          "text": "Mỗi ký tự"
+        },
+        {
+          "key": "D",
+          "text": "Không bao giờ"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Dispose đúng lifecycle tránh leak.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả một lần khi state hủy.",
+        "C": "Lựa chọn này không đúng vì không mô tả một lần khi state hủy.",
+        "D": "Lựa chọn này không đúng vì không mô tả một lần khi state hủy."
+      },
+      "reference_url": "https://docs.flutter.dev/cookbook/forms"
+    },
+    {
+      "id": "flutter_l2_state_q025",
+      "type": "single_choice",
+      "area": "errors",
+      "challenge_type": "compile_error",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "FocusNode cũng cần xử lý thế nào?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dispose trong dispose"
+        },
+        {
+          "key": "B",
+          "text": "Tạo const"
+        },
+        {
+          "key": "C",
+          "text": "Đưa vào JSON"
+        },
+        {
+          "key": "D",
+          "text": "Gọi trong build mỗi frame"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "FocusNode giữ listener và cần giải phóng.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì không mô tả dispose trong dispose.",
+        "C": "Lựa chọn này không đúng vì không mô tả dispose trong dispose.",
+        "D": "Lựa chọn này không đúng vì không mô tả dispose trong dispose."
+      },
+      "reference_url": "https://docs.flutter.dev/cookbook/forms"
+    }
+  ]
+}
