@@ -1,0 +1,49 @@
+{
+  "schema_version": "1",
+  "packs": [
+    {
+      "pack_id": "dart-fundamentals",
+      "title": "Dart Fundamentals",
+      "description": "Build a strong foundation in Dart syntax, types, collections, and functions.",
+      "subject": "Dart",
+      "level": "Beginner",
+      "kind": "Standard",
+      "content_version": "1",
+      "question_count": 30,
+      "status": "available"
+    },
+    {
+      "pack_id": "flutter-widgets",
+      "title": "Flutter Widgets",
+      "description": "Practice the widgets and layout patterns used to build Flutter interfaces.",
+      "subject": "Flutter",
+      "level": "Intermediate",
+      "kind": "Standard",
+      "content_version": "1",
+      "question_count": 25,
+      "status": "installed"
+    },
+    {
+      "pack_id": "java-advanced",
+      "title": "Advanced Java",
+      "description": "Review object-oriented design, collections, streams, and concurrency.",
+      "subject": "Java",
+      "level": "Advanced",
+      "kind": "Standard",
+      "content_version": "2",
+      "question_count": 40,
+      "status": "update_available"
+    },
+    {
+      "pack_id": "javascript-core",
+      "title": "JavaScript Core",
+      "description": "Test your knowledge of modern JavaScript language fundamentals.",
+      "subject": "JavaScript",
+      "level": "Beginner",
+      "kind": "Special",
+      "content_version": "1",
+      "question_count": 20,
+      "status": "unavailable"
+    }
+  ]
+}

@@ -1,0 +1,793 @@
+{
+  "metadata": {
+    "quiz_id": "javascript_sp_es6",
+    "title": "Modern JavaScript ES6+",
+    "subject": "javascript",
+    "level": "Intermediate",
+    "kind": "special",
+    "pack_id": "javascript-special-es6",
+    "topic_id": "technology",
+    "language": "javascript",
+    "difficulty": "medium",
+    "time_limit_minutes": 25,
+    "total_questions": 20,
+    "pass_percentage": 70,
+    "timer_mode": "global",
+    "per_question_time_seconds": 0,
+    "negative_marking": false,
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "strict_mode": false,
+    "tags": [
+      "javascript",
+      "special",
+      "es6",
+      "l2"
+    ],
+    "created_by": "TN Club Quiz",
+    "created_at": "2026-09-06T00:00:00Z",
+    "version": "1.0.0"
+  },
+  "questions": [
+    {
+      "id": "javascript_sp_es6_q001",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: let khai báo biến có phạm vi block-scoped và cho phép gán lại giá trị.",
+      "options": [
+        {
+          "key": "A",
+          "text": "let khai báo biến có phạm vi block-scoped và cho phép gán lại giá trị."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: let khai báo biến có phạm vi block-scoped và cho phép gán lại giá trị. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    },
+    {
+      "id": "javascript_sp_es6_q002",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: const khai báo biến có phạm vi block-scoped nhưng không thể gán lại tham chiếu.",
+      "options": [
+        {
+          "key": "A",
+          "text": "const khai báo biến có phạm vi block-scoped nhưng không thể gán lại tham chiếu."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: const khai báo biến có phạm vi block-scoped nhưng không thể gán lại tham chiếu. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    },
+    {
+      "id": "javascript_sp_es6_q003",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Arrow function dùng cú pháp => và không có binding this, arguments, super riêng.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Arrow function dùng cú pháp => và không có binding this, arguments, super riêng."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Arrow function dùng cú pháp => và không có binding this, arguments, super riêng. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    },
+    {
+      "id": "javascript_sp_es6_q004",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Template literal sử dụng backtick ` để nhúng biểu thức ${expression} trong chuỗi.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Template literal sử dụng backtick ` để nhúng biểu thức ${expression} trong chuỗi."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Template literal sử dụng backtick ` để nhúng biểu thức ${expression} trong chuỗi. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    },
+    {
+      "id": "javascript_sp_es6_q005",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Destructuring cho phép trích xuất giá trị từ array hoặc object vào biến riêng.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Destructuring cho phép trích xuất giá trị từ array hoặc object vào biến riêng."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Destructuring cho phép trích xuất giá trị từ array hoặc object vào biến riêng. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    },
+    {
+      "id": "javascript_sp_es6_q006",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Spread syntax ... mở rộng iterable thành các phần tử đơn lẻ.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Spread syntax ... mở rộng iterable thành các phần tử đơn lẻ."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Spread syntax ... mở rộng iterable thành các phần tử đơn lẻ. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    },
+    {
+      "id": "javascript_sp_es6_q007",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Rest parameter ...args gom các đối số còn lại thành một mảng.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Rest parameter ...args gom các đối số còn lại thành một mảng."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Rest parameter ...args gom các đối số còn lại thành một mảng. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    },
+    {
+      "id": "javascript_sp_es6_q008",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Default parameter cho phép đặt giá trị mặc định cho tham số hàm.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Default parameter cho phép đặt giá trị mặc định cho tham số hàm."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Default parameter cho phép đặt giá trị mặc định cho tham số hàm. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    },
+    {
+      "id": "javascript_sp_es6_q009",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Object shorthand property cho phép khai báo {name, age} thay vì {name: name, age: age}.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Object shorthand property cho phép khai báo {name, age} thay vì {name: name, age: age}."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Object shorthand property cho phép khai báo {name, age} thay vì {name: name, age: age}. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    },
+    {
+      "id": "javascript_sp_es6_q010",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Computed property name cho phép dùng biểu thức làm tên thuộc tính object.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Computed property name cho phép dùng biểu thức làm tên thuộc tính object."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Computed property name cho phép dùng biểu thức làm tên thuộc tính object. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    },
+    {
+      "id": "javascript_sp_es6_q011",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: for...of lặp qua các giá trị của iterable như Array, String, Map, Set.",
+      "options": [
+        {
+          "key": "A",
+          "text": "for...of lặp qua các giá trị của iterable như Array, String, Map, Set."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: for...of lặp qua các giá trị của iterable như Array, String, Map, Set. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    },
+    {
+      "id": "javascript_sp_es6_q012",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Symbol tạo ra một giá trị định danh duy nhất, thường dùng làm khóa object.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Symbol tạo ra một giá trị định danh duy nhất, thường dùng làm khóa object."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Symbol tạo ra một giá trị định danh duy nhất, thường dùng làm khóa object. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    },
+    {
+      "id": "javascript_sp_es6_q013",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Map lưu trữ cặp key-value theo thứ tự chèn và cho phép key là bất kỳ kiểu nào.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Map lưu trữ cặp key-value theo thứ tự chèn và cho phép key là bất kỳ kiểu nào."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Map lưu trữ cặp key-value theo thứ tự chèn và cho phép key là bất kỳ kiểu nào. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    },
+    {
+      "id": "javascript_sp_es6_q014",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Set lưu trữ các giá trị duy nhất và kiểm tra sự tồn tại hiệu quả.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Set lưu trữ các giá trị duy nhất và kiểm tra sự tồn tại hiệu quả."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Set lưu trữ các giá trị duy nhất và kiểm tra sự tồn tại hiệu quả. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    },
+    {
+      "id": "javascript_sp_es6_q015",
+      "area": "syntax",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh JavaScript về: WeakMap cho phép key là object và tự động giải phóng khi object không còn tham chiếu. và WeakSet chỉ lưu các object duy nhất và không ngăn garbage collection.",
+      "options": [
+        {
+          "key": "A",
+          "text": "WeakMap cho phép key là object và tự động giải phóng khi object không còn tham chiếu."
+        },
+        {
+          "key": "B",
+          "text": "WeakSet chỉ lưu các object duy nhất và không ngăn garbage collection."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: WeakMap cho phép key là object và tự động giải phóng khi object không còn tham chiếu. và WeakSet chỉ lưu các object duy nhất và không ngăn garbage collection.. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    },
+    {
+      "id": "javascript_sp_es6_q016",
+      "area": "syntax",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh JavaScript về: class trong ES6 là cú pháp syntactic sugar dựa trên prototype inheritance. và static method thuộc về lớp, không phải instance của lớp.",
+      "options": [
+        {
+          "key": "A",
+          "text": "class trong ES6 là cú pháp syntactic sugar dựa trên prototype inheritance."
+        },
+        {
+          "key": "B",
+          "text": "static method thuộc về lớp, không phải instance của lớp."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: class trong ES6 là cú pháp syntactic sugar dựa trên prototype inheritance. và static method thuộc về lớp, không phải instance của lớp.. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    },
+    {
+      "id": "javascript_sp_es6_q017",
+      "area": "syntax",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh JavaScript về: module import/export cho phép chia code thành các file có phạm vi riêng. và default export chỉ có một trong một module, import có thể đặt tên tùy ý.",
+      "options": [
+        {
+          "key": "A",
+          "text": "module import/export cho phép chia code thành các file có phạm vi riêng."
+        },
+        {
+          "key": "B",
+          "text": "default export chỉ có một trong một module, import có thể đặt tên tùy ý."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: module import/export cho phép chia code thành các file có phạm vi riêng. và default export chỉ có một trong một module, import có thể đặt tên tùy ý.. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    },
+    {
+      "id": "javascript_sp_es6_q018",
+      "area": "syntax",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh JavaScript về: Promise là đối tượng đại diện cho kết quả cuối cùng của một tác vụ bất đồng bộ. và Proxy tạo ra một đối tượng trung gian để tùy chỉnh hành vi truy cập thuộc tính.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Promise là đối tượng đại diện cho kết quả cuối cùng của một tác vụ bất đồng bộ."
+        },
+        {
+          "key": "B",
+          "text": "Proxy tạo ra một đối tượng trung gian để tùy chỉnh hành vi truy cập thuộc tính."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: Promise là đối tượng đại diện cho kết quả cuối cùng của một tác vụ bất đồng bộ. và Proxy tạo ra một đối tượng trung gian để tùy chỉnh hành vi truy cập thuộc tính.. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    },
+    {
+      "id": "javascript_sp_es6_q019",
+      "area": "syntax",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đúng hay sai: let và const tạo biến trong phạm vi block, không bị hoisting như var.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ đúng trên hệ điều hành cụ thể"
+        },
+        {
+          "key": "D",
+          "text": "Không thể kết luận từ JavaScript API"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: let và const tạo biến trong phạm vi block, không bị hoisting như var. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    },
+    {
+      "id": "javascript_sp_es6_q020",
+      "area": "syntax",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đúng hay sai: Arrow function không phù hợp làm method của object khi cần binding this động.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ đúng trên hệ điều hành cụ thể"
+        },
+        {
+          "key": "D",
+          "text": "Không thể kết luận từ JavaScript API"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Arrow function không phù hợp làm method của object khi cần binding this động. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+    }
+  ]
+}

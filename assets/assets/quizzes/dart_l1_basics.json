@@ -1,0 +1,562 @@
+{
+  "metadata": {
+    "quiz_id": "dart_l1_basics",
+    "title": "Dart Foundations",
+    "subject": "dart",
+    "level": "Beginner",
+    "kind": "standard",
+    "pack_id": "dart-l1-foundation",
+    "topic_id": "technology",
+    "language": "dart",
+    "difficulty": "easy",
+    "time_limit_minutes": 20,
+    "total_questions": 20,
+    "pass_percentage": 70,
+    "timer_mode": "global",
+    "per_question_time_seconds": 0,
+    "negative_marking": false,
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "strict_mode": false,
+    "tags": ["dart", "foundation", "l1"],
+    "created_by": "TN Club",
+    "created_at": "2026-01-01T00:00:00Z",
+    "version": "1.0.0"
+  },
+  "questions": [
+    {
+      "id": "dart_l1_q001",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "dart",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Từ khóa nào khai báo một hằng số mà giá trị phải xác định được ngay tại thời điểm biên dịch?",
+      "options": [
+        { "key": "A", "text": "`const`" },
+        { "key": "B", "text": "`final`" },
+        { "key": "C", "text": "`static`" },
+        { "key": "D", "text": "`late`" }
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`const` yêu cầu giá trị là hằng số biên dịch. Trình biên dịch tính sẵn giá trị và có thể chia sẻ (canonicalize) cùng một đối tượng cho mọi nơi dùng chung giá trị đó.",
+      "distractor_explanations": {
+        "B": "`final` chỉ bảo đảm biến được gán đúng một lần; giá trị vẫn có thể được tính lúc chạy, ví dụ `final now = DateTime.now();`.",
+        "C": "`static` nói về việc thành viên thuộc về lớp thay vì thuộc về instance, hoàn toàn không liên quan tới tính bất biến.",
+        "D": "`late` chỉ trì hoãn việc khởi tạo tới lần đọc đầu tiên, và biến `late` vẫn có thể thay đổi nếu không kèm `final`."
+      },
+      "reference_url": "https://dart.dev/language/variables"
+    },
+    {
+      "id": "dart_l1_q002",
+      "area": "syntax",
+      "challenge_type": "predict_output",
+      "type": "single_choice",
+      "language": "dart",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Đoạn code sau in ra gì?",
+      "code_snippet": {
+        "language": "dart",
+        "code": "void main() {\n  const a = 7;\n  const b = 2;\n  print('${a ~/ b} ${a % b}');\n}"
+      },
+      "options": [
+        { "key": "A", "text": "`3 1`" },
+        { "key": "B", "text": "`3.5 1`" },
+        { "key": "C", "text": "`3 0`" },
+        { "key": "D", "text": "`4 1`" }
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`~/` là phép chia lấy phần nguyên nên `7 ~/ 2` bằng `3` và trả về `int`. `%` là phép lấy phần dư nên `7 % 2` bằng `1`.",
+      "distractor_explanations": {
+        "B": "`3.5` là kết quả của toán tử `/`, luôn trả về `double`. Ở đây code dùng `~/` nên kết quả là số nguyên.",
+        "C": "`7 % 2` bằng `1` vì 7 không chia hết cho 2; chỉ khi chia hết thì phần dư mới bằng `0`.",
+        "D": "`~/` cắt bỏ phần thập phân chứ không làm tròn lên, nên `7 ~/ 2` là `3` chứ không phải `4`."
+      },
+      "reference_url": "https://dart.dev/language/operators"
+    },
+    {
+      "id": "dart_l1_q003",
+      "area": "syntax",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "dart",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Toán tử `??=` chỉ gán giá trị cho biến khi biến đó đang mang giá trị `null`.",
+      "code_snippet": {
+        "language": "dart",
+        "code": "void main() {\n  int? score;\n  score ??= 10;\n  score ??= 20;\n  print(score);\n}"
+      },
+      "options": [
+        { "key": "A", "text": "Đúng" },
+        { "key": "B", "text": "Sai" }
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`??=` là phép gán có điều kiện null. Lần gán đầu đưa `score` về `10`; lần gán thứ hai bị bỏ qua vì `score` không còn `null`, nên chương trình in ra `10`.",
+      "distractor_explanations": {
+        "B": "Nếu `??=` gán vô điều kiện thì kết quả sẽ là `20`. Thực tế Dart chỉ đánh giá vế phải khi vế trái là `null`."
+      },
+      "reference_url": "https://dart.dev/language/operators"
+    },
+    {
+      "id": "dart_l1_q004",
+      "area": "types",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "dart",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Trong Dart, biểu thức `10 / 4` có kiểu tĩnh là gì?",
+      "options": [
+        { "key": "A", "text": "`double`" },
+        { "key": "B", "text": "`int`" },
+        { "key": "C", "text": "`num`" },
+        { "key": "D", "text": "`Object`" }
+      ],
+      "correct_keys": ["A"],
+      "explanation": "Toán tử `/` trên `int` luôn trả về `double`, kể cả khi phép chia hết. Muốn nhận `int` thì dùng `~/`.",
+      "distractor_explanations": {
+        "B": "`int` là kiểu trả về của `~/`, không phải của `/`. Vì vậy `var x = 10 / 4;` không thể gán vào biến `int`.",
+        "C": "`num` là lớp cha của `int` và `double`, nhưng kiểu tĩnh cụ thể mà `int.operator /` khai báo trả về là `double`.",
+        "D": "`Object` là siêu kiểu chung, không phải kiểu tĩnh mà trình phân tích suy ra cho phép chia."
+      },
+      "reference_url": "https://dart.dev/language/built-in-types"
+    },
+    {
+      "id": "dart_l1_q005",
+      "area": "types",
+      "challenge_type": "predict_output",
+      "type": "single_choice",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đoạn code sau in ra gì?",
+      "code_snippet": {
+        "language": "dart",
+        "code": "void main() {\n  Object value = 42;\n  if (value is int) {\n    print(value + 1);\n  } else {\n    print('not an int');\n  }\n}"
+      },
+      "options": [
+        { "key": "A", "text": "`43`" },
+        { "key": "B", "text": "`not an int`" },
+        { "key": "C", "text": "Không biên dịch được vì `Object` không có toán tử `+`" },
+        { "key": "D", "text": "`42`" }
+      ],
+      "correct_keys": ["A"],
+      "explanation": "Sau khi `value is int` cho kết quả đúng, Dart thực hiện type promotion: bên trong nhánh `if`, biến cục bộ `value` được xem như kiểu `int` nên có thể gọi `+`.",
+      "distractor_explanations": {
+        "B": "`42` là một `int` nên phép kiểm tra `is int` trả về `true` và nhánh `else` không chạy.",
+        "C": "Đúng là `Object` không khai báo `+`, nhưng type promotion đã nâng kiểu tĩnh của biến cục bộ lên `int` nên lời gọi hợp lệ.",
+        "D": "Chương trình in `value + 1` chứ không in `value`, nên kết quả là `43`."
+      },
+      "reference_url": "https://dart.dev/language/type-system"
+    },
+    {
+      "id": "dart_l1_q006",
+      "area": "types",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "dart",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Khai báo nào làm cho trình phân tích bỏ qua kiểm tra kiểu tĩnh khi gọi phương thức trên biến?",
+      "options": [
+        { "key": "A", "text": "`dynamic name;`" },
+        { "key": "B", "text": "`var name;`" },
+        { "key": "C", "text": "`Object? name;`" },
+        { "key": "D", "text": "`final name = null;`" }
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`dynamic` tắt kiểm tra kiểu tĩnh: mọi lời gọi phương thức đều được chấp nhận lúc biên dịch và chỉ bị kiểm tra lúc chạy.",
+      "distractor_explanations": {
+        "B": "`var` chỉ yêu cầu trình phân tích suy luận kiểu. Khi không có giá trị khởi tạo, kiểu suy ra là `dynamic` nhưng bản thân `var` không phải là một kiểu và `var name = 1;` có kiểu tĩnh `int`.",
+        "C": "`Object?` vẫn được kiểm tra tĩnh chặt chẽ; chỉ những thành viên của `Object` mới gọi được, và phải xử lý null trước.",
+        "D": "`final` chỉ ngăn gán lại. Kiểu suy ra ở đây là `Null`, còn chặt hơn chứ không lỏng hơn."
+      },
+      "reference_url": "https://dart.dev/language/type-system"
+    },
+    {
+      "id": "dart_l1_q007",
+      "area": "null-safety",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "dart",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Từ khóa `late` trước một biến non-nullable có tác dụng gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cho phép khởi tạo biến sau khi khai báo, và chuyển việc kiểm tra khởi tạo sang lúc chạy"
+        },
+        { "key": "B", "text": "Tự động gán `null` cho biến khi khai báo" },
+        {
+          "key": "C",
+          "text": "Biến biến đó thành nullable mà không cần dấu `?`"
+        },
+        { "key": "D", "text": "Bắt buộc giá trị phải là hằng số biên dịch" }
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`late` nói với trình phân tích rằng biến sẽ được gán trước lần đọc đầu tiên. Nếu đọc trước khi gán, chương trình ném `LateInitializationError` lúc chạy.",
+      "distractor_explanations": {
+        "B": "Ngược lại: biến `late` non-nullable không bao giờ nhận `null` ngầm định; nó đơn giản là chưa được khởi tạo.",
+        "C": "Kiểu của biến `late String name;` vẫn là `String`, không phải `String?`; bạn không thể gán `null` cho nó.",
+        "D": "Yêu cầu hằng số biên dịch là vai trò của `const`. `late` còn cho phép khởi tạo lười bằng biểu thức chạy lúc runtime."
+      },
+      "reference_url": "https://dart.dev/null-safety/understanding-null-safety"
+    },
+    {
+      "id": "dart_l1_q008",
+      "area": "null-safety",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "dart",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Với một biến kiểu `String?`, ta có thể gọi trực tiếp `.length` mà không cần kiểm tra null trước.",
+      "options": [
+        { "key": "A", "text": "Đúng" },
+        { "key": "B", "text": "Sai" }
+      ],
+      "correct_keys": ["B"],
+      "explanation": "Sai. Với kiểu nullable, trình phân tích báo lỗi vì `.length` không tồn tại trên `null`. Cần dùng `?.`, `!`, giá trị mặc định `?? 0`, hoặc kiểm tra null để type promotion nâng kiểu lên `String`.",
+      "distractor_explanations": {
+        "A": "Truy cập thành viên trên kiểu nullable bị chặn ngay lúc biên dịch, đây chính là điểm cốt lõi của sound null safety."
+      },
+      "reference_url": "https://dart.dev/null-safety/understanding-null-safety"
+    },
+    {
+      "id": "dart_l1_q009",
+      "area": "null-safety",
+      "challenge_type": "spot_bug",
+      "type": "single_choice",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đoạn code sau không biên dịch được. Nguyên nhân là gì?",
+      "code_snippet": {
+        "language": "dart",
+        "code": "class Profile {\n  String? nickname;\n\n  int nicknameLength() {\n    return nickname.length;\n  }\n}"
+      },
+      "options": [
+        {
+          "key": "A",
+          "text": "`nickname` có kiểu `String?` nên không thể truy cập `.length` khi chưa loại bỏ null"
+        },
+        { "key": "B", "text": "Field của class bắt buộc phải khai báo `final`" },
+        { "key": "C", "text": "Phương thức thiếu từ khóa `override`" },
+        { "key": "D", "text": "Kiểu trả về phải là `int?` thay vì `int`" }
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`nickname` là field nullable và có thể thay đổi, nên Dart không cho type promotion trên nó. Cách sửa: `return nickname?.length ?? 0;` hoặc gán vào biến cục bộ `final name = nickname;` rồi kiểm tra `if (name != null)`.",
+      "distractor_explanations": {
+        "B": "Field có thể thay đổi là hoàn toàn hợp lệ. Điều đáng nói là chính vì field không `final` nên trình phân tích từ chối promotion.",
+        "C": "`nicknameLength` không ghi đè thành viên nào của lớp cha, nên `override` là không cần thiết và cũng không sửa được lỗi null safety.",
+        "D": "Đổi kiểu trả về thành `int?` không giúp gì, vì lỗi nằm ở biểu thức `nickname.length` chứ không phải ở câu lệnh `return`."
+      },
+      "reference_url": "https://dart.dev/null-safety/understanding-null-safety"
+    },
+    {
+      "id": "dart_l1_q010",
+      "area": "collections",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "dart",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Bạn cần một tập hợp các phần tử không trùng lặp và không quan tâm thứ tự chèn. Kiểu nào phù hợp nhất?",
+      "options": [
+        { "key": "A", "text": "`Set<T>`" },
+        { "key": "B", "text": "`List<T>`" },
+        { "key": "C", "text": "`Map<T, T>`" },
+        { "key": "D", "text": "`Iterable<T>`" }
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`Set` là tập hợp không có phần tử trùng lặp và cung cấp `contains` nhanh. Ví dụ `{1, 2, 2}.length` bằng `2`.",
+      "distractor_explanations": {
+        "B": "`List` cho phép trùng lặp và giữ thứ tự chèn; muốn loại trùng bạn phải tự lọc, ví dụ `list.toSet().toList()`.",
+        "C": "`Map` bảo đảm khóa không trùng nhưng buộc bạn phải sinh thêm giá trị vô nghĩa cho mỗi khóa; đây là cách dùng vòng vo cho nhu cầu này.",
+        "D": "`Iterable` chỉ là giao diện duyệt tuần tự, không hề ràng buộc tính duy nhất và cũng không có API thêm hoặc xóa phần tử."
+      },
+      "reference_url": "https://dart.dev/language/collections"
+    },
+    {
+      "id": "dart_l1_q011",
+      "area": "collections",
+      "challenge_type": "predict_output",
+      "type": "single_choice",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đoạn code sau in ra gì?",
+      "code_snippet": {
+        "language": "dart",
+        "code": "void main() {\n  final numbers = [1, 2, 3, 4];\n  final result = numbers.where((n) => n.isEven).map((n) => n * 10).toList();\n  print(result);\n}"
+      },
+      "options": [
+        { "key": "A", "text": "`[20, 40]`" },
+        { "key": "B", "text": "`[2, 4]`" },
+        { "key": "C", "text": "`[10, 20, 30, 40]`" },
+        { "key": "D", "text": "`[10, 30]`" }
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`where` giữ lại các số chẵn `2` và `4`, sau đó `map` nhân mỗi phần tử với 10 cho ra `20` và `40`. `toList` biến `Iterable` lười thành `List` và `print` hiển thị dạng `[20, 40]`.",
+      "distractor_explanations": {
+        "B": "`[2, 4]` là kết quả nếu chỉ có `where`; ở đây `map` còn nhân thêm 10.",
+        "C": "`[10, 20, 30, 40]` là kết quả nếu bỏ qua bước `where`, tức áp dụng `map` cho toàn bộ danh sách.",
+        "D": "`[10, 30]` tương ứng với việc lọc số lẻ; `isEven` giữ số chẵn chứ không giữ số lẻ."
+      },
+      "reference_url": "https://dart.dev/libraries/dart-core"
+    },
+    {
+      "id": "dart_l1_q012",
+      "area": "collections",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn tất cả phát biểu **đúng** về `List` trong Dart.",
+      "options": [
+        {
+          "key": "A",
+          "text": "List literal như `[1, 2]` có thể thay đổi độ dài, ví dụ gọi `add` được"
+        },
+        {
+          "key": "B",
+          "text": "`List.filled(3, 0)` mặc định trả về danh sách có độ dài cố định"
+        },
+        {
+          "key": "C",
+          "text": "Mọi `List` trong Dart đều bất biến sau khi khởi tạo"
+        },
+        { "key": "D", "text": "`list.remove(x)` trả về chỉ số của phần tử bị xóa" }
+      ],
+      "correct_keys": ["A", "B"],
+      "explanation": "List literal tạo danh sách growable nên `add` và `removeAt` đều hợp lệ. Ngược lại `List.filled` mặc định có `growable: false`, gọi `add` trên nó sẽ ném `UnsupportedError`.",
+      "distractor_explanations": {
+        "C": "Chỉ danh sách khai báo `const` hoặc bọc bằng `List.unmodifiable` mới bất biến; list literal thông thường vẫn sửa được.",
+        "D": "`remove` trả về `bool` cho biết có xóa được hay không. Muốn xóa theo chỉ số thì dùng `removeAt`, hàm này trả về chính phần tử đã xóa."
+      },
+      "reference_url": "https://dart.dev/language/collections"
+    },
+    {
+      "id": "dart_l1_q013",
+      "area": "functions",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "dart",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Khai báo nào định nghĩa một tham số đặt tên **bắt buộc**?",
+      "options": [
+        { "key": "A", "text": "`void greet({required String name}) {}`" },
+        { "key": "B", "text": "`void greet([String name = '']) {}`" },
+        { "key": "C", "text": "`void greet({String? name}) {}`" },
+        { "key": "D", "text": "`void greet(String name) {}`" }
+      ],
+      "correct_keys": ["A"],
+      "explanation": "Tham số đặt tên nằm trong cặp `{}` và mặc định là tùy chọn; thêm `required` để buộc nơi gọi phải truyền, ví dụ `greet(name: 'Mai')`.",
+      "distractor_explanations": {
+        "B": "Cặp `[]` khai báo tham số vị trí tùy chọn, có giá trị mặc định nên có thể bỏ qua hoàn toàn.",
+        "C": "`{String? name}` là tham số đặt tên tùy chọn; nếu nơi gọi không truyền thì `name` nhận giá trị `null`.",
+        "D": "Đây là tham số vị trí bắt buộc, truyền theo thứ tự chứ không theo tên."
+      },
+      "reference_url": "https://dart.dev/language/functions"
+    },
+    {
+      "id": "dart_l1_q014",
+      "area": "functions",
+      "challenge_type": "predict_output",
+      "type": "single_choice",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đoạn code sau in ra gì?",
+      "code_snippet": {
+        "language": "dart",
+        "code": "void main() {\n  final callbacks = <int Function()>[];\n  for (var i = 0; i < 3; i++) {\n    callbacks.add(() => i);\n  }\n  print(callbacks.map((f) => f()).toList());\n}"
+      },
+      "options": [
+        { "key": "A", "text": "`[0, 1, 2]`" },
+        { "key": "B", "text": "`[3, 3, 3]`" },
+        { "key": "C", "text": "`[0, 0, 0]`" },
+        { "key": "D", "text": "`[1, 2, 3]`" }
+      ],
+      "correct_keys": ["A"],
+      "explanation": "Trong Dart, mỗi vòng lặp `for` với biến khai báo bằng `var` tạo một biến `i` mới. Vì vậy mỗi closure bắt giữ một biến riêng và giữ lại đúng giá trị `0`, `1`, `2`.",
+      "distractor_explanations": {
+        "B": "`[3, 3, 3]` là hành vi của `var` trong JavaScript, nơi mọi closure chia sẻ chung một biến. Dart không hoạt động như vậy.",
+        "C": "`[0, 0, 0]` sẽ xảy ra nếu closure chụp lại giá trị tại thời điểm khai báo vòng lặp; thực tế mỗi lần lặp có một biến riêng với giá trị riêng.",
+        "D": "`[1, 2, 3]` giả định `i` đã tăng trước khi closure được tạo; thực tế `i` tăng sau khi thân vòng lặp chạy xong."
+      },
+      "reference_url": "https://dart.dev/language/functions"
+    },
+    {
+      "id": "dart_l1_q015",
+      "area": "oop",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "dart",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Điểm khác biệt cốt lõi giữa một `mixin` và một `class` thông thường là gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mixin không có constructor và không thể được khởi tạo trực tiếp"
+        },
+        { "key": "B", "text": "Mixin chỉ được phép chứa phương thức tĩnh" },
+        { "key": "C", "text": "Mixin không thể khai báo field" },
+        { "key": "D", "text": "Một class chỉ được dùng tối đa một mixin" }
+      ],
+      "correct_keys": ["A"],
+      "explanation": "Khai báo `mixin` không có constructor nên bạn không thể viết `MyMixin()`. Nó chỉ được đưa vào một lớp qua mệnh đề `with` để tái sử dụng hành vi.",
+      "distractor_explanations": {
+        "B": "Mixin chủ yếu tồn tại để chia sẻ phương thức instance; nếu chỉ chứa thành viên tĩnh thì dùng một class tiện ích là đủ.",
+        "C": "Mixin được phép khai báo field instance, chỉ là các field đó không thể khởi tạo qua constructor.",
+        "D": "Dart cho phép ghép nhiều mixin, ví dụ `class A extends B with M1, M2 {}`, và chúng được áp dụng lần lượt từ trái sang phải."
+      },
+      "reference_url": "https://dart.dev/language/mixins"
+    },
+    {
+      "id": "dart_l1_q016",
+      "area": "oop",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Dart 3, từ khóa nào giúp trình phân tích kiểm tra vét cạn (exhaustiveness) khi `switch` trên một cây phân cấp lớp?",
+      "code_snippet": {
+        "language": "dart",
+        "code": "sealed class Shape {}\n\nclass Circle extends Shape {}\n\nclass Square extends Shape {}\n\nString name(Shape shape) => switch (shape) {\n  Circle() => 'circle',\n  Square() => 'square',\n};"
+      },
+      "options": [
+        { "key": "A", "text": "`sealed`" },
+        { "key": "B", "text": "`abstract`" },
+        { "key": "C", "text": "`final`" },
+        { "key": "D", "text": "`interface`" }
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`sealed` vừa hàm ý `abstract` vừa giới hạn các lớp con trong cùng thư viện, nhờ đó trình phân tích biết đủ mọi nhánh và báo lỗi nếu `switch` bỏ sót một lớp con.",
+      "distractor_explanations": {
+        "B": "`abstract` chỉ ngăn việc khởi tạo. Lớp con có thể nằm ở bất kỳ thư viện nào nên trình phân tích không thể liệt kê hết các nhánh.",
+        "C": "`final` ngăn kế thừa ngoài thư viện hiện tại nhưng không tạo ra tập lớp con đóng để `switch` kiểm tra vét cạn.",
+        "D": "`interface` chỉ buộc các thư viện khác dùng `implements` thay vì `extends`, không liên quan tới kiểm tra vét cạn."
+      },
+      "reference_url": "https://dart.dev/language/class-modifiers"
+    },
+    {
+      "id": "dart_l1_q017",
+      "area": "oop",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn tất cả phát biểu **đúng** về constructor trong Dart.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Một class có thể có nhiều named constructor, ví dụ `Point.origin()`"
+        },
+        {
+          "key": "B",
+          "text": "Một `factory` constructor có thể trả về một instance đã tồn tại thay vì tạo mới"
+        },
+        { "key": "C", "text": "Constructor được kế thừa từ lớp cha" },
+        {
+          "key": "D",
+          "text": "Mỗi class chỉ được phép có đúng một constructor"
+        }
+      ],
+      "correct_keys": ["A", "B"],
+      "explanation": "Dart hỗ trợ nhiều named constructor bên cạnh constructor mặc định, và `factory` cho phép trả về instance từ cache, trả về đối tượng lớp con, hoặc bất kỳ giá trị nào tương thích kiểu.",
+      "distractor_explanations": {
+        "C": "Constructor không được kế thừa. Lớp con phải tự khai báo constructor của mình và gọi lên lớp cha qua `super`.",
+        "D": "Một class có thể có constructor mặc định, nhiều named constructor và nhiều factory cùng lúc."
+      },
+      "reference_url": "https://dart.dev/language/constructors"
+    },
+    {
+      "id": "dart_l1_q018",
+      "area": "errors",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "dart",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Theo quy ước của thư viện chuẩn Dart, `Exception` và `Error` khác nhau thế nào?",
+      "options": [
+        {
+          "key": "A",
+          "text": "`Exception` mô tả tình huống chương trình nên xử lý, còn `Error` báo hiệu lỗi lập trình mà thường không nên bắt"
+        },
+        { "key": "B", "text": "`Error` luôn được runtime bắt và xử lý tự động" },
+        { "key": "C", "text": "Chỉ `Exception` mới có thể dùng với `throw`" },
+        {
+          "key": "D",
+          "text": "`Error` và `Exception` là cùng một lớp, chỉ khác tên gọi"
+        }
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`Exception` dành cho các điều kiện có thể lường trước và phục hồi, ví dụ lỗi định dạng đầu vào. `Error` như `StateError` hay `RangeError` báo hiệu bug trong code và cách xử lý đúng là sửa code chứ không phải bắt lỗi.",
+      "distractor_explanations": {
+        "B": "Không có cơ chế tự động nào. `Error` không bị bắt sẽ làm dừng isolate hiện tại như mọi lỗi khác.",
+        "C": "Dart cho phép `throw` bất kỳ đối tượng non-null nào, bao gồm cả `Error` và cả các lớp tự định nghĩa.",
+        "D": "Đây là hai lớp riêng biệt trong `dart:core`, không có quan hệ kế thừa với nhau."
+      },
+      "reference_url": "https://dart.dev/language/error-handling"
+    },
+    {
+      "id": "dart_l1_q019",
+      "area": "errors",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "dart",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Khối `finally` vẫn được thực thi ngay cả khi khối `try` chứa lệnh `return`.",
+      "code_snippet": {
+        "language": "dart",
+        "code": "int compute() {\n  try {\n    return 1;\n  } finally {\n    print('cleanup');\n  }\n}\n\nvoid main() {\n  print(compute());\n}"
+      },
+      "options": [
+        { "key": "A", "text": "Đúng" },
+        { "key": "B", "text": "Sai" }
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`finally` luôn chạy trước khi quyền điều khiển rời khỏi khối `try`, bất kể do `return`, do exception hay do chạy hết bình thường. Chương trình in `cleanup` rồi mới in `1`.",
+      "distractor_explanations": {
+        "B": "Nếu `return` bỏ qua được `finally` thì mọi thao tác dọn dẹp như đóng file hay hủy subscription sẽ không đáng tin cậy. Dart bảo đảm điều ngược lại."
+      },
+      "reference_url": "https://dart.dev/language/error-handling"
+    },
+    {
+      "id": "dart_l1_q020",
+      "area": "errors",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Cú pháp nào bắt exception và đồng thời lấy được stack trace?",
+      "options": [
+        { "key": "A", "text": "`on FormatException catch (e, stackTrace) { ... }`" },
+        { "key": "B", "text": "`catch (e) { ... }`" },
+        { "key": "C", "text": "`on FormatException { ... }`" },
+        { "key": "D", "text": "`finally (e, stackTrace) { ... }`" }
+      ],
+      "correct_keys": ["A"],
+      "explanation": "Mệnh đề `catch` nhận tối đa hai tham số: đối tượng lỗi và `StackTrace`. Kết hợp `on` để lọc theo kiểu giúp bạn vừa bắt đúng lỗi vừa ghi log đầy đủ ngữ cảnh.",
+      "distractor_explanations": {
+        "B": "`catch (e)` hợp lệ nhưng chỉ nhận đối tượng lỗi; muốn có stack trace phải khai báo thêm tham số thứ hai.",
+        "C": "`on FormatException { ... }` bắt đúng kiểu nhưng không ràng buộc biến nào, nên trong thân khối bạn không truy cập được lỗi lẫn stack trace.",
+        "D": "`finally` không nhận tham số. Nó chỉ là khối dọn dẹp luôn chạy, không phải nơi bắt lỗi."
+      },
+      "reference_url": "https://dart.dev/language/error-handling"
+    }
+  ]
+}

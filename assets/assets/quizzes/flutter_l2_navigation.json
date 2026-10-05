@@ -1,0 +1,982 @@
+{
+  "metadata": {
+    "quiz_id": "flutter_l2_navigation",
+    "title": "Flutter Navigation and Routing",
+    "subject": "flutter",
+    "level": "Intermediate",
+    "kind": "standard",
+    "pack_id": "flutter-l2-navigation",
+    "topic_id": "technology",
+    "language": "vi",
+    "difficulty": "medium",
+    "time_limit_minutes": 30,
+    "total_questions": 25,
+    "pass_percentage": 70,
+    "timer_mode": "global",
+    "per_question_time_seconds": 0,
+    "negative_marking": false,
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "strict_mode": false,
+    "tags": [
+      "flutter",
+      "l2"
+    ],
+    "created_by": "TN Club Quiz",
+    "created_at": "2026-09-06T00:00:00Z",
+    "version": "1.0.0",
+    "focus": "Navigator, routes, go_router, deep links, parameters"
+  },
+  "questions": [
+    {
+      "id": "flutter_l2_navigation_q001",
+      "type": "single_choice",
+      "area": "testing",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `Navigator.push` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Navigator.push"
+        },
+        {
+          "key": "B",
+          "text": "Navigator.pop"
+        },
+        {
+          "key": "C",
+          "text": "named routes"
+        },
+        {
+          "key": "D",
+          "text": "onGenerateRoute"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`Navigator.push` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `Navigator.pop`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `Navigator.pop`, không phải vai trò của `Navigator.push`.",
+        "C": "Lựa chọn này không đúng vì mô tả `named routes`, không phải vai trò của `Navigator.push`.",
+        "D": "Lựa chọn này không đúng vì mô tả `onGenerateRoute`, không phải vai trò của `Navigator.push`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q002",
+      "type": "single_choice",
+      "area": "performance",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `Navigator.pop` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Navigator.pop"
+        },
+        {
+          "key": "B",
+          "text": "named routes"
+        },
+        {
+          "key": "C",
+          "text": "onGenerateRoute"
+        },
+        {
+          "key": "D",
+          "text": "GoRouter"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`Navigator.pop` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `named routes`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `named routes`, không phải vai trò của `Navigator.pop`.",
+        "C": "Lựa chọn này không đúng vì mô tả `onGenerateRoute`, không phải vai trò của `Navigator.pop`.",
+        "D": "Lựa chọn này không đúng vì mô tả `GoRouter`, không phải vai trò của `Navigator.pop`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q003",
+      "type": "single_choice",
+      "area": "async",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `named routes` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "named routes"
+        },
+        {
+          "key": "B",
+          "text": "onGenerateRoute"
+        },
+        {
+          "key": "C",
+          "text": "GoRouter"
+        },
+        {
+          "key": "D",
+          "text": "GoRoute"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`named routes` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `onGenerateRoute`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `onGenerateRoute`, không phải vai trò của `named routes`.",
+        "C": "Lựa chọn này không đúng vì mô tả `GoRouter`, không phải vai trò của `named routes`.",
+        "D": "Lựa chọn này không đúng vì mô tả `GoRoute`, không phải vai trò của `named routes`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q004",
+      "type": "single_choice",
+      "area": "patterns",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `onGenerateRoute` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "onGenerateRoute"
+        },
+        {
+          "key": "B",
+          "text": "GoRouter"
+        },
+        {
+          "key": "C",
+          "text": "GoRoute"
+        },
+        {
+          "key": "D",
+          "text": "pathParameters"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`onGenerateRoute` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `GoRouter`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `GoRouter`, không phải vai trò của `onGenerateRoute`.",
+        "C": "Lựa chọn này không đúng vì mô tả `GoRoute`, không phải vai trò của `onGenerateRoute`.",
+        "D": "Lựa chọn này không đúng vì mô tả `pathParameters`, không phải vai trò của `onGenerateRoute`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q005",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `GoRouter` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "GoRouter"
+        },
+        {
+          "key": "B",
+          "text": "GoRoute"
+        },
+        {
+          "key": "C",
+          "text": "pathParameters"
+        },
+        {
+          "key": "D",
+          "text": "queryParameters"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`GoRouter` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `GoRoute`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `GoRoute`, không phải vai trò của `GoRouter`.",
+        "C": "Lựa chọn này không đúng vì mô tả `pathParameters`, không phải vai trò của `GoRouter`.",
+        "D": "Lựa chọn này không đúng vì mô tả `queryParameters`, không phải vai trò của `GoRouter`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q006",
+      "type": "single_choice",
+      "area": "testing",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `GoRoute` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "GoRoute"
+        },
+        {
+          "key": "B",
+          "text": "pathParameters"
+        },
+        {
+          "key": "C",
+          "text": "queryParameters"
+        },
+        {
+          "key": "D",
+          "text": "deep links"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`GoRoute` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `pathParameters`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `pathParameters`, không phải vai trò của `GoRoute`.",
+        "C": "Lựa chọn này không đúng vì mô tả `queryParameters`, không phải vai trò của `GoRoute`.",
+        "D": "Lựa chọn này không đúng vì mô tả `deep links`, không phải vai trò của `GoRoute`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q007",
+      "type": "multiple_choice",
+      "area": "performance",
+      "challenge_type": "multi",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `pathParameters` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "pathParameters"
+        },
+        {
+          "key": "B",
+          "text": "queryParameters"
+        },
+        {
+          "key": "C",
+          "text": "deep links"
+        },
+        {
+          "key": "D",
+          "text": "redirect"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "`pathParameters` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `queryParameters`.",
+      "distractor_explanations": {
+        "C": "Lựa chọn này không đúng vì mô tả `deep links`, không phải vai trò của `pathParameters`.",
+        "D": "Lựa chọn này không đúng vì mô tả `redirect`, không phải vai trò của `pathParameters`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q008",
+      "type": "multiple_choice",
+      "area": "async",
+      "challenge_type": "multi",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `queryParameters` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "queryParameters"
+        },
+        {
+          "key": "B",
+          "text": "deep links"
+        },
+        {
+          "key": "C",
+          "text": "redirect"
+        },
+        {
+          "key": "D",
+          "text": "ShellRoute"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "`queryParameters` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `deep links`.",
+      "distractor_explanations": {
+        "C": "Lựa chọn này không đúng vì mô tả `redirect`, không phải vai trò của `queryParameters`.",
+        "D": "Lựa chọn này không đúng vì mô tả `ShellRoute`, không phải vai trò của `queryParameters`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q009",
+      "type": "multiple_choice",
+      "area": "patterns",
+      "challenge_type": "multi",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `deep links` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "deep links"
+        },
+        {
+          "key": "B",
+          "text": "redirect"
+        },
+        {
+          "key": "C",
+          "text": "ShellRoute"
+        },
+        {
+          "key": "D",
+          "text": "StatefulShellRoute"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "`deep links` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `redirect`.",
+      "distractor_explanations": {
+        "C": "Lựa chọn này không đúng vì mô tả `ShellRoute`, không phải vai trò của `deep links`.",
+        "D": "Lựa chọn này không đúng vì mô tả `StatefulShellRoute`, không phải vai trò của `deep links`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q010",
+      "type": "multiple_choice",
+      "area": "oop",
+      "challenge_type": "multi",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `redirect` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "redirect"
+        },
+        {
+          "key": "B",
+          "text": "ShellRoute"
+        },
+        {
+          "key": "C",
+          "text": "StatefulShellRoute"
+        },
+        {
+          "key": "D",
+          "text": "RouterDelegate"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "`redirect` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `ShellRoute`.",
+      "distractor_explanations": {
+        "C": "Lựa chọn này không đúng vì mô tả `StatefulShellRoute`, không phải vai trò của `redirect`.",
+        "D": "Lựa chọn này không đúng vì mô tả `RouterDelegate`, không phải vai trò của `redirect`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q011",
+      "type": "true_false",
+      "area": "testing",
+      "challenge_type": "true_false",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `ShellRoute` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Không đủ thông tin"
+        },
+        {
+          "key": "D",
+          "text": "Phụ thuộc nền tảng"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`ShellRoute` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `StatefulShellRoute`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `Sai`, không phải vai trò của `ShellRoute`.",
+        "C": "Lựa chọn này không đúng vì mô tả `Không đủ thông tin`, không phải vai trò của `ShellRoute`.",
+        "D": "Lựa chọn này không đúng vì mô tả `Phụ thuộc nền tảng`, không phải vai trò của `ShellRoute`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q012",
+      "type": "true_false",
+      "area": "performance",
+      "challenge_type": "true_false",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `StatefulShellRoute` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Không đủ thông tin"
+        },
+        {
+          "key": "D",
+          "text": "Phụ thuộc nền tảng"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`StatefulShellRoute` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `RouterDelegate`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `Sai`, không phải vai trò của `StatefulShellRoute`.",
+        "C": "Lựa chọn này không đúng vì mô tả `Không đủ thông tin`, không phải vai trò của `StatefulShellRoute`.",
+        "D": "Lựa chọn này không đúng vì mô tả `Phụ thuộc nền tảng`, không phải vai trò của `StatefulShellRoute`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q013",
+      "type": "single_choice",
+      "area": "async",
+      "challenge_type": "predict_output",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `RouterDelegate` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "RouterDelegate"
+        },
+        {
+          "key": "B",
+          "text": "RouteInformationParser"
+        },
+        {
+          "key": "C",
+          "text": "pushReplacement"
+        },
+        {
+          "key": "D",
+          "text": "popUntil"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`RouterDelegate` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `RouteInformationParser`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `RouteInformationParser`, không phải vai trò của `RouterDelegate`.",
+        "C": "Lựa chọn này không đúng vì mô tả `pushReplacement`, không phải vai trò của `RouterDelegate`.",
+        "D": "Lựa chọn này không đúng vì mô tả `popUntil`, không phải vai trò của `RouterDelegate`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q014",
+      "type": "single_choice",
+      "area": "patterns",
+      "challenge_type": "predict_output",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `RouteInformationParser` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "RouteInformationParser"
+        },
+        {
+          "key": "B",
+          "text": "pushReplacement"
+        },
+        {
+          "key": "C",
+          "text": "popUntil"
+        },
+        {
+          "key": "D",
+          "text": "canPop"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`RouteInformationParser` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `pushReplacement`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `pushReplacement`, không phải vai trò của `RouteInformationParser`.",
+        "C": "Lựa chọn này không đúng vì mô tả `popUntil`, không phải vai trò của `RouteInformationParser`.",
+        "D": "Lựa chọn này không đúng vì mô tả `canPop`, không phải vai trò của `RouteInformationParser`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q015",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "predict_output",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `pushReplacement` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "pushReplacement"
+        },
+        {
+          "key": "B",
+          "text": "popUntil"
+        },
+        {
+          "key": "C",
+          "text": "canPop"
+        },
+        {
+          "key": "D",
+          "text": "route result"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`pushReplacement` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `popUntil`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `popUntil`, không phải vai trò của `pushReplacement`.",
+        "C": "Lựa chọn này không đúng vì mô tả `canPop`, không phải vai trò của `pushReplacement`.",
+        "D": "Lựa chọn này không đúng vì mô tả `route result`, không phải vai trò của `pushReplacement`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q016",
+      "type": "single_choice",
+      "area": "testing",
+      "challenge_type": "predict_output",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `popUntil` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "popUntil"
+        },
+        {
+          "key": "B",
+          "text": "canPop"
+        },
+        {
+          "key": "C",
+          "text": "route result"
+        },
+        {
+          "key": "D",
+          "text": "URL strategy"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`popUntil` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `canPop`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `canPop`, không phải vai trò của `popUntil`.",
+        "C": "Lựa chọn này không đúng vì mô tả `route result`, không phải vai trò của `popUntil`.",
+        "D": "Lựa chọn này không đúng vì mô tả `URL strategy`, không phải vai trò của `popUntil`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q017",
+      "type": "single_choice",
+      "area": "performance",
+      "challenge_type": "predict_output",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `canPop` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "canPop"
+        },
+        {
+          "key": "B",
+          "text": "route result"
+        },
+        {
+          "key": "C",
+          "text": "URL strategy"
+        },
+        {
+          "key": "D",
+          "text": "auth guard"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`canPop` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `route result`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `route result`, không phải vai trò của `canPop`.",
+        "C": "Lựa chọn này không đúng vì mô tả `URL strategy`, không phải vai trò của `canPop`.",
+        "D": "Lựa chọn này không đúng vì mô tả `auth guard`, không phải vai trò của `canPop`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q018",
+      "type": "single_choice",
+      "area": "async",
+      "challenge_type": "predict_output",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `route result` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "route result"
+        },
+        {
+          "key": "B",
+          "text": "URL strategy"
+        },
+        {
+          "key": "C",
+          "text": "auth guard"
+        },
+        {
+          "key": "D",
+          "text": "nested navigator"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`route result` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `URL strategy`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `URL strategy`, không phải vai trò của `route result`.",
+        "C": "Lựa chọn này không đúng vì mô tả `auth guard`, không phải vai trò của `route result`.",
+        "D": "Lựa chọn này không đúng vì mô tả `nested navigator`, không phải vai trò của `route result`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q019",
+      "type": "single_choice",
+      "area": "patterns",
+      "challenge_type": "predict_output",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `URL strategy` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "URL strategy"
+        },
+        {
+          "key": "B",
+          "text": "auth guard"
+        },
+        {
+          "key": "C",
+          "text": "nested navigator"
+        },
+        {
+          "key": "D",
+          "text": "page key"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`URL strategy` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `auth guard`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `auth guard`, không phải vai trò của `URL strategy`.",
+        "C": "Lựa chọn này không đúng vì mô tả `nested navigator`, không phải vai trò của `URL strategy`.",
+        "D": "Lựa chọn này không đúng vì mô tả `page key`, không phải vai trò của `URL strategy`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q020",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "spot_bug",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `auth guard` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "auth guard"
+        },
+        {
+          "key": "B",
+          "text": "nested navigator"
+        },
+        {
+          "key": "C",
+          "text": "page key"
+        },
+        {
+          "key": "D",
+          "text": "restorationScopeId"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`auth guard` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `nested navigator`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `nested navigator`, không phải vai trò của `auth guard`.",
+        "C": "Lựa chọn này không đúng vì mô tả `page key`, không phải vai trò của `auth guard`.",
+        "D": "Lựa chọn này không đúng vì mô tả `restorationScopeId`, không phải vai trò của `auth guard`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q021",
+      "type": "single_choice",
+      "area": "testing",
+      "challenge_type": "spot_bug",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `nested navigator` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "nested navigator"
+        },
+        {
+          "key": "B",
+          "text": "page key"
+        },
+        {
+          "key": "C",
+          "text": "restorationScopeId"
+        },
+        {
+          "key": "D",
+          "text": "BackButtonDispatcher"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`nested navigator` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `page key`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `page key`, không phải vai trò của `nested navigator`.",
+        "C": "Lựa chọn này không đúng vì mô tả `restorationScopeId`, không phải vai trò của `nested navigator`.",
+        "D": "Lựa chọn này không đúng vì mô tả `BackButtonDispatcher`, không phải vai trò của `nested navigator`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q022",
+      "type": "single_choice",
+      "area": "performance",
+      "challenge_type": "spot_bug",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `page key` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "page key"
+        },
+        {
+          "key": "B",
+          "text": "restorationScopeId"
+        },
+        {
+          "key": "C",
+          "text": "BackButtonDispatcher"
+        },
+        {
+          "key": "D",
+          "text": "hero transition"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`page key` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `restorationScopeId`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `restorationScopeId`, không phải vai trò của `page key`.",
+        "C": "Lựa chọn này không đúng vì mô tả `BackButtonDispatcher`, không phải vai trò của `page key`.",
+        "D": "Lựa chọn này không đúng vì mô tả `hero transition`, không phải vai trò của `page key`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q023",
+      "type": "single_choice",
+      "area": "async",
+      "challenge_type": "fix_code",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `restorationScopeId` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "restorationScopeId"
+        },
+        {
+          "key": "B",
+          "text": "BackButtonDispatcher"
+        },
+        {
+          "key": "C",
+          "text": "hero transition"
+        },
+        {
+          "key": "D",
+          "text": "Navigator.push"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`restorationScopeId` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `BackButtonDispatcher`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `BackButtonDispatcher`, không phải vai trò của `restorationScopeId`.",
+        "C": "Lựa chọn này không đúng vì mô tả `hero transition`, không phải vai trò của `restorationScopeId`.",
+        "D": "Lựa chọn này không đúng vì mô tả `Navigator.push`, không phải vai trò của `restorationScopeId`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q024",
+      "type": "single_choice",
+      "area": "patterns",
+      "challenge_type": "fix_code",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `BackButtonDispatcher` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "BackButtonDispatcher"
+        },
+        {
+          "key": "B",
+          "text": "hero transition"
+        },
+        {
+          "key": "C",
+          "text": "Navigator.push"
+        },
+        {
+          "key": "D",
+          "text": "Navigator.pop"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`BackButtonDispatcher` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `hero transition`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `hero transition`, không phải vai trò của `BackButtonDispatcher`.",
+        "C": "Lựa chọn này không đúng vì mô tả `Navigator.push`, không phải vai trò của `BackButtonDispatcher`.",
+        "D": "Lựa chọn này không đúng vì mô tả `Navigator.pop`, không phải vai trò của `BackButtonDispatcher`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    },
+    {
+      "id": "flutter_l2_navigation_q025",
+      "type": "single_choice",
+      "area": "oop",
+      "challenge_type": "compile_error",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, khái niệm `hero transition` có vai trò nào trong tình huống thực tế?",
+      "options": [
+        {
+          "key": "A",
+          "text": "hero transition"
+        },
+        {
+          "key": "B",
+          "text": "Navigator.push"
+        },
+        {
+          "key": "C",
+          "text": "Navigator.pop"
+        },
+        {
+          "key": "D",
+          "text": "named routes"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "`hero transition` là khái niệm thuộc phạm vi bộ đề: nó cần được dùng đúng ranh giới và vòng đời thay vì nhầm với `Navigator.push`.",
+      "distractor_explanations": {
+        "B": "Lựa chọn này không đúng vì mô tả `Navigator.push`, không phải vai trò của `hero transition`.",
+        "C": "Lựa chọn này không đúng vì mô tả `Navigator.pop`, không phải vai trò của `hero transition`.",
+        "D": "Lựa chọn này không đúng vì mô tả `named routes`, không phải vai trò của `hero transition`."
+      },
+      "reference_url": "https://docs.flutter.dev/ui/navigation"
+    }
+  ]
+}

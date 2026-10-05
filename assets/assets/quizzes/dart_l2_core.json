@@ -1,0 +1,984 @@
+{
+    "metadata": {
+        "quiz_id": "dart_l2_core",
+        "title": "Dart Core Concepts",
+        "difficulty": "medium",
+        "language": "dart",
+        "topic_id": "technology",
+        "level": "Intermediate",
+        "subject": "dart",
+        "kind": "standard",
+        "pack_id": "dart-l2-core",
+        "tags": [
+            "dart",
+            "core",
+            "intermediate"
+        ],
+        "pass_percentage": 70,
+        "time_limit_minutes": 30,
+        "total_questions": 25,
+        "created_by": "TN Club Quiz",
+        "created_at": "2026-03-05T00:00:00Z",
+        "version": "1.0.0",
+        "timer_mode": "global",
+        "per_question_time_seconds": 0,
+        "negative_marking": false,
+        "shuffle_questions": true,
+        "shuffle_options": true,
+        "strict_mode": false
+    },
+    "questions": [
+        {
+            "id": "dart_l2_core_q001",
+            "type": "single_choice",
+            "area": "null-safety",
+            "challenge_type": "recall",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Toán tử nào được gọi là Null-aware cascade operator trong Dart?",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "?."
+                },
+                {
+                    "key": "B",
+                    "text": "?.."
+                },
+                {
+                    "key": "C",
+                    "text": "??"
+                },
+                {
+                    "key": "D",
+                    "text": "??="
+                }
+            ],
+            "correct_keys": [
+                "B"
+            ],
+            "explanation": "Toán tử `?..` cho phép thực hiện chuỗi các thao tác (cascade) trên một đối tượng chỉ khi đối tượng đó khác `null`.",
+            "distractor_explanations": {
+                "A": "Toán tử `?.` là Null-aware navigation operator (truy cập thuộc tính/phương thức an toàn null).",
+                "C": "Toán tử `??` là Null-coalescing operator (trả về giá trị mặc định nếu biểu thức bên trái là null).",
+                "D": "Toán tử `??=` là Null-aware assignment operator (gán giá trị nếu biến đang null)."
+            },
+            "reference_url": "[https://dart.dev/null-safety/understanding-null-safety](https://dart.dev/null-safety/understanding-null-safety)"
+        },
+        {
+            "id": "dart_l2_core_q002",
+            "type": "single_choice",
+            "area": "oop",
+            "challenge_type": "recall",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Từ khóa `extension type` được giới thiệu trong Dart 3 nhằm mục đích chính là gì?",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Tạo ra một lớp con mới kế thừa toàn bộ bộ nhớ của lớp cha ở runtime."
+                },
+                {
+                    "key": "B",
+                    "text": "Cung cấp một abstraction không tốn chi phí runtime (zero-cost wrapper) cho một kiểu dữ liệu đã tồn tại."
+                },
+                {
+                    "key": "C",
+                    "text": "Định nghĩa một interface bắt buộc các class khác phải implement."
+                },
+                {
+                    "key": "D",
+                    "text": "Cho phép đa thừa kế từ nhiều class khác nhau."
+                }
+            ],
+            "correct_keys": [
+                "B"
+            ],
+            "explanation": "Extension types trong Dart 3 cung cấp giải pháp bọc một kiểu dữ liệu có sẵn với giao diện mới mà không tạo ra chi phí bổ sung về bộ nhớ hay allocation ở runtime.",
+            "distractor_explanations": {
+                "A": "Extension type bị loại bỏ ở compile-time thành kiểu dữ liệu gốc chứ không tạo ra lớp con riêng biệt runtime.",
+                "C": "Interface thường dùng `abstract interface class`, không phải mục đích chính của extension type.",
+                "D": "Dart không hỗ trợ đa thừa kế trực tiếp từ nhiều class; tính năng này không liên quan đến extension type."
+            },
+            "reference_url": "[https://dart.dev/language/extension-types](https://dart.dev/language/extension-types)"
+        },
+        {
+            "id": "dart_l2_core_q003",
+            "type": "single_choice",
+            "area": "async",
+            "challenge_type": "recall",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Sự khác biệt chính giữa `Future.microtask` và `Future` thông thường (event loop task) là gì?",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Microtask queue có độ ưu tiên cao hơn Event queue và được xử lý hết trước khi Event queue tiếp tục."
+                },
+                {
+                    "key": "B",
+                    "text": "Microtask chạy trên một Isolate hoàn toàn độc lập."
+                },
+                {
+                    "key": "C",
+                    "text": "Future thông thường chạy đồng bộ, còn Microtask chạy bất đồng bộ."
+                },
+                {
+                    "key": "D",
+                    "text": "Microtask chỉ có thể được gọi bên trong một hàm async."
+                }
+            ],
+            "correct_keys": [
+                "A"
+            ],
+            "explanation": "Event loop trong Dart ưu tiên xử lý toàn bộ các tác vụ trong Microtask queue trước khi chuyển sang tác vụ tiếp theo trong Event queue.",
+            "distractor_explanations": {
+                "B": "Microtask vẫn chạy trên cùng một Isolate và cùng một thread chính.",
+                "C": "Cả hai đều là cơ chế quản lý bất đồng bộ trong Event loop.",
+                "D": "Microtask có thể được khởi tạo ở bất kỳ đâu, không bắt buộc trong hàm async."
+            },
+            "reference_url": "[https://dart.dev/articles/archive/event-loop](https://www.google.com/url?sa=E&source=gmail&q=https://dart.dev/articles/archive/event-loop)"
+        },
+        {
+            "id": "dart_l2_core_q004",
+            "type": "single_choice",
+            "area": "collections",
+            "challenge_type": "recall",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Kiểu collection nào trong Dart đảm bảo các phần tử không bị lặp lại và không duy trì thứ tự chèn theo mặc định trừ khi dùng triển khai cụ thể?",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "List"
+                },
+                {
+                    "key": "B",
+                    "text": "Set (HashSet)"
+                },
+                {
+                    "key": "C",
+                    "text": "Map"
+                },
+                {
+                    "key": "D",
+                    "text": "Queue"
+                }
+            ],
+            "correct_keys": [
+                "B"
+            ],
+            "explanation": "HashSet là một triển khai của Set không đảm bảo thứ tự chèn và chỉ chứa các phần tử duy nhất dựa trên hashCode/operator==.",
+            "distractor_explanations": {
+                "A": "List duy trì thứ tự và cho phép các phần tử trùng lặp.",
+                "C": "Map lưu trữ cặp key-value, trong đó key là duy nhất nhưng không phải tập hợp các phần tử đơn lẻ.",
+                "D": "Queue lưu trữ danh sách hàng đợi FIFO/LIFO duy trì thứ tự thêm vào."
+            },
+            "reference_url": "[https://api.dart.dev/stable/dart-core/Set-class.html](https://www.google.com/search?q=https://api.dart.dev/stable/dart-core/Set-class.html)"
+        },
+        {
+            "id": "dart_l2_core_q005",
+            "type": "single_choice",
+            "area": "patterns",
+            "challenge_type": "recall",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Đặc điểm nào đúng nhất khi định nghĩa một `sealed class` trong Dart 3?",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Nó có thể được instantiate trực tiếp mà không cần lớp con."
+                },
+                {
+                    "key": "B",
+                    "text": "Nó không cho phép bất kỳ lớp nào extend hoặc implement nó."
+                },
+                {
+                    "key": "C",
+                    "text": "Nó tự động làm cho các câu lệnh `switch` kiểm tra toàn bộ các lớp con (exhaustive checking) trong cùng library."
+                },
+                {
+                    "key": "D",
+                    "text": "Nó có thể được extend từ một library khác ngoài library hiện tại."
+                }
+            ],
+            "correct_keys": [
+                "C"
+            ],
+            "explanation": "`sealed class` là abstract ngầm định và tất cả các lớp con của nó phải được định nghĩa trong cùng library, giúp trình biên dịch kiểm tra tính bao quát (exhaustive) khi pattern matching.",
+            "distractor_explanations": {
+                "A": "`sealed class` là abstract nên không thể khởi tạo trực tiếp.",
+                "B": "`sealed class` cho phép extend/implement nhưng chỉ trong cùng library.",
+                "D": "Lớp sealed không thể được kế thừa hoặc triển khai bên ngoài library nơi nó khai báo."
+            },
+            "reference_url": "[https://dart.dev/language/class-modifiers#sealed](https://www.google.com/search?q=https://dart.dev/language/class-modifiers%23sealed)"
+        },
+        {
+            "id": "dart_l2_core_q006",
+            "type": "single_choice",
+            "area": "generics",
+            "challenge_type": "recall",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Khái niệm 'Reified Generics' trong Dart có nghĩa là gì?",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Thông tin về kiểu Generic bị xóa hoàn toàn ở runtime (type erasure)."
+                },
+                {
+                    "key": "B",
+                    "text": "Thông tin về kiểu Generic được giữ lại ở runtime và có thể kiểm tra bằng toán tử `is`."
+                },
+                {
+                    "key": "C",
+                    "text": "Generics chỉ hoạt động với các kiểu dữ liệu primitive như `int` hay `double`."
+                },
+                {
+                    "key": "D",
+                    "text": "Generics chỉ được kiểm tra ở bước biên dịch và không dùng được trong runtime."
+                }
+            ],
+            "correct_keys": [
+                "B"
+            ],
+            "explanation": "Dart hỗ trợ reified generics, nghĩa là tham số kiểu generic được lưu giữ tại runtime, cho phép bạn thực hiện kiểm tra như `list is List<String>`.",
+            "distractor_explanations": {
+                "A": "Type erasure là đặc tính của Java, không phải Dart.",
+                "C": "Generics trong Dart hoạt động với mọi kiểu dữ liệu (Object, custom classes,...).",
+                "D": "Generics trong Dart không bị xóa mà có sẵn tại runtime."
+            },
+            "reference_url": "[https://dart.dev/language/generics](https://dart.dev/language/generics)"
+        },
+        {
+            "id": "dart_l2_core_q007",
+            "type": "single_choice",
+            "area": "oop",
+            "challenge_type": "recall",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Điều kiện để sử dụng một class như một `mixin` (hoặc khai báo `mixin`) trong Dart là gì?",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Class đó phải kế thừa từ `Stream`."
+                },
+                {
+                    "key": "B",
+                    "text": "Class đó không được khai báo bất kỳ constructor nào."
+                },
+                {
+                    "key": "C",
+                    "text": "Class đó phải có ít nhất một constructor khởi tạo có tham số."
+                },
+                {
+                    "key": "D",
+                    "text": "Class đó phải triển khai interface `Comparable`."
+                }
+            ],
+            "correct_keys": [
+                "B"
+            ],
+            "explanation": "Một mixin (hoặc class được dùng làm mixin) không được phép khai báo bất kỳ constructor nào.",
+            "distractor_explanations": {
+                "A": "Mixin không bắt buộc phải kế thừa `Stream`.",
+                "C": "Nếu khai báo bất kỳ constructor nào, class đó không thể được sử dụng làm mixin.",
+                "D": "Interface `Comparable` không phải là yêu cầu bắt buộc của mixin."
+            },
+            "reference_url": "[https://dart.dev/language/mixins](https://dart.dev/language/mixins)"
+        },
+        {
+            "id": "dart_l2_core_q008",
+            "type": "single_choice",
+            "area": "functions",
+            "challenge_type": "recall",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Cú pháp `({int? a, required int b})` đại diện cho điều gì trong hàm Dart?",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Positional parameters (tham số theo vị trí)"
+                },
+                {
+                    "key": "B",
+                    "text": "Named parameters (tham số có tên) với `a` là tùy chọn và `b` là bắt buộc"
+                },
+                {
+                    "key": "C",
+                    "text": "Optional positional parameters (tham số vị trí tùy chọn)"
+                },
+                {
+                    "key": "D",
+                    "text": "Cú pháp định nghĩa Destructuring Tuple"
+                }
+            ],
+            "correct_keys": [
+                "B"
+            ],
+            "explanation": "Dấu `{}` dùng để khai báo named parameters. `int? a` cho phép null và không bắt buộc truyền, trong khi `required int b` bắt buộc phải truyền tên tham số khi gọi.",
+            "distractor_explanations": {
+                "A": "Positional parameters được viết không có ngoặc nhọn `{}`.",
+                "C": "Optional positional parameters được bọc trong ngoặc vuông `[]`.",
+                "D": "Tuple/Record destructuring sử dụng cú pháp ngoặc đơn `()`."
+            },
+            "reference_url": "[https://dart.dev/language/functions#named-parameters](https://www.google.com/search?q=https://dart.dev/language/functions%23named-parameters)"
+        },
+        {
+            "id": "dart_l2_core_q009",
+            "type": "single_choice",
+            "area": "isolates",
+            "challenge_type": "recall",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Các Isolate trong Dart chia sẻ tài nguyên bộ nhớ (memory) như thế nào?",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Chia sẻ chung một heap bộ nhớ và dùng lock/mutex để đồng bộ."
+                },
+                {
+                    "key": "B",
+                    "text": "Mỗi Isolate có bộ nhớ (heap) hoàn toàn riêng biệt và truyền thông điệp qua message passing."
+                },
+                {
+                    "key": "C",
+                    "text": "Chia sẻ các biến global nhưng không chia sẻ biến local."
+                },
+                {
+                    "key": "D",
+                    "text": "Chia sẻ bộ nhớ nếu chạy trên cùng một CPU core."
+                }
+            ],
+            "correct_keys": [
+                "B"
+            ],
+            "explanation": "Isolate không chia sẻ bộ nhớ. Mỗi isolate có heap riêng và giao tiếp với nhau bằng cách gửi message qua `ReceivePort` và `SendPort` (hoặc dùng `Isolate.run`).",
+            "distractor_explanations": {
+                "A": "Dart không sử dụng mô hình shared memory đa luồng truyền thống với lock/mutex.",
+                "C": "Biến global cũng không được chia sẻ giữa các Isolate.",
+                "D": "Dù ở CPU core nào, bộ nhớ của các Isolate vẫn cách ly tuyệt đối."
+            },
+            "reference_url": "[https://dart.dev/language/concurrency](https://dart.dev/language/concurrency)"
+        },
+        {
+            "id": "dart_l2_core_q010",
+            "type": "single_choice",
+            "area": "streams",
+            "challenge_type": "recall",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Sự khác biệt cơ bản giữa Single-subscription Stream và Broadcast Stream là gì?",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Single-subscription Stream chỉ cho phép lắng nghe một lần; Broadcast Stream cho phép nhiều listener lắng nghe đồng thời."
+                },
+                {
+                    "key": "B",
+                    "text": "Single-subscription Stream chạy đồng bộ, Broadcast Stream chạy bất đồng bộ."
+                },
+                {
+                    "key": "C",
+                    "text": "Broadcast Stream lưu trữ lại tất cả sự kiện cũ cho listener mới."
+                },
+                {
+                    "key": "D",
+                    "text": "Single-subscription Stream không thể hủy (cancel) sau khi đã listen."
+                }
+            ],
+            "correct_keys": [
+                "A"
+            ],
+            "explanation": "Single-subscription Stream chỉ cho phép 1 listener trong suốt vòng đời của nó. Broadcast Stream cho phép nhiều listener đăng ký cùng lúc.",
+            "distractor_explanations": {
+                "B": "Cả hai loại stream đều xử lý sự kiện bất đồng bộ.",
+                "C": "Broadcast Stream mặc định không phát lại (replay) sự kiện quá khứ cho listener mới đăng ký sau.",
+                "D": "Single-subscription Stream hoàn toàn có thể lắng nghe và hủy (cancel subscription)."
+            },
+            "reference_url": "[https://dart.dev/articles/libraries/the-event-loop#streams](https://www.google.com/search?q=https://dart.dev/articles/libraries/the-event-loop%23streams)"
+        },
+        {
+            "id": "dart_l2_core_q011",
+            "type": "multiple_choice",
+            "area": "oop",
+            "challenge_type": "multi",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Những phát biểu nào sau đây đúng về `factory` constructor trong Dart? (Chọn tất cả đáp án đúng)",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Có thể trả về một instance đã tồn tại từ cache."
+                },
+                {
+                    "key": "B",
+                    "text": "Có thể trả về một instance của lớp con (subtype)."
+                },
+                {
+                    "key": "C",
+                    "text": "Có quyền truy cập trực tiếp vào từ khóa `this` trước khi trả về."
+                },
+                {
+                    "key": "D",
+                    "text": "Bắt buộc phải dùng từ khóa `return` để trả về một instance."
+                }
+            ],
+            "correct_keys": [
+                "A",
+                "B",
+                "D"
+            ],
+            "explanation": "Factory constructor không tự động tạo instance mới. Nó bắt buộc dùng `return` để trả về một instance (có thể lấy từ cache hoặc instance của subtype). Nó không có truy cập tới `this` vì instance chưa được tạo ra tự động.",
+            "distractor_explanations": {
+                "C": "Factory constructor không tạo instance tự động nên không thể sử dụng từ khóa `this`."
+            },
+            "reference_url": "[https://dart.dev/language/constructors#factory-constructors](https://www.google.com/search?q=https://dart.dev/language/constructors%23factory-constructors)"
+        },
+        {
+            "id": "dart_l2_core_q012",
+            "type": "multiple_choice",
+            "area": "types",
+            "challenge_type": "multi",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Những kiểu dữ liệu nào dưới đây là các kiểu dữ liệu không thể khởi tạo giá trị (bottom types hoặc uninstantiable types) trong hệ thống kiểu của Dart? (Chọn tất cả đáp án đúng)",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Never"
+                },
+                {
+                    "key": "B",
+                    "text": "Null"
+                },
+                {
+                    "key": "C",
+                    "text": "void"
+                },
+                {
+                    "key": "D",
+                    "text": "Object"
+                }
+            ],
+            "correct_keys": [
+                "A",
+                "C"
+            ],
+            "explanation": "`Never` là bottom type (không có giá trị nào thuộc kiểu Never). `void` đại diện cho giá trị bị bỏ qua và không thể được gán/khởi tạo như một giá trị thông thường.",
+            "distractor_explanations": {
+                "B": "`Null` có một giá trị duy nhất là `null`.",
+                "D": "`Object` là top type và có thể khởi tạo instance bằng `Object()`."
+            },
+            "reference_url": "[https://dart.dev/null-safety/understanding-null-safety#never-and-null](https://www.google.com/search?q=https://dart.dev/null-safety/understanding-null-safety%23never-and-null)"
+        },
+        {
+            "id": "dart_l2_core_q013",
+            "type": "true_false",
+            "area": "null-safety",
+            "challenge_type": "true_false",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Trong Dart, việc khai báo một biến với từ khóa `late` sẽ làm hoãn việc khởi tạo biến đó cho đến lần đầu tiên nó được truy cập.",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Đúng"
+                },
+                {
+                    "key": "B",
+                    "text": "Sai"
+                }
+            ],
+            "correct_keys": [
+                "A"
+            ],
+            "explanation": "Từ khóa `late` có hai công dụng: đánh dấu biến non-nullable sẽ được gán sau, và thực hiện lazy initialization (chỉ tính toán/khởi tạo giá trị khi biến được đọc lần đầu).",
+            "distractor_explanations": {
+                "B": "Mô tả trên là chính xác về cơ chế Lazy Initialization của biến `late`."
+            },
+            "reference_url": "[https://dart.dev/null-safety/understanding-null-safety#late-variables](https://www.google.com/search?q=https://dart.dev/null-safety/understanding-null-safety%23late-variables)"
+        },
+        {
+            "id": "dart_l2_core_q014",
+            "type": "true_false",
+            "area": "oop",
+            "challenge_type": "true_false",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Tất cả mọi class trong Dart đều ngầm định định nghĩa một implicit interface.",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Đúng"
+                },
+                {
+                    "key": "B",
+                    "text": "Sai"
+                }
+            ],
+            "correct_keys": [
+                "A"
+            ],
+            "explanation": "Trong Dart, mọi class đều tự động tạo ra một interface tương ứng chứa tất cả instance members của nó. Class khác có thể dùng từ khóa `implements` để triển khai interface này.",
+            "distractor_explanations": {
+                "B": "Đây là tính năng đặc trưng của Dart: mỗi class đều là một implicit interface."
+            },
+            "reference_url": "[https://dart.dev/language/classes#implicit-interfaces](https://www.google.com/search?q=https://dart.dev/language/classes%23implicit-interfaces)"
+        },
+        {
+            "id": "dart_l2_core_q015",
+            "type": "true_false",
+            "area": "async",
+            "challenge_type": "true_false",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Hàm generator bất đồng bộ (`async*`) bắt buộc phải sử dụng từ khóa `yield` hoặc `yield*` để trả về các phần tử trong một `Stream`.",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Đúng"
+                },
+                {
+                    "key": "B",
+                    "text": "Sai"
+                }
+            ],
+            "correct_keys": [
+                "A"
+            ],
+            "explanation": "Hàm `async*` trả về một `Stream`. Để phát các giá trị ra stream, ta dùng `yield` cho từng giá trị hoặc `yield*` cho một stream/iterable khác.",
+            "distractor_explanations": {
+                "B": "Phát biểu này hoàn toàn đúng về cú pháp async generator trong Dart."
+            },
+            "reference_url": "[https://dart.dev/language/functions#generators](https://www.google.com/search?q=https://dart.dev/language/functions%23generators)"
+        },
+        {
+            "id": "dart_l2_core_q016",
+            "type": "single_choice",
+            "area": "patterns",
+            "challenge_type": "predict_output",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Đoạn code Dart 3 dưới đây sẽ in ra kết quả gì?",
+            "code_snippet": {
+                "language": "dart",
+                "code": "void main() {\n  var pair = (10, 'Dart');\n  var (count, name) = pair;\n  print('$name: $count');\n}"
+            },
+            "options": [
+                {
+                    "key": "A",
+                    "text": "10: Dart"
+                },
+                {
+                    "key": "B",
+                    "text": "Dart: 10"
+                },
+                {
+                    "key": "C",
+                    "text": "(10, Dart)"
+                },
+                {
+                    "key": "D",
+                    "text": "Lỗi biên dịch (Compile Error)"
+                }
+            ],
+            "correct_keys": [
+                "B"
+            ],
+            "explanation": "Đoạn code dùng Record destructuring. `count` nhận giá trị `10` và `name` nhận giá trị `'Dart'`. Chuỗi in ra `$name: $count` sẽ tương ứng với `Dart: 10`.",
+            "distractor_explanations": {
+                "A": "Thứ tự trong chuỗi in ra là `$name` trước rồi mới tới `$count`.",
+                "C": "Biểu thức in ra dạng chuỗi định dạng chứ không in cả Record.",
+                "D": "Cú pháp destructuring record này hoàn toàn hợp lệ trong Dart 3."
+            },
+            "reference_url": "[https://dart.dev/language/records#patterns](https://www.google.com/search?q=https%3A%2F%2Fdart.dev%2Flanguage%2Frecords%23patterns)"
+        },
+        {
+            "id": "dart_l2_core_q017",
+            "type": "single_choice",
+            "area": "collections",
+            "challenge_type": "predict_output",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Kết quả in ra console của đoạn code bên dưới là gì?",
+            "code_snippet": {
+                "language": "dart",
+                "code": "void main() {\n  final numbers = [1, 2, 3];\n  final result = numbers.map((e) {\n    print('item $e');\n    return e * 2;\n  });\n  print('Done');\n}"
+            },
+            "options": [
+                {
+                    "key": "A",
+                    "text": "item 1\nitem 2\nitem 3\nDone"
+                },
+                {
+                    "key": "B",
+                    "text": "Done\nitem 1\nitem 2\nitem 3"
+                },
+                {
+                    "key": "C",
+                    "text": "Done"
+                },
+                {
+                    "key": "D",
+                    "text": "item 1\nDone"
+                }
+            ],
+            "correct_keys": [
+                "C"
+            ],
+            "explanation": "Phương thức `.map()` trên Iterable trả về một lazy Iterable. Do không có thao tác duyệt phần tử nào (như `.toList()` hay `for-in`), hàm callback trong map không được thực thi. Vì vậy chỉ có `'Done'` được in ra.",
+            "distractor_explanations": {
+                "A": "`.map()` là lazy, không chạy callback ngay khi khai báo trừ khi kết quả được duyệt.",
+                "B": "Callback không chạy sau `Done` vì `result` hoàn toàn không được duyệt.",
+                "D": "Không có phần tử nào được tính toán vì là lazy evaluation."
+            },
+            "reference_url": "[https://api.dart.dev/stable/dart-core/Iterable/map.html](https://www.google.com/search?q=https%3A%2F%2Fapi.dart.dev%2Fstable%2Fdart-core%2FIterable%2Fmap.html)"
+        },
+        {
+            "id": "dart_l2_core_q018",
+            "type": "single_choice",
+            "area": "async",
+            "challenge_type": "predict_output",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Thứ tự in ra màn hình của đoạn code sau là gì?",
+            "code_snippet": {
+                "language": "dart",
+                "code": "void main() {\n  print('A');\n  Future.microtask(() => print('B'));\n  Future(() => print('C'));\n  print('D');\n}"
+            },
+            "options": [
+                {
+                    "key": "A",
+                    "text": "A -> B -> C -> D"
+                },
+                {
+                    "key": "B",
+                    "text": "A -> D -> B -> C"
+                },
+                {
+                    "key": "C",
+                    "text": "A -> D -> C -> B"
+                },
+                {
+                    "key": "D",
+                    "text": "B -> A -> D -> C"
+                }
+            ],
+            "correct_keys": [
+                "B"
+            ],
+            "explanation": "1. `print('A')` đồng bộ chạy ngay.\n2. `print('D')` đồng bộ chạy tiếp.\n3. Microtask queue có ưu tiên cao hơn Event queue nên `print('B')` chạy trước.\n4. Cuối cùng Event queue xử lý `Future` và in `'C'`.",
+            "distractor_explanations": {
+                "A": "Các câu lệnh đồng bộ (A, D) luôn chạy xong trước các tác vụ bất đồng bộ.",
+                "C": "Microtask (B) được ưu tiên chạy trước Event (C).",
+                "D": "Tác vụ đồng bộ 'A' chạy ngay lập tức, không chờ Microtask 'B'."
+            },
+            "reference_url": "[https://dart.dev/articles/archive/event-loop](https://www.google.com/url?sa=E&source=gmail&q=https://dart.dev/articles/archive/event-loop)"
+        },
+        {
+            "id": "dart_l2_core_q019",
+            "type": "single_choice",
+            "area": "null-safety",
+            "challenge_type": "predict_output",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Đoạn code sau đây xuất ra kết quả gì?",
+            "code_snippet": {
+                "language": "dart",
+                "code": "void main() {\n  String? text;\n  text ??= 'Hello';\n  text ??= 'World';\n  print(text);\n}"
+            },
+            "options": [
+                {
+                    "key": "A",
+                    "text": "World"
+                },
+                {
+                    "key": "B",
+                    "text": "Hello World"
+                },
+                {
+                    "key": "C",
+                    "text": "Hello"
+                },
+                {
+                    "key": "D",
+                    "text": "null"
+                }
+            ],
+            "correct_keys": [
+                "C"
+            ],
+            "explanation": "Ban đầu `text` là `null`. Lệnh `text ??= 'Hello'` gán `'Hello'` vào `text`. Ở dòng tiếp theo, do `text` đã khác `null` nên `text ??= 'World'` không thực hiện gán lại.",
+            "distractor_explanations": {
+                "A": "`text` không bị gán đè vì nó không còn là null ở dòng thứ hai.",
+                "B": "Toán tử `??=` không nối chuỗi.",
+                "D": "`text` đã được gán giá trị ở dòng lệnh đầu tiên."
+            },
+            "reference_url": "[https://dart.dev/language/operators#assignment-operators](https://www.google.com/search?q=https%3A%2F%2Fdart.dev%2Flanguage%2Foperators%23assignment-operators)"
+        },
+        {
+            "id": "dart_l2_core_q010_p",
+            "type": "single_choice",
+            "area": "oop",
+            "challenge_type": "spot_bug",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Đoạn code sau gặp lỗi ở đâu và lý do là gì?",
+            "code_snippet": {
+                "language": "dart",
+                "code": "class Animal {\n  final String name;\n  Animal(this.name);\n}\n\nclass Dog extends Animal {\n  int age;\n  Dog(String name, this.age);\n}"
+            },
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Lỗi tại `class Dog`: Constructor của `Dog` chưa gọi hoặc truyền tham số cho super constructor của `Animal`."
+                },
+                {
+                    "key": "B",
+                    "text": "Lỗi tại `final String name`: Không thể khai báo biến `final` trong lớp cha."
+                },
+                {
+                    "key": "C",
+                    "text": "Lỗi tại `int age`: Biến chưa được khởi tạo giá trị mặc định."
+                },
+                {
+                    "key": "D",
+                    "text": "Lỗi cú pháp tại `Animal(this.name)`."
+                }
+            ],
+            "correct_keys": [
+                "A"
+            ],
+            "explanation": "Lớp cha `Animal` không có unnamed no-argument constructor. Do đó lớp con `Dog` bắt buộc phải chuyển tiếp tham số cho super class, ví dụ: `Dog(String name, this.age) : super(name);` hoặc `Dog(super.name, this.age);`.",
+            "distractor_explanations": {
+                "B": "Biến `final` hoàn toàn hợp lệ trong lớp cha.",
+                "C": "`this.age` trong constructor initializing formal đã khởi tạo giá trị cho `age`.",
+                "D": "Cú pháp `Animal(this.name)` là generative constructor hợp lệ."
+            },
+            "reference_url": "[https://dart.dev/language/constructors#super-parameters](https://www.google.com/search?q=https%3A%2F%2Fdart.dev%2Flanguage%2Fconstructors%23super-parameters)"
+        },
+        {
+            "id": "dart_l2_core_q021",
+            "type": "single_choice",
+            "area": "oop",
+            "challenge_type": "compile_error",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Tại sao đoạn code sau gây ra lỗi biên dịch (Compile Error)?",
+            "code_snippet": {
+                "language": "dart",
+                "code": "class Point {\n  final int x;\n  final int y;\n  const Point(this.x, this.y);\n}\n\nvoid main() {\n  var p1 = const Point(1, 2);\n  p1.x = 5;\n}"
+            },
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Vì không thể tạo hằng số bằng từ khóa `const Point`."
+                },
+                {
+                    "key": "B",
+                    "text": "Vì thuộc tính `x` là `final` nên không thể thay đổi giá trị sau khi đã khởi tạo."
+                },
+                {
+                    "key": "C",
+                    "text": "Vì `p1` được khai báo bằng `var` nên không thể nhận giá trị `const`."
+                },
+                {
+                    "key": "D",
+                    "text": "Vì constructor `Point` không thể khai báo là `const`."
+                }
+            ],
+            "correct_keys": [
+                "B"
+            ],
+            "explanation": "Trường `x` được khai báo là `final`, nghĩa là Setter của nó không tồn tại và giá trị không thể thay đổi sau khi khởi tạo.",
+            "distractor_explanations": {
+                "A": "Tạo đối tượng const với `const Point(1, 2)` là cú pháp hoàn toàn hợp lệ.",
+                "C": "Biến khai báo bằng `var` vẫn có thể gán một hằng số `const`.",
+                "D": "Class có tất cả thuộc tính `final` hoàn toàn có thể tạo `const` constructor."
+            },
+            "reference_url": "[https://dart.dev/language/classes#instance-variables](https://www.google.com/search?q=https%3A%2F%2Fdart.dev%2Flanguage%2Fclasses%23instance-variables)"
+        },
+        {
+            "id": "dart_l2_core_q022",
+            "type": "single_choice",
+            "area": "null-safety",
+            "challenge_type": "best_practice",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Trong Dart Null Safety, cách làm nào là Best Practice để làm việc với một biến nullable local khi kiểm tra null?",
+            "code_snippet": {
+                "language": "dart",
+                "code": "// Cách A:\nif (val != null) { print(val.length); }\n\n// Cách B:\nprint(val!.length);"
+            },
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Sử dụng kiểm tra `if (val != null)` để tận dụng cơ chế Type Promotion tự động của Dart."
+                },
+                {
+                    "key": "B",
+                    "text": "Luôn dùng toán tử `!` (bang operator) để ép kiểu nhanh."
+                },
+                {
+                    "key": "C",
+                    "text": "Gán biến đó thành `dynamic` để bỏ qua kiểm tra null."
+                },
+                {
+                    "key": "D",
+                    "text": "Chuyển biến đó thành biến `late`."
+                }
+            ],
+            "correct_keys": [
+                "A"
+            ],
+            "explanation": "type promotion hoạt động an toàn với các biến local nullable khi kiểm tra `!= null`. Việc dùng toán tử `!` dễ gây ra runtime crash nếu giả định sai.",
+            "distractor_explanations": {
+                "B": "Sử dụng toán tử `!` chỉ nên dùng khi chắc chắn 100% không null, nếu không sẽ gây Exception tại runtime.",
+                "C": "Chuyển sang `dynamic` làm mất lợi ích của Type System và Null Safety.",
+                "D": "`late` không giải quyết được vấn đề kiểm tra một biến đã mang giá trị nullable."
+            },
+            "reference_url": "[https://dart.dev/null-safety/understanding-null-safety#type-promotion](https://www.google.com/search?q=https%3A%2F%2Fdart.dev%2Fnull-safety%2Funderstanding-null-safety%23type-promotion)"
+        },
+        {
+            "id": "dart_l2_core_q023",
+            "type": "single_choice",
+            "area": "errors",
+            "challenge_type": "recall",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Sự khác biệt chính giữa `Error` và `Exception` trong Dart là gì?",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "`Error` đại diện cho các lỗi lập trình (program failure) không nên catch; `Exception` đại diện cho các điều kiện bất thường có thể dự đoán và catch."
+                },
+                {
+                    "key": "B",
+                    "text": "`Error` xảy ra bất đồng bộ, `Exception` xảy ra đồng bộ."
+                },
+                {
+                    "key": "C",
+                    "text": "`Exception` chỉ xuất hiện ở compile-time, `Error` xuất hiện ở runtime."
+                },
+                {
+                    "key": "D",
+                    "text": "Không có sự khác biệt, hai lớp này là alias của nhau."
+                }
+            ],
+            "correct_keys": [
+                "A"
+            ],
+            "explanation": "`Error` dùng cho các lỗi phần mềm nghiêm trọng (ví dụ: `TypeError`, `OutOfMemoryError`) do vi phạm logic code. `Exception` dùng cho các tình huống vận hành bất thường mà ứng dụng có thể xử lý (ví dụ: `FormatException`, `SocketException`).",
+            "distractor_explanations": {
+                "B": "Cả Error và Exception đều có thể xảy ra ở bất kỳ luồng xử lý nào.",
+                "C": "Cả hai đều là các đối tượng được throw tại runtime.",
+                "D": "Chúng là hai lớp khác biệt với mục đích sử dụng được khuyến cáo rõ ràng trong Dart guide."
+            },
+            "reference_url": "[https://dart.dev/language/error-handling](https://www.google.com/search?q=https%3A%2F%2Fdart.dev%2Flanguage%2Ferror-handling)"
+        },
+        {
+            "id": "dart_l2_core_q024",
+            "type": "single_choice",
+            "area": "patterns",
+            "challenge_type": "predict_output",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Kết quả xuất ra console của đoạn code Switch Expression trong Dart 3 này là gì?",
+            "code_snippet": {
+                "language": "dart",
+                "code": "void main() {\n  Object obj = [1, 2];\n  var description = switch (obj) {\n    Intlist [var a, var b] => 'Two ints: $a, $b',\n    List [var a, ...] => 'List starting with $a',\n    _ => 'Unknown'\n  };\n  print(description);\n}"
+            },
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Two ints: 1, 2"
+                },
+                {
+                    "key": "B",
+                    "text": "List starting with 1"
+                },
+                {
+                    "key": "C",
+                    "text": "Unknown"
+                },
+                {
+                    "key": "D",
+                    "text": "Lỗi biên dịch (Compile Error)"
+                }
+            ],
+            "correct_keys": [
+                "B"
+            ],
+            "explanation": "Pattern `Intlist` không tồn tại trong thư viện chuẩn Dart (gây sai ngữ pháp nếu coi là class name không xác định), tuy nhiên ở đây pattern `List [var a, ...]` sẽ khớp với danh sách `[1, 2]`. Do `Intlist` không phải kiểu hợp lệ, trong trường hợp này `List [var a, ...]` là pattern đúng duy nhất khớp với `[1, 2]` và giải phóng `a = 1`.",
+            "distractor_explanations": {
+                "A": "`Intlist` không phải là built-in type pattern hợp lệ trong Dart.",
+                "C": "Pattern `List [var a, ...]` đã khớp nên không nhảy vào wildcard `_`.",
+                "D": "Do `List [var a, ...]` được khớp chính xác với kiểu List."
+            },
+            "reference_url": "[https://dart.dev/language/branches#switch-expressions](https://www.google.com/search?q=https%3A%2F%2Fdart.dev%2Flanguage%2Fbranches%23switch-expressions)"
+        },
+        {
+            "id": "dart_l2_core_q025",
+            "type": "single_choice",
+            "area": "generics",
+            "challenge_type": "fix_code",
+            "language": "dart",
+            "difficulty": "medium",
+            "points": 2,
+            "content_markdown": "Bạn muốn giới hạn tham số kiểu `T` trong một generic class `DataHolder<T>` để chỉ chấp nhận các kiểu dữ liệu là số (`num` hoặc lớp con của `num`). Cú pháp nào đúng?",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "class DataHolder {}"
+                },
+                {
+                    "key": "B",
+                    "text": "class DataHolder {}"
+                },
+                {
+                    "key": "C",
+                    "text": "class DataHolder {}"
+                },
+                {
+                    "key": "D",
+                    "text": "class DataHolder {}"
+                }
+            ],
+            "correct_keys": [
+                "A"
+            ],
+            "explanation": "Từ khóa `extends` được sử dụng trong Generics để thiết lập giới hạn trên (upper bound) cho kiểu dữ liệu.",
+            "distractor_explanations": {
+                "B": "`implements` không được dùng để giới hạn kiểu generic trong khai báo `<T>`.",
+                "C": "Dart không hỗ trợ từ khóa `super` trong khai báo bounds cho generic.",
+                "D": "Cú pháp dấu hai chấm `:` là của một số ngôn ngữ khác (như Kotlin/C#), không phải Dart."
+            },
+            "reference_url": "[https://dart.dev/language/generics#restricting-the-parameterized-type](https://www.google.com/search?q=https://dart.dev/language/generics%23restricting-the-parameterized-type)"
+        }
+    ]
+}

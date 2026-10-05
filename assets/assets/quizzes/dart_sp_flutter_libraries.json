@@ -1,0 +1,433 @@
+{
+  "metadata": {
+    "quiz_id": "dart_sp_flutter_libraries",
+    "title": "Flutter Libraries Essentials",
+    "difficulty": "medium",
+    "language": "dart",
+    "topic_id": "technology",
+    "level": "Intermediate",
+    "subject": "flutter",
+    "kind": "special",
+    "pack_id": "dart-special-flutter-libraries",
+    "tags": ["dart", "flutter", "libraries", "special"],
+    "pass_percentage": 70,
+    "time_limit_minutes": 25,
+    "total_questions": 20,
+    "created_by": "TN Club Quiz",
+    "created_at": "2026-09-06T00:00:00Z",
+    "version": "1.0.0",
+    "timer_mode": "global",
+    "per_question_time_seconds": 0,
+    "negative_marking": false,
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "strict_mode": false
+  },
+  "questions": [
+    {
+      "id": "dart_sp_flutter_libraries_q001",
+      "type": "single_choice",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong `go_router`, API nào thường dùng để khai báo danh sách route trong `GoRouter`?",
+      "options": [
+        {"key": "A", "text": "`GoRoute`"},
+        {"key": "B", "text": "`RouteTable`"},
+        {"key": "C", "text": "`RouterEntry`"},
+        {"key": "D", "text": "`NavigatorConfig`"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`GoRouter` nhận một danh sách các đối tượng `GoRoute`; mỗi `GoRoute` mô tả một location và builder hoặc page của route đó.",
+      "distractor_explanations": {"B": "`RouteTable` không phải API khai báo route của go_router.", "C": "`RouterEntry` không phải lớp public của go_router.", "D": "`NavigatorConfig` không phải API khai báo route của go_router."},
+      "reference_url": "https://pub.dev/documentation/go_router/latest/go_router/GoRoute-class.html"
+    },
+    {
+      "id": "dart_sp_flutter_libraries_q002",
+      "type": "single_choice",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phương thức nào của `SharedPreferences` dùng để đọc một giá trị chuỗi đã lưu?",
+      "options": [
+        {"key": "A", "text": "`readString`"},
+        {"key": "B", "text": "`getString`"},
+        {"key": "C", "text": "`loadString`"},
+        {"key": "D", "text": "`stringValue`"}
+      ],
+      "correct_keys": ["B"],
+      "explanation": "`SharedPreferences.getString(key)` trả về `String?`, vì key có thể chưa tồn tại hoặc giá trị không phải chuỗi.",
+      "distractor_explanations": {"A": "`SharedPreferences` không có API `readString`.", "C": "`loadString` không phải API đọc preference.", "D": "`stringValue` không phải phương thức của `SharedPreferences`."},
+      "reference_url": "https://pub.dev/documentation/shared_preferences/latest/shared_preferences/SharedPreferences/getString.html"
+    },
+    {
+      "id": "dart_sp_flutter_libraries_q003",
+      "type": "single_choice",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, widget nào phù hợp để hiển thị Markdown với cú pháp cơ bản?",
+      "options": [
+        {"key": "A", "text": "`Markdown` từ package `flutter_markdown`"},
+        {"key": "B", "text": "`RichMarkdown` từ Flutter SDK"},
+        {"key": "C", "text": "`MarkdownView` từ package `intl`"},
+        {"key": "D", "text": "`Text.markdown` từ `dart:ui`"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "Package `flutter_markdown` cung cấp widget `Markdown` để parse và render nội dung Markdown trong Flutter.",
+      "distractor_explanations": {"B": "Flutter SDK không cung cấp widget public tên `RichMarkdown`.", "C": "`intl` không cung cấp widget Markdown; `MarkdownView` cũng không phải API của package này.", "D": "`Text.markdown` không tồn tại trong `dart:ui`."},
+      "reference_url": "https://pub.dev/documentation/flutter_markdown/latest/flutter_markdown/Markdown-class.html"
+    },
+    {
+      "id": "dart_sp_flutter_libraries_q004",
+      "type": "single_choice",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Hằng số nào của `url_launcher` thường dùng để mở một URL trong ứng dụng trình duyệt bên ngoài?",
+      "options": [
+        {"key": "A", "text": "`LaunchMode.externalApplication`"},
+        {"key": "B", "text": "`LaunchMode.browserOnly`"},
+        {"key": "C", "text": "`LaunchMode.webBrowser`"},
+        {"key": "D", "text": "`LaunchMode.systemBrowser`"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`LaunchMode.externalApplication` yêu cầu url_launcher dùng một ứng dụng bên ngoài ứng dụng hiện tại, thường là trình duyệt.",
+      "distractor_explanations": {"B": "`browserOnly` không phải giá trị của enum `LaunchMode`.", "C": "`webBrowser` không phải giá trị của enum `LaunchMode`.", "D": "`systemBrowser` không phải giá trị của enum `LaunchMode`."},
+      "reference_url": "https://pub.dev/documentation/url_launcher/latest/url_launcher/LaunchMode.html"
+    },
+    {
+      "id": "dart_sp_flutter_libraries_q005",
+      "type": "single_choice",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Hàm nào của `intl` tạo `DateFormat` theo locale đã chỉ định?",
+      "options": [
+        {"key": "A", "text": "`DateFormat.locale`"},
+        {"key": "B", "text": "`DateFormat.withLocale`"},
+        {"key": "C", "text": "`DateFormat` với named constructor `locale`"},
+        {"key": "D", "text": "`DateFormat` nhận locale ở tham số thứ hai của constructor mặc định"}
+      ],
+      "correct_keys": ["D"],
+      "explanation": "Có thể dùng `DateFormat(pattern, locale)`, ví dụ `DateFormat.yMMMMd('vi')`; locale là tham số thứ hai của constructor mặc định.",
+      "distractor_explanations": {"A": "`DateFormat.locale` không phải API tạo formatter.", "B": "`DateFormat.withLocale` không phải named constructor của intl.", "C": "Constructor named `locale` không phải API của `DateFormat`."},
+      "reference_url": "https://pub.dev/documentation/intl/latest/intl/DateFormat-class.html"
+    },
+    {
+      "id": "dart_sp_flutter_libraries_q006",
+      "type": "single_choice",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Để mở database SQLite trên web bằng `sqflite_common_ffi_web`, factory nào được cấu hình cho `sqflite`?",
+      "options": [
+        {"key": "A", "text": "`databaseFactoryFfiWeb`"},
+        {"key": "B", "text": "`databaseFactoryWebSql`"},
+        {"key": "C", "text": "`webDatabaseFactory`"},
+        {"key": "D", "text": "`databaseFactoryChrome`"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`sqflite_common_ffi_web` cung cấp `databaseFactoryFfiWeb`; ứng dụng web thường gán factory này cho `databaseFactory` trước khi mở database.",
+      "distractor_explanations": {"B": "`databaseFactoryWebSql` không phải factory được package cung cấp.", "C": "`webDatabaseFactory` không phải API public của package.", "D": "`databaseFactoryChrome` không phải API của sqflite."},
+      "reference_url": "https://pub.dev/documentation/sqflite_common_ffi_web/latest/sqflite_common_ffi_web/databaseFactoryFfiWeb.html"
+    },
+    {
+      "id": "dart_sp_flutter_libraries_q007",
+      "type": "single_choice",
+      "area": "patterns",
+      "challenge_type": "recall",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong Flutter, pattern nào giúp truyền một dependency xuống cây widget mà không phải truyền thủ công qua mọi constructor?",
+      "options": [
+        {"key": "A", "text": "`InheritedWidget` hoặc một thư viện dựa trên context"},
+        {"key": "B", "text": "`StringBuffer`"},
+        {"key": "C", "text": "`FutureBuilder` bắt buộc"},
+        {"key": "D", "text": "`MediaQuery` cho mọi loại dependency"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`InheritedWidget` cung cấp dữ liệu cho các descendant thông qua `BuildContext`; nhiều thư viện quản lý state/dependency xây dựng trên pattern này.",
+      "distractor_explanations": {"B": "`StringBuffer` chỉ hỗ trợ xây dựng chuỗi.", "C": "`FutureBuilder` hiển thị trạng thái Future, không phải cơ chế dependency injection tổng quát.", "D": "`MediaQuery` là inherited data chuyên cho thông tin màn hình, không thay thế dependency pattern tổng quát."},
+      "reference_url": "https://docs.flutter.dev/get-started/fundamentals/state-management"
+    },
+    {
+      "id": "dart_sp_flutter_libraries_q008",
+      "type": "single_choice",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "API nào của `sqflite` dùng để chạy một câu lệnh SQL không trả về các hàng kết quả?",
+      "options": [
+        {"key": "A", "text": "`Database.execute`"},
+        {"key": "B", "text": "`Database.queryOnly`"},
+        {"key": "C", "text": "`Database.select`"},
+        {"key": "D", "text": "`Database.rows`"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`Database.execute(sql, arguments)` thực thi SQL như CREATE, ALTER hoặc UPDATE khi không cần đọc danh sách hàng; truy vấn đọc dữ liệu thường dùng `query`.",
+      "distractor_explanations": {"B": "`queryOnly` không phải method của `sqflite` Database.", "C": "`select` không phải method public tương ứng của `sqflite` Database.", "D": "`rows` không phải method thực thi SQL của `sqflite` Database."},
+      "reference_url": "https://pub.dev/documentation/sqflite/latest/sqflite/Database/execute.html"
+    },
+    {
+      "id": "dart_sp_flutter_libraries_q009",
+      "type": "multiple_choice",
+      "area": "patterns",
+      "challenge_type": "multi",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Những thực hành nào phù hợp khi tổ chức một lớp repository gọi các package lưu trữ trong Flutter? (Chọn tất cả đáp án đúng)",
+      "options": [
+        {"key": "A", "text": "Để UI gọi repository thay vì phụ thuộc trực tiếp vào SQL và plugin."},
+        {"key": "B", "text": "Trả về model/domain rõ ràng và cô lập chi tiết Map/row ở biên repository."},
+        {"key": "C", "text": "Khởi tạo một database mới trong mỗi lần build widget để luôn có dữ liệu mới."},
+        {"key": "D", "text": "Đưa chuỗi SQL vào mọi widget để giảm số lớp trung gian."}
+      ],
+      "correct_keys": ["A", "B"],
+      "explanation": "Repository tạo ranh giới giữa UI và data source: UI phụ thuộc abstraction/model, còn chuyển đổi row và chi tiết plugin được giữ ở lớp dữ liệu.",
+      "distractor_explanations": {"C": "Khởi tạo database trong build gây tốn tài nguyên và tạo vòng đời không ổn định.", "D": "SQL trong widget làm tăng coupling, khó test và khó thay đổi data source."},
+      "reference_url": "https://docs.flutter.dev/app-architecture/guide"
+    },
+    {
+      "id": "dart_sp_flutter_libraries_q010",
+      "type": "multiple_choice",
+      "area": "tooling",
+      "challenge_type": "multi",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Những phát biểu nào đúng về `SharedPreferences`? (Chọn tất cả đáp án đúng)",
+      "options": [
+        {"key": "A", "text": "Phù hợp cho các giá trị nhỏ dạng key-value như cờ và thiết lập."},
+        {"key": "B", "text": "Các API ghi như `setBool` trả về `Future<bool>` trong API legacy."},
+        {"key": "C", "text": "Nó là database quan hệ thay thế cho mọi truy vấn SQL."},
+        {"key": "D", "text": "Nó tự động mã hóa mọi giá trị bằng khóa ứng dụng."}
+      ],
+      "correct_keys": ["A", "B"],
+      "explanation": "SharedPreferences phù hợp với preference đơn giản và các setter legacy là bất đồng bộ, trả về `Future<bool>` để báo trạng thái ghi; nó không phải SQL database hay cơ chế mã hóa.",
+      "distractor_explanations": {"C": "SharedPreferences là key-value store, không cung cấp truy vấn quan hệ SQL.", "D": "Package không mặc định cung cấp bảo mật/mã hóa cho dữ liệu nhạy cảm."},
+      "reference_url": "https://pub.dev/documentation/shared_preferences/latest/shared_preferences/SharedPreferences-class.html"
+    },
+    {
+      "id": "dart_sp_flutter_libraries_q011",
+      "type": "multiple_choice",
+      "area": "tooling",
+      "challenge_type": "multi",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Khi dùng `url_launcher`, điều nào là đúng? (Chọn tất cả đáp án đúng)",
+      "options": [
+        {"key": "A", "text": "Nên dùng `Uri` thay vì nối chuỗi URL một cách tùy tiện."},
+        {"key": "B", "text": "Có thể kiểm tra kết quả `bool` của `launchUrl` để xử lý trường hợp không mở được URL."},
+        {"key": "C", "text": "`canLaunchUrl` đảm bảo chắc chắn mọi lần gọi `launchUrl` sau đó đều thành công."},
+        {"key": "D", "text": "Mọi scheme tùy ý đều chắc chắn được hỗ trợ trên tất cả nền tảng."}
+      ],
+      "correct_keys": ["A", "B"],
+      "explanation": "`launchUrl` nhận `Uri` và trả về Future<bool>; ứng dụng nên xử lý false. Việc hỗ trợ scheme phụ thuộc nền tảng và cấu hình, nên không thể suy ra thành công tuyệt đối từ kiểm tra trước.",
+      "distractor_explanations": {"C": "Tài liệu cảnh báo `canLaunchUrl` có thể trả false dù launch được và ngược lại; kiểm tra trước không phải bảo đảm tuyệt đối.", "D": "Scheme và khả năng xử lý phụ thuộc nền tảng, ứng dụng cài đặt và cấu hình manifest/entitlement."},
+      "reference_url": "https://pub.dev/documentation/url_launcher/latest/url_launcher/launchUrl.html"
+    },
+    {
+      "id": "dart_sp_flutter_libraries_q012",
+      "type": "true_false",
+      "area": "async",
+      "challenge_type": "true_false",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "`Database.openDatabase` của `sqflite` là thao tác bất đồng bộ và nên được `await` trước khi thực hiện truy vấn.",
+      "options": [
+        {"key": "A", "text": "Đúng"},
+        {"key": "B", "text": "Sai"},
+        {"key": "C", "text": "Chỉ đúng trên Android"},
+        {"key": "D", "text": "Chỉ đúng khi database có transaction"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`openDatabase` trả về `Future<Database>`, vì vậy code cần chờ Future hoàn thành trước khi gọi các thao tác trên database.",
+      "distractor_explanations": {"B": "Sai vì mở database không trả về Database đồng bộ.", "C": "Đây là API bất đồng bộ của sqflite trên các nền tảng được hỗ trợ, không chỉ Android.", "D": "Tính bất đồng bộ không phụ thuộc việc có transaction hay không."},
+      "reference_url": "https://pub.dev/documentation/sqflite/latest/sqflite/openDatabase.html"
+    },
+    {
+      "id": "dart_sp_flutter_libraries_q013",
+      "type": "true_false",
+      "area": "patterns",
+      "challenge_type": "true_false",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong `go_router`, `context.go('/settings')` thường thay thế location hiện tại thay vì luôn thêm một route mới lên stack.",
+      "options": [
+        {"key": "A", "text": "Đúng"},
+        {"key": "B", "text": "Sai"},
+        {"key": "C", "text": "Chỉ đúng khi dùng deep link"},
+        {"key": "D", "text": "Chỉ đúng trên web"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`go` điều hướng tới location mới và xây dựng stack phù hợp với route tree; nó khác `push`, vốn thêm một route lên stack hiện tại.",
+      "distractor_explanations": {"B": "Sai vì `go` không có semantics mặc định là push thêm một route.", "C": "Semantics này áp dụng cho API điều hướng nói chung, không chỉ deep link.", "D": "go_router cung cấp hành vi này trên các nền tảng Flutter được hỗ trợ, không chỉ web."},
+      "reference_url": "https://pub.dev/documentation/go_router/latest/topics/Navigation-topic.html"
+    },
+    {
+      "id": "dart_sp_flutter_libraries_q014",
+      "type": "single_choice",
+      "area": "tooling",
+      "challenge_type": "predict_output",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đoạn code sau in ra gì?",
+      "code_snippet": {"language": "dart", "code": "final prefs = await SharedPreferences.getInstance();\nawait prefs.setInt('level', 2);\nprint(prefs.getInt('level'));"},
+      "options": [
+        {"key": "A", "text": "`2`"},
+        {"key": "B", "text": "`null`"},
+        {"key": "C", "text": "`true`"},
+        {"key": "D", "text": "Một `Future<int>` chưa hoàn thành"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`setInt` hoàn tất việc cập nhật preference và `getInt` đọc lại số nguyên 2 từ cùng instance.",
+      "distractor_explanations": {"B": "Key đã được set thành công trước khi đọc nên không phải null.", "C": "Setter trả về bool nhưng giá trị được đọc là int 2.", "D": "`getInt` là getter đồng bộ và trả về `int?`, không phải Future."},
+      "reference_url": "https://pub.dev/documentation/shared_preferences/latest/shared_preferences/SharedPreferences/getInt.html"
+    },
+    {
+      "id": "dart_sp_flutter_libraries_q015",
+      "type": "single_choice",
+      "area": "tooling",
+      "challenge_type": "predict_output",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Với locale `vi`, kết quả gần đúng của đoạn code là gì?",
+      "code_snippet": {"language": "dart", "code": "final f = NumberFormat.currency(locale: 'vi', symbol: '₫');\nprint(f.format(1250000));"},
+      "options": [
+        {"key": "A", "text": "Một chuỗi tiền tệ theo quy tắc locale Việt Nam, xấp xỉ `1.250.000 ₫`"},
+        {"key": "B", "text": "`1250000.0 USD`"},
+        {"key": "C", "text": "`1,250,000 ₫` theo quy tắc US bắt buộc"},
+        {"key": "D", "text": "Một `double` có giá trị 1250000"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`NumberFormat.currency` trả về chuỗi đã định dạng theo locale; locale `vi` dùng quy tắc nhóm chữ số Việt Nam và symbol được chỉ định là ₫.",
+      "distractor_explanations": {"B": "Symbol truyền vào là ₫, không phải USD; formatter cũng trả String.", "C": "Dấu phân cách phụ thuộc locale, không bị bắt buộc theo quy tắc US.", "D": "`format` trả về String hiển thị, không trả về double."},
+      "reference_url": "https://pub.dev/documentation/intl/latest/intl/NumberFormat/NumberFormat.currency.html"
+    },
+    {
+      "id": "dart_sp_flutter_libraries_q016",
+      "type": "single_choice",
+      "area": "patterns",
+      "challenge_type": "predict_output",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Khi route `/users/:id` được khai báo với `path: '/users/:id'`, biểu thức nào lấy giá trị `42` từ URL `/users/42`?",
+      "code_snippet": {"language": "dart", "code": "GoRoute(\n  path: '/users/:id',\n  builder: (context, state) => UserPage(id: state.pathParameters['id']!),\n)"},
+      "options": [
+        {"key": "A", "text": "`state.pathParameters['id']`"},
+        {"key": "B", "text": "`state.queryParameters['id']`"},
+        {"key": "C", "text": "`state.extra['id']`"},
+        {"key": "D", "text": "`state.routeData['id']`"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "Phần `:id` là path parameter nên go_router đặt giá trị tương ứng trong `state.pathParameters` với key `id`.",
+      "distractor_explanations": {"B": "`queryParameters` dành cho phần query như `?id=42`, không phải segment động.", "C": "`extra` là dữ liệu truyền ngoài URL, không tự chứa path parameter.", "D": "`routeData` không phải API dùng để đọc parameter của GoRouterState."},
+      "reference_url": "https://pub.dev/documentation/go_router/latest/go_router/GoRouterState/pathParameters.html"
+    },
+    {
+      "id": "dart_sp_flutter_libraries_q017",
+      "type": "single_choice",
+      "area": "errors",
+      "challenge_type": "spot_bug",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đâu là lỗi chính trong đoạn code mở liên kết dưới đây?",
+      "code_snippet": {"language": "dart", "code": "onPressed: () {\n  final uri = Uri.parse('https://example.com');\n  launchUrl(uri);\n}"},
+      "options": [
+        {"key": "A", "text": "Không xử lý Future<bool> và lỗi khi thao tác mở URL thất bại."},
+        {"key": "B", "text": "`Uri.parse` không thể parse URL HTTPS."},
+        {"key": "C", "text": "`launchUrl` chỉ nhận chuỗi, không nhận Uri."},
+        {"key": "D", "text": "Callback onPressed không được phép gọi API bất đồng bộ."}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "`launchUrl` trả về `Future<bool>`. Callback có thể là async và nên `await`, kiểm tra kết quả false rồi hiển thị hoặc xử lý lỗi phù hợp.",
+      "distractor_explanations": {"B": "`Uri.parse` hỗ trợ URL HTTPS hợp lệ.", "C": "API hiện đại `launchUrl` nhận `Uri`.", "D": "Callback có thể khai báo `async`; vấn đề là code chưa xử lý Future, không phải cấm async."},
+      "reference_url": "https://pub.dev/documentation/url_launcher/latest/url_launcher/launchUrl.html"
+    },
+    {
+      "id": "dart_sp_flutter_libraries_q018",
+      "type": "single_choice",
+      "area": "errors",
+      "challenge_type": "spot_bug",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đoạn code database dưới đây có vấn đề gì đáng chú ý?",
+      "code_snippet": {"language": "dart", "code": "Future<List<Map<String, Object?>>> loadUsers() async {\n  final db = await openDatabase('app.db');\n  return db.query('users');\n}"},
+      "options": [
+        {"key": "A", "text": "Mỗi lần gọi lại mở một database handle; nên tái sử dụng một instance hoặc singleton được quản lý vòng đời."},
+        {"key": "B", "text": "`db.query` không trả về Future nên không thể return trong hàm async."},
+        {"key": "C", "text": "Tên bảng `users` luôn bị cấm trong SQLite."},
+        {"key": "D", "text": "`openDatabase` chỉ hoạt động trong widget build."}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "Code có thể biên dịch vì `db.query` trả về Future phù hợp với hàm async, nhưng mở handle mới trong mỗi lần tải là pattern dễ rò rỉ/tốn tài nguyên; nên quản lý và tái sử dụng database.",
+      "distractor_explanations": {"B": "`Database.query` trả về Future<List<Map<String, Object?>>> nên kiểu return phù hợp.", "C": "`users` là tên bảng hợp lệ nếu schema đã tạo bảng đó.", "D": "Database có thể mở ở tầng repository/service, không bị giới hạn trong build."},
+      "reference_url": "https://pub.dev/documentation/sqflite/latest/sqflite/Database/query.html"
+    },
+    {
+      "id": "dart_sp_flutter_libraries_q019",
+      "type": "multiple_choice",
+      "area": "performance",
+      "challenge_type": "best_practice",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Những lựa chọn nào là best practice khi dùng `flutter_markdown` để hiển thị nội dung từ mạng? (Chọn tất cả đáp án đúng)",
+      "options": [
+        {"key": "A", "text": "Hiển thị trạng thái loading/error và xử lý nội dung trước khi render."},
+        {"key": "B", "text": "Cân nhắc giới hạn hoặc vô hiệu hóa các tính năng tải tài nguyên ngoài nếu nội dung không tin cậy."},
+        {"key": "C", "text": "Tin mọi HTML/script nhúng vì Markdown luôn an toàn tuyệt đối."},
+        {"key": "D", "text": "Parse toàn bộ nội dung lớn đồng bộ trong `build` mỗi frame."}
+      ],
+      "correct_keys": ["A", "B"],
+      "explanation": "Nội dung mạng cần trạng thái tải/lỗi và kiểm soát nguồn; tài liệu package có các tùy chọn liên quan đến HTML và image nên ứng dụng cần cân nhắc an toàn, hiệu năng trước khi render.",
+      "distractor_explanations": {"C": "Markdown từ nguồn không tin cậy không nên mặc định được coi là an toàn tuyệt đối; cần kiểm soát HTML/tài nguyên.", "D": "Parse lặp lại nội dung lớn trong build gây tốn CPU và jank; nên chuẩn bị dữ liệu và tránh công việc nặng mỗi frame."},
+      "reference_url": "https://pub.dev/documentation/flutter_markdown/latest/flutter_markdown/Markdown-class.html"
+    },
+    {
+      "id": "dart_sp_flutter_libraries_q020",
+      "type": "multiple_choice",
+      "area": "patterns",
+      "challenge_type": "best_practice",
+      "language": "dart",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Khi xây dựng lớp điều hướng dùng `go_router`, đâu là best practice? (Chọn tất cả đáp án đúng)",
+      "options": [
+        {"key": "A", "text": "Giữ cấu hình route ở một nơi rõ ràng và dùng redirect cho quy tắc xác thực tập trung."},
+        {"key": "B", "text": "Dùng named route hoặc helper nhất quán để giảm lỗi chuỗi URL rải rác."},
+        {"key": "C", "text": "Đặt toàn bộ điều hướng trong `build` của từng màn hình và tạo GoRouter mới mỗi lần build."},
+        {"key": "D", "text": "Lưu token bí mật vào query parameter để redirect luôn đọc được."}
+      ],
+      "correct_keys": ["A", "B"],
+      "explanation": "Một router được quản lý ổn định với redirect tập trung giúp route dễ kiểm thử và tránh khởi tạo lặp; named route/helper làm giảm lỗi khi thay đổi URL. Bí mật không nên nằm trong URL.",
+      "distractor_explanations": {"C": "Tạo router trong build làm mất trạng thái và gây cấu hình không ổn định; điều hướng nên tách khỏi việc build từng màn hình.", "D": "Query parameter có thể bị log, lưu vào history hoặc chia sẻ; token bí mật nên được bảo vệ ngoài URL."},
+      "reference_url": "https://pub.dev/documentation/go_router/latest/topics/Redirection-topic.html"
+    }
+  ]
+}

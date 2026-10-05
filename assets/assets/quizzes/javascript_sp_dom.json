@@ -1,0 +1,793 @@
+{
+  "metadata": {
+    "quiz_id": "javascript_sp_dom",
+    "title": "JavaScript DOM and Events",
+    "subject": "javascript",
+    "level": "Intermediate",
+    "kind": "special",
+    "pack_id": "javascript-special-dom",
+    "topic_id": "technology",
+    "language": "javascript",
+    "difficulty": "medium",
+    "time_limit_minutes": 25,
+    "total_questions": 20,
+    "pass_percentage": 70,
+    "timer_mode": "global",
+    "per_question_time_seconds": 0,
+    "negative_marking": false,
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "strict_mode": false,
+    "tags": [
+      "javascript",
+      "special",
+      "dom",
+      "l2"
+    ],
+    "created_by": "TN Club Quiz",
+    "created_at": "2026-09-06T00:00:00Z",
+    "version": "1.0.0"
+  },
+  "questions": [
+    {
+      "id": "javascript_sp_dom_q001",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: DOM (Document Object Model) biểu diễn cấu trúc cây của tài liệu HTML hoặc XML.",
+      "options": [
+        {
+          "key": "A",
+          "text": "DOM (Document Object Model) biểu diễn cấu trúc cây của tài liệu HTML hoặc XML."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: DOM (Document Object Model) biểu diễn cấu trúc cây của tài liệu HTML hoặc XML. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": "javascript_sp_dom_q002",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: document.getElementById trả về phần tử có id khớp với chuỗi đã cho.",
+      "options": [
+        {
+          "key": "A",
+          "text": "document.getElementById trả về phần tử có id khớp với chuỗi đã cho."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: document.getElementById trả về phần tử có id khớp với chuỗi đã cho. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": "javascript_sp_dom_q003",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: document.querySelector chọn phần tử đầu tiên khớp với CSS selector.",
+      "options": [
+        {
+          "key": "A",
+          "text": "document.querySelector chọn phần tử đầu tiên khớp với CSS selector."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: document.querySelector chọn phần tử đầu tiên khớp với CSS selector. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": "javascript_sp_dom_q004",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: document.querySelectorAll trả về một NodeList chứa tất cả phần tử khớp selector.",
+      "options": [
+        {
+          "key": "A",
+          "text": "document.querySelectorAll trả về một NodeList chứa tất cả phần tử khớp selector."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: document.querySelectorAll trả về một NodeList chứa tất cả phần tử khớp selector. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": "javascript_sp_dom_q005",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: element.addEventListener đăng ký hàm xử lý sự kiện cho một phần tử.",
+      "options": [
+        {
+          "key": "A",
+          "text": "element.addEventListener đăng ký hàm xử lý sự kiện cho một phần tử."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: element.addEventListener đăng ký hàm xử lý sự kiện cho một phần tử. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": "javascript_sp_dom_q006",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: Event object chứa thông tin về sự kiện, bao gồm target và type.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Event object chứa thông tin về sự kiện, bao gồm target và type."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: Event object chứa thông tin về sự kiện, bao gồm target và type. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": "javascript_sp_dom_q007",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: event.preventDefault ngăn hành vi mặc định của trình duyệt đối với sự kiện.",
+      "options": [
+        {
+          "key": "A",
+          "text": "event.preventDefault ngăn hành vi mặc định của trình duyệt đối với sự kiện."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: event.preventDefault ngăn hành vi mặc định của trình duyệt đối với sự kiện. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": "javascript_sp_dom_q008",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: event.stopPropagation ngăn sự kiện lan truyền lên các phần tử cha.",
+      "options": [
+        {
+          "key": "A",
+          "text": "event.stopPropagation ngăn sự kiện lan truyền lên các phần tử cha."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: event.stopPropagation ngăn sự kiện lan truyền lên các phần tử cha. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": "javascript_sp_dom_q009",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: element.classList cung cấp các phương thức add, remove, toggle, contains cho class CSS.",
+      "options": [
+        {
+          "key": "A",
+          "text": "element.classList cung cấp các phương thức add, remove, toggle, contains cho class CSS."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: element.classList cung cấp các phương thức add, remove, toggle, contains cho class CSS. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": "javascript_sp_dom_q010",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: innerHTML phân tích chuỗi HTML và thay thế nội dung bên trong phần tử.",
+      "options": [
+        {
+          "key": "A",
+          "text": "innerHTML phân tích chuỗi HTML và thay thế nội dung bên trong phần tử."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: innerHTML phân tích chuỗi HTML và thay thế nội dung bên trong phần tử. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": "javascript_sp_dom_q011",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: textContent lấy hoặc đặt nội dung văn bản của phần tử, không phân tích HTML.",
+      "options": [
+        {
+          "key": "A",
+          "text": "textContent lấy hoặc đặt nội dung văn bản của phần tử, không phân tích HTML."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: textContent lấy hoặc đặt nội dung văn bản của phần tử, không phân tích HTML. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": "javascript_sp_dom_q012",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: element.style cho phép đọc và gán các thuộc tính CSS inline của phần tử.",
+      "options": [
+        {
+          "key": "A",
+          "text": "element.style cho phép đọc và gán các thuộc tính CSS inline của phần tử."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: element.style cho phép đọc và gán các thuộc tính CSS inline của phần tử. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": "javascript_sp_dom_q013",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: document.createElement tạo một phần tử HTML mới chưa gắn vào DOM.",
+      "options": [
+        {
+          "key": "A",
+          "text": "document.createElement tạo một phần tử HTML mới chưa gắn vào DOM."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: document.createElement tạo một phần tử HTML mới chưa gắn vào DOM. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": "javascript_sp_dom_q014",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "type": "single_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Phát biểu nào mô tả chính xác trong JavaScript: parentNode.appendChild thêm một nút con vào cuối danh sách con của nút cha.",
+      "options": [
+        {
+          "key": "A",
+          "text": "parentNode.appendChild thêm một nút con vào cuối danh sách con của nút cha."
+        },
+        {
+          "key": "B",
+          "text": "Điều ngược lại với phát biểu trên"
+        },
+        {
+          "key": "C",
+          "text": "Đây chỉ là quy tắc của một API khác và không áp dụng ở đây"
+        },
+        {
+          "key": "D",
+          "text": "Không có ảnh hưởng thực tế nào trong chương trình"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: parentNode.appendChild thêm một nút con vào cuối danh sách con của nút cha. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": "javascript_sp_dom_q015",
+      "area": "syntax",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh JavaScript về: Sự kiện trong DOM lan truyền theo hai giai đoạn: capturing và bubbling. và addEventListener với useCapture true bắt sự kiện ở giai đoạn capturing.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sự kiện trong DOM lan truyền theo hai giai đoạn: capturing và bubbling."
+        },
+        {
+          "key": "B",
+          "text": "addEventListener với useCapture true bắt sự kiện ở giai đoạn capturing."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: Sự kiện trong DOM lan truyền theo hai giai đoạn: capturing và bubbling. và addEventListener với useCapture true bắt sự kiện ở giai đoạn capturing.. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": "javascript_sp_dom_q016",
+      "area": "syntax",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh JavaScript về: Event delegation đăng ký listener ở phần tử cha để xử lý sự kiện từ các phần tử con. và matches kiểm tra xem phần tử có khớp với một CSS selector không.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Event delegation đăng ký listener ở phần tử cha để xử lý sự kiện từ các phần tử con."
+        },
+        {
+          "key": "B",
+          "text": "matches kiểm tra xem phần tử có khớp với một CSS selector không."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: Event delegation đăng ký listener ở phần tử cha để xử lý sự kiện từ các phần tử con. và matches kiểm tra xem phần tử có khớp với một CSS selector không.. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": "javascript_sp_dom_q017",
+      "area": "syntax",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh JavaScript về: closest tìm phần tử tổ tiên gần nhất khớp với selector, bao gồm chính phần tử. và insertAdjacentHTML chèn chuỗi HTML vào vị trí xác định so với phần tử gọi.",
+      "options": [
+        {
+          "key": "A",
+          "text": "closest tìm phần tử tổ tiên gần nhất khớp với selector, bao gồm chính phần tử."
+        },
+        {
+          "key": "B",
+          "text": "insertAdjacentHTML chèn chuỗi HTML vào vị trí xác định so với phần tử gọi."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: closest tìm phần tử tổ tiên gần nhất khớp với selector, bao gồm chính phần tử. và insertAdjacentHTML chèn chuỗi HTML vào vị trí xác định so với phần tử gọi.. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": "javascript_sp_dom_q018",
+      "area": "syntax",
+      "challenge_type": "multi",
+      "type": "multiple_choice",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Chọn hai phát biểu đúng nhất trong bối cảnh JavaScript về: removeChild loại bỏ một nút con khỏi DOM và trả về nút đó. và replaceChild thay thế một nút con bằng nút mới trong cây DOM.",
+      "options": [
+        {
+          "key": "A",
+          "text": "removeChild loại bỏ một nút con khỏi DOM và trả về nút đó."
+        },
+        {
+          "key": "B",
+          "text": "replaceChild thay thế một nút con bằng nút mới trong cây DOM."
+        },
+        {
+          "key": "C",
+          "text": "Điều ngược lại với hai phát biểu trên"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ đúng khi mọi code chạy đơn luồng"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "Đáp án đúng: removeChild loại bỏ một nút con khỏi DOM và trả về nút đó. và replaceChild thay thế một nút con bằng nút mới trong cây DOM.. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": "javascript_sp_dom_q019",
+      "area": "syntax",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đúng hay sai: getElementsByTagName trả về HTMLCollection tự động cập nhật khi DOM thay đổi.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ đúng trên hệ điều hành cụ thể"
+        },
+        {
+          "key": "D",
+          "text": "Không thể kết luận từ JavaScript API"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: getElementsByTagName trả về HTMLCollection tự động cập nhật khi DOM thay đổi. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": "javascript_sp_dom_q020",
+      "area": "syntax",
+      "challenge_type": "true_false",
+      "type": "true_false",
+      "language": "javascript",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Đúng hay sai: querySelectorAll trả về NodeList tĩnh, không tự động cập nhật khi DOM thay đổi.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ đúng trên hệ điều hành cụ thể"
+        },
+        {
+          "key": "D",
+          "text": "Không thể kết luận từ JavaScript API"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Đáp án đúng: querySelectorAll trả về NodeList tĩnh, không tự động cập nhật khi DOM thay đổi. Đây là hành vi/khuyến nghị cụ thể của JavaScript và cần được áp dụng đúng ngữ cảnh; các lựa chọn khác phủ nhận, đánh tráo API hoặc khẳng định quá mức.",
+      "distractor_explanations": {
+        "B": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "C": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu.",
+        "D": "Phương án này không đúng vì không phản ánh contract hoặc semantics của JavaScript trong tình huống đã nêu."
+      },
+      "reference_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    }
+  ]
+}

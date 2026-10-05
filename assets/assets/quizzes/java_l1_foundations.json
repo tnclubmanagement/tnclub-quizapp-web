@@ -1,0 +1,792 @@
+{
+  "metadata": {
+    "quiz_id": "java_l1_foundations",
+    "title": "Java Foundations",
+    "subject": "java",
+    "level": "Beginner",
+    "kind": "standard",
+    "pack_id": "java-l1-foundations",
+    "topic_id": "technology",
+    "language": "java",
+    "difficulty": "easy",
+    "tags": [
+      "java",
+      "l1",
+      "technology"
+    ],
+    "pass_percentage": 70,
+    "time_limit_minutes": 20,
+    "total_questions": 20,
+    "created_by": "TN Club Quiz",
+    "created_at": "2026-09-06T00:00:00Z",
+    "version": "1.0.0",
+    "timer_mode": "global",
+    "per_question_time_seconds": 0,
+    "negative_marking": false,
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "strict_mode": false
+  },
+  "questions": [
+    {
+      "id": "java_l1_foundations_q001",
+      "type": "single_choice",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Từ khóa khai báo lớp Java là gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "class"
+        },
+        {
+          "key": "B",
+          "text": "record"
+        },
+        {
+          "key": "C",
+          "text": "object"
+        },
+        {
+          "key": "D",
+          "text": "struct"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "class là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc java về syntax.",
+        "C": "Phương án C không đúng với quy tắc java về syntax.",
+        "D": "Phương án D không đúng với quy tắc java về syntax."
+      },
+      "reference_url": "https://dev.java/learn/language-basics/"
+    },
+    {
+      "id": "java_l1_foundations_q002",
+      "type": "single_choice",
+      "area": "types",
+      "challenge_type": "recall",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Kiểu nguyên thủy chứa số nguyên 64-bit là gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "long"
+        },
+        {
+          "key": "B",
+          "text": "int"
+        },
+        {
+          "key": "C",
+          "text": "short"
+        },
+        {
+          "key": "D",
+          "text": "byte"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "long là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc java về types.",
+        "C": "Phương án C không đúng với quy tắc java về types.",
+        "D": "Phương án D không đúng với quy tắc java về types."
+      },
+      "reference_url": "https://dev.java/learn/language-basics/primitive-data-types/"
+    },
+    {
+      "id": "java_l1_foundations_q003",
+      "type": "single_choice",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Điểm vào chuẩn của ứng dụng Java là gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "public static void main(String[] args)"
+        },
+        {
+          "key": "B",
+          "text": "start()"
+        },
+        {
+          "key": "C",
+          "text": "run(String[])"
+        },
+        {
+          "key": "D",
+          "text": "public void main()"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "public static void main(String[] args) là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc java về syntax.",
+        "C": "Phương án C không đúng với quy tắc java về syntax.",
+        "D": "Phương án D không đúng với quy tắc java về syntax."
+      },
+      "reference_url": "https://dev.java/learn/language-basics/"
+    },
+    {
+      "id": "java_l1_foundations_q004",
+      "type": "single_choice",
+      "area": "types",
+      "challenge_type": "recall",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Giá trị mặc định của field boolean là gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "false"
+        },
+        {
+          "key": "B",
+          "text": "true"
+        },
+        {
+          "key": "C",
+          "text": "null"
+        },
+        {
+          "key": "D",
+          "text": "0"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "false là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc java về types.",
+        "C": "Phương án C không đúng với quy tắc java về types.",
+        "D": "Phương án D không đúng với quy tắc java về types."
+      },
+      "reference_url": "https://dev.java/learn/language-basics/primitive-data-types/"
+    },
+    {
+      "id": "java_l1_foundations_q005",
+      "type": "single_choice",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Toán tử so sánh bằng giá trị là gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "=="
+        },
+        {
+          "key": "B",
+          "text": "="
+        },
+        {
+          "key": "C",
+          "text": "equals="
+        },
+        {
+          "key": "D",
+          "text": "::"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "== là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc java về syntax.",
+        "C": "Phương án C không đúng với quy tắc java về syntax.",
+        "D": "Phương án D không đúng với quy tắc java về syntax."
+      },
+      "reference_url": "https://dev.java/learn/language-basics/"
+    },
+    {
+      "id": "java_l1_foundations_q006",
+      "type": "single_choice",
+      "area": "collections",
+      "challenge_type": "recall",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Interface cho danh sách có thứ tự và phần tử trùng?",
+      "options": [
+        {
+          "key": "A",
+          "text": "List"
+        },
+        {
+          "key": "B",
+          "text": "Set"
+        },
+        {
+          "key": "C",
+          "text": "Map"
+        },
+        {
+          "key": "D",
+          "text": "Queue"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "List là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc java về collections.",
+        "C": "Phương án C không đúng với quy tắc java về collections.",
+        "D": "Phương án D không đúng với quy tắc java về collections."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Collection.html"
+    },
+    {
+      "id": "java_l1_foundations_q007",
+      "type": "single_choice",
+      "area": "collections",
+      "challenge_type": "recall",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "HashMap lưu dữ liệu dạng gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "key-value"
+        },
+        {
+          "key": "B",
+          "text": "chỉ value"
+        },
+        {
+          "key": "C",
+          "text": "index cố định"
+        },
+        {
+          "key": "D",
+          "text": "cặp luôn sort"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "key-value là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc java về collections.",
+        "C": "Phương án C không đúng với quy tắc java về collections.",
+        "D": "Phương án D không đúng với quy tắc java về collections."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Collection.html"
+    },
+    {
+      "id": "java_l1_foundations_q008",
+      "type": "single_choice",
+      "area": "functions",
+      "challenge_type": "recall",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Từ khóa trả về giá trị từ method?",
+      "options": [
+        {
+          "key": "A",
+          "text": "return"
+        },
+        {
+          "key": "B",
+          "text": "yield"
+        },
+        {
+          "key": "C",
+          "text": "give"
+        },
+        {
+          "key": "D",
+          "text": "output"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "return là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc java về functions.",
+        "C": "Phương án C không đúng với quy tắc java về functions.",
+        "D": "Phương án D không đúng với quy tắc java về functions."
+      },
+      "reference_url": "https://dev.java/learn/classes-objects/methods/"
+    },
+    {
+      "id": "java_l1_foundations_q009",
+      "type": "single_choice",
+      "area": "syntax",
+      "challenge_type": "recall",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Vòng lặp thường dùng khi biết điều kiện cập nhật?",
+      "options": [
+        {
+          "key": "A",
+          "text": "for"
+        },
+        {
+          "key": "B",
+          "text": "when"
+        },
+        {
+          "key": "C",
+          "text": "repeat"
+        },
+        {
+          "key": "D",
+          "text": "loop"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "for là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc java về syntax.",
+        "C": "Phương án C không đúng với quy tắc java về syntax.",
+        "D": "Phương án D không đúng với quy tắc java về syntax."
+      },
+      "reference_url": "https://dev.java/learn/language-basics/"
+    },
+    {
+      "id": "java_l1_foundations_q010",
+      "type": "single_choice",
+      "area": "types",
+      "challenge_type": "recall",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "String trong Java là gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "class bất biến"
+        },
+        {
+          "key": "B",
+          "text": "primitive"
+        },
+        {
+          "key": "C",
+          "text": "mutable byte array"
+        },
+        {
+          "key": "D",
+          "text": "enum"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "class bất biến là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc java về types.",
+        "C": "Phương án C không đúng với quy tắc java về types.",
+        "D": "Phương án D không đúng với quy tắc java về types."
+      },
+      "reference_url": "https://dev.java/learn/language-basics/primitive-data-types/"
+    },
+    {
+      "id": "java_l1_foundations_q011",
+      "type": "multiple_choice",
+      "area": "syntax",
+      "challenge_type": "multi",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Kết quả 7 / 2 với hai int?",
+      "options": [
+        {
+          "key": "A",
+          "text": "3"
+        },
+        {
+          "key": "B",
+          "text": "Một điều kiện/đặc điểm đúng liên quan"
+        },
+        {
+          "key": "C",
+          "text": "3.5"
+        },
+        {
+          "key": "D",
+          "text": "4"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "3 là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "C": "Phương án C không đúng với quy tắc java về syntax.",
+        "D": "Phương án D không đúng với quy tắc java về syntax."
+      },
+      "reference_url": "https://dev.java/learn/language-basics/"
+    },
+    {
+      "id": "java_l1_foundations_q012",
+      "type": "multiple_choice",
+      "area": "collections",
+      "challenge_type": "multi",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Cấu trúc tự loại phần tử trùng?",
+      "options": [
+        {
+          "key": "A",
+          "text": "HashSet"
+        },
+        {
+          "key": "B",
+          "text": "Một điều kiện/đặc điểm đúng liên quan"
+        },
+        {
+          "key": "C",
+          "text": "ArrayList"
+        },
+        {
+          "key": "D",
+          "text": "HashMap value"
+        }
+      ],
+      "correct_keys": [
+        "A",
+        "B"
+      ],
+      "explanation": "HashSet là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "C": "Phương án C không đúng với quy tắc java về collections.",
+        "D": "Phương án D không đúng với quy tắc java về collections."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Collection.html"
+    },
+    {
+      "id": "java_l1_foundations_q013",
+      "type": "true_false",
+      "area": "types",
+      "challenge_type": "true_false",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Widening int sang long có cần cast?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Không xác định"
+        },
+        {
+          "key": "D",
+          "text": "Không áp dụng"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Không là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc java về types.",
+        "C": "Phương án C không đúng với quy tắc java về types.",
+        "D": "Phương án D không đúng với quy tắc java về types."
+      },
+      "reference_url": "https://dev.java/learn/language-basics/primitive-data-types/"
+    },
+    {
+      "id": "java_l1_foundations_q014",
+      "type": "true_false",
+      "area": "functions",
+      "challenge_type": "true_false",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Cú pháp varargs đúng?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Không xác định"
+        },
+        {
+          "key": "D",
+          "text": "Không áp dụng"
+        }
+      ],
+      "correct_keys": [
+        "B"
+      ],
+      "explanation": "String... names là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "A": "Phương án A không đúng với quy tắc java về functions.",
+        "C": "Phương án C không đúng với quy tắc java về functions.",
+        "D": "Phương án D không đúng với quy tắc java về functions."
+      },
+      "reference_url": "https://dev.java/learn/classes-objects/methods/"
+    },
+    {
+      "id": "java_l1_foundations_q015",
+      "type": "true_false",
+      "area": "syntax",
+      "challenge_type": "true_false",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Kết thúc vòng lặp gần nhất?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đúng"
+        },
+        {
+          "key": "B",
+          "text": "Sai"
+        },
+        {
+          "key": "C",
+          "text": "Không xác định"
+        },
+        {
+          "key": "D",
+          "text": "Không áp dụng"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "break là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc java về syntax.",
+        "C": "Phương án C không đúng với quy tắc java về syntax.",
+        "D": "Phương án D không đúng với quy tắc java về syntax."
+      },
+      "reference_url": "https://dev.java/learn/language-basics/"
+    },
+    {
+      "id": "java_l1_foundations_q016",
+      "type": "single_choice",
+      "area": "collections",
+      "challenge_type": "predict_output",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Lấy số phần tử List?",
+      "options": [
+        {
+          "key": "A",
+          "text": "size()"
+        },
+        {
+          "key": "B",
+          "text": "length"
+        },
+        {
+          "key": "C",
+          "text": "count()"
+        },
+        {
+          "key": "D",
+          "text": "capacity()"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "size() là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc java về collections.",
+        "C": "Phương án C không đúng với quy tắc java về collections.",
+        "D": "Phương án D không đúng với quy tắc java về collections."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Collection.html"
+    },
+    {
+      "id": "java_l1_foundations_q017",
+      "type": "single_choice",
+      "area": "types",
+      "challenge_type": "predict_output",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Binding không gán lại được?",
+      "options": [
+        {
+          "key": "A",
+          "text": "final"
+        },
+        {
+          "key": "B",
+          "text": "const"
+        },
+        {
+          "key": "C",
+          "text": "readonly"
+        },
+        {
+          "key": "D",
+          "text": "fixed"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "final là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc java về types.",
+        "C": "Phương án C không đúng với quy tắc java về types.",
+        "D": "Phương án D không đúng với quy tắc java về types."
+      },
+      "reference_url": "https://dev.java/learn/language-basics/primitive-data-types/"
+    },
+    {
+      "id": "java_l1_foundations_q018",
+      "type": "single_choice",
+      "area": "syntax",
+      "challenge_type": "predict_output",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "switch expression trả giá trị bằng từ khóa?",
+      "options": [
+        {
+          "key": "A",
+          "text": "yield"
+        },
+        {
+          "key": "B",
+          "text": "return"
+        },
+        {
+          "key": "C",
+          "text": "emit"
+        },
+        {
+          "key": "D",
+          "text": "value"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "yield là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc java về syntax.",
+        "C": "Phương án C không đúng với quy tắc java về syntax.",
+        "D": "Phương án D không đúng với quy tắc java về syntax."
+      },
+      "reference_url": "https://dev.java/learn/language-basics/"
+    },
+    {
+      "id": "java_l1_foundations_q019",
+      "type": "single_choice",
+      "area": "collections",
+      "challenge_type": "predict_output",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Map có truy cập theo key không?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Có"
+        },
+        {
+          "key": "B",
+          "text": "Không, chỉ index"
+        },
+        {
+          "key": "C",
+          "text": "Chỉ TreeMap"
+        },
+        {
+          "key": "D",
+          "text": "Chỉ key int"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "Có là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc java về collections.",
+        "C": "Phương án C không đúng với quy tắc java về collections.",
+        "D": "Phương án D không đúng với quy tắc java về collections."
+      },
+      "reference_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Collection.html"
+    },
+    {
+      "id": "java_l1_foundations_q020",
+      "type": "single_choice",
+      "area": "functions",
+      "challenge_type": "spot_bug",
+      "language": "java",
+      "difficulty": "easy",
+      "points": 1,
+      "content_markdown": "Overload method dựa trên gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "tên và danh sách tham số"
+        },
+        {
+          "key": "B",
+          "text": "chỉ return type"
+        },
+        {
+          "key": "C",
+          "text": "chỉ modifier"
+        },
+        {
+          "key": "D",
+          "text": "package"
+        }
+      ],
+      "correct_keys": [
+        "A"
+      ],
+      "explanation": "tên và danh sách tham số là đáp án đúng theo ngữ nghĩa và quy tắc của java; cần áp dụng trong đúng ngữ cảnh câu hỏi.",
+      "distractor_explanations": {
+        "B": "Phương án B không đúng với quy tắc java về functions.",
+        "C": "Phương án C không đúng với quy tắc java về functions.",
+        "D": "Phương án D không đúng với quy tắc java về functions."
+      },
+      "reference_url": "https://dev.java/learn/classes-objects/methods/"
+    }
+  ]
+}

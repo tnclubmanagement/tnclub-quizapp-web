@@ -1,0 +1,269 @@
+{
+  "metadata": {
+    "quiz_id": "flutter_l2_layout_constraints",
+    "title": "Flutter Layout and Constraints",
+    "subject": "flutter",
+    "level": "Intermediate",
+    "kind": "standard",
+    "pack_id": "flutter-l2-layout-constraints",
+    "topic_id": "technology",
+    "language": "vi",
+    "difficulty": "medium",
+    "time_limit_minutes": 30,
+    "total_questions": 12,
+    "pass_percentage": 70,
+    "timer_mode": "global",
+    "per_question_time_seconds": 0,
+    "negative_marking": false,
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "strict_mode": false,
+    "tags": ["flutter", "layout", "constraints", "responsive", "l2"],
+    "created_by": "TN Club Quiz",
+    "created_at": "2026-09-06T00:00:00Z",
+    "version": "1.0.0",
+    "focus": "constraints, Row, Column, Flex, ListView, Stack, responsive layout, common RenderBox errors"
+  },
+  "questions": [
+    {
+      "id": "flutter_l2_layout_q001",
+      "type": "single_choice",
+      "area": "performance",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Trong quy tắc layout cơ bản của Flutter, câu nào đúng?",
+      "options": [
+        {"key": "A", "text": "Constraints đi xuống, sizes đi lên, parent đặt vị trí child"},
+        {"key": "B", "text": "Child luôn tự quyết định constraint của mình"},
+        {"key": "C", "text": "Parent chỉ nhận kích thước sau khi child vẽ xong"},
+        {"key": "D", "text": "Flutter layout không dùng constraints"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "Flutter truyền constraints từ parent xuống child, child chọn size trong constraints đó rồi parent quyết định vị trí.",
+      "distractor_explanations": {"B": "Child phải tuân theo constraints từ parent.", "C": "Parent nhận size trong quá trình layout, không phải sau khi vẽ.", "D": "Constraints là nền tảng của Flutter layout."},
+      "reference_url": "https://docs.flutter.dev/ui/layout/constraints"
+    },
+    {
+      "id": "flutter_l2_layout_q002",
+      "type": "single_choice",
+      "area": "errors",
+      "challenge_type": "spot_bug",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Vì sao `Expanded` trong một `Column` nằm trực tiếp trong `SingleChildScrollView` thường gây lỗi layout?",
+      "options": [
+        {"key": "A", "text": "Column nhận chiều cao không giới hạn nhưng Expanded cần phần không gian còn lại hữu hạn"},
+        {"key": "B", "text": "Expanded chỉ dùng được trong Stack"},
+        {"key": "C", "text": "SingleChildScrollView không thể chứa Column"},
+        {"key": "D", "text": "Expanded không hỗ trợ Flutter web"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "Scroll view cho chiều cao vô hạn theo hướng scroll, vì vậy Flex không thể phân bổ phần còn lại cho Expanded.",
+      "distractor_explanations": {"B": "Expanded được dùng trong Row, Column hoặc Flex.", "C": "Column có thể nằm trong scroll view nếu không dùng flex sai cách.", "D": "Đây không phải giới hạn của Flutter web."},
+      "reference_url": "https://docs.flutter.dev/ui/layout/constraints"
+    },
+    {
+      "id": "flutter_l2_layout_q003",
+      "type": "single_choice",
+      "area": "errors",
+      "challenge_type": "best_practice",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Khác biệt chính giữa `Expanded` và `Flexible` là gì?",
+      "options": [
+        {"key": "A", "text": "Expanded yêu cầu child lấp đầy phần không gian được phân bổ, Flexible cho phép child nhỏ hơn"},
+        {"key": "B", "text": "Expanded chỉ dùng cho text, Flexible chỉ dùng cho hình ảnh"},
+        {"key": "C", "text": "Hai widget hoàn toàn giống nhau trong mọi trường hợp"},
+        {"key": "D", "text": "Flexible luôn ép child lấp đầy không gian"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "Expanded tương đương Flexible với fit tight; Flexible mặc định dùng fit loose.",
+      "distractor_explanations": {"B": "Cả hai đều là Flex widgets tổng quát.", "C": "Fit của chúng khác nhau.", "D": "Flexible mặc định không ép child lấp đầy."},
+      "reference_url": "https://api.flutter.dev/flutter/widgets/Expanded-class.html"
+    },
+    {
+      "id": "flutter_l2_layout_q004",
+      "type": "single_choice",
+      "area": "performance",
+      "challenge_type": "spot_bug",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Cách phù hợp để đặt `ListView` chiếm phần còn lại bên dưới một header trong `Column` là gì?",
+      "options": [
+        {"key": "A", "text": "Bọc ListView bằng Expanded"},
+        {"key": "B", "text": "Đặt ListView trong Center mà không thêm constraint"},
+        {"key": "C", "text": "Đặt ListView vào một Row không có Expanded"},
+        {"key": "D", "text": "Luôn đặt shrinkWrap: true và bỏ mọi constraint"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "Expanded cung cấp chiều cao hữu hạn còn lại cho ListView để nó có thể scroll đúng.",
+      "distractor_explanations": {"B": "Center không tự tạo constraint hữu hạn.", "C": "Row không giải quyết chiều cao vô hạn.", "D": "shrinkWrap không thay thế constraint và có thể tốn hiệu năng."},
+      "reference_url": "https://api.flutter.dev/flutter/widgets/ListView-class.html"
+    },
+    {
+      "id": "flutter_l2_layout_q005",
+      "type": "single_choice",
+      "area": "performance",
+      "challenge_type": "best_practice",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Khi nào `shrinkWrap: true` thường cần thiết cho `ListView`?",
+      "options": [
+        {"key": "A", "text": "Khi ListView nằm trong một parent scrollable cùng hướng và cần tự co theo nội dung"},
+        {"key": "B", "text": "Để ListView luôn render nhanh hơn"},
+        {"key": "C", "text": "Để ListView tự chuyển thành GridView"},
+        {"key": "D", "text": "Mọi ListView đều bắt buộc phải dùng shrinkWrap"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "shrinkWrap giúp sliver đo theo nội dung, nhưng có chi phí layout nên không nên bật mặc định.",
+      "distractor_explanations": {"B": "shrinkWrap thường làm layout tốn hơn.", "C": "Nó không thay đổi loại widget.", "D": "ListView có constraint hữu hạn thường không cần shrinkWrap."},
+      "reference_url": "https://api.flutter.dev/flutter/widgets/ScrollView/shrinkWrap.html"
+    },
+    {
+      "id": "flutter_l2_layout_q006",
+      "type": "single_choice",
+      "area": "tooling",
+      "challenge_type": "recall",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Widget nào phù hợp để đặt một nút ở góc phải bên dưới trong `Stack`?",
+      "options": [
+        {"key": "A", "text": "Positioned(bottom: 0, right: 0, child: ...)"},
+        {"key": "B", "text": "Expanded(child: ...)"},
+        {"key": "C", "text": "Flexible(fit: FlexFit.tight, child: ...)"},
+        {"key": "D", "text": "TableRow(child: ...)"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "Positioned cho phép đặt child theo các cạnh của Stack khi Stack có kích thước xác định.",
+      "distractor_explanations": {"B": "Expanded dành cho Flex layout.", "C": "Flexible dành cho Flex layout.", "D": "TableRow không định vị child trong Stack."},
+      "reference_url": "https://api.flutter.dev/flutter/widgets/Positioned-class.html"
+    },
+    {
+      "id": "flutter_l2_layout_q007",
+      "type": "single_choice",
+      "area": "testing",
+      "challenge_type": "fix_code",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Khi cần đổi layout dựa trên chiều rộng thực tế của vùng chứa, widget nào phù hợp nhất?",
+      "options": [
+        {"key": "A", "text": "LayoutBuilder"},
+        {"key": "B", "text": "FutureBuilder"},
+        {"key": "C", "text": "StreamBuilder"},
+        {"key": "D", "text": "ValueListenableBuilder"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "LayoutBuilder cung cấp constraints của parent tại vị trí widget, phù hợp cho responsive theo container.",
+      "distractor_explanations": {"B": "FutureBuilder xử lý Future, không đo layout.", "C": "StreamBuilder xử lý Stream.", "D": "ValueListenableBuilder phản ứng với giá trị thay đổi."},
+      "reference_url": "https://api.flutter.dev/flutter/widgets/LayoutBuilder-class.html"
+    },
+    {
+      "id": "flutter_l2_layout_q008",
+      "type": "single_choice",
+      "area": "testing",
+      "challenge_type": "fix_code",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Vì sao nên dùng `MediaQuery.sizeOf(context)` thay vì luôn dùng kích thước màn hình để quyết định chiều rộng card?",
+      "options": [
+        {"key": "A", "text": "Card có thể nằm trong vùng chứa hẹp hơn toàn màn hình"},
+        {"key": "B", "text": "MediaQuery tự động tải dữ liệu mạng"},
+        {"key": "C", "text": "MediaQuery loại bỏ mọi overflow"},
+        {"key": "D", "text": "MediaQuery chỉ hoạt động trên Android"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "Kích thước parent thực tế có thể nhỏ hơn viewport, đặc biệt trong dialog, split view hoặc constrained layout.",
+      "distractor_explanations": {"B": "MediaQuery chỉ cung cấp thông tin môi trường.", "C": "Developer vẫn phải xử lý constraints.", "D": "MediaQuery hoạt động đa nền tảng."},
+      "reference_url": "https://api.flutter.dev/flutter/widgets/MediaQuery-class.html"
+    },
+    {
+      "id": "flutter_l2_layout_q009",
+      "type": "single_choice",
+      "area": "errors",
+      "challenge_type": "spot_bug",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Lỗi `A RenderFlex overflowed by ... pixels` trong một `Row` thường cho biết điều gì?",
+      "options": [
+        {"key": "A", "text": "Tổng kích thước các child lớn hơn không gian theo trục chính"},
+        {"key": "B", "text": "Thiếu internet"},
+        {"key": "C", "text": "Widget chưa có key"},
+        {"key": "D", "text": "Dữ liệu JSON sai định dạng"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "Row không đủ không gian theo chiều ngang; có thể cần Expanded, Flexible, Wrap hoặc giới hạn nội dung.",
+      "distractor_explanations": {"B": "Overflow là vấn đề layout cục bộ.", "C": "Key không giải quyết kích thước vượt quá parent.", "D": "JSON không liên quan trực tiếp đến RenderFlex overflow."},
+      "reference_url": "https://docs.flutter.dev/testing/common-errors"
+    },
+    {
+      "id": "flutter_l2_layout_q010",
+      "type": "single_choice",
+      "area": "errors",
+      "challenge_type": "spot_bug",
+      "language": "vi",
+      "difficulty": "hard",
+      "points": 3,
+      "content_markdown": "Điều gì thường gây lỗi `Incorrect use of ParentDataWidget`?",
+      "options": [
+        {"key": "A", "text": "Đặt Expanded/Flexible vào parent không phải Flex hoặc đặt sai vị trí"},
+        {"key": "B", "text": "Dùng const constructor"},
+        {"key": "C", "text": "Dùng Theme.of(context)"},
+        {"key": "D", "text": "Dùng một Card trong ListView"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "ParentDataWidget chỉ hợp lệ với loại parent layout tương ứng, ví dụ Expanded cần Row, Column hoặc Flex trực tiếp.",
+      "distractor_explanations": {"B": "const không gây lỗi ParentDataWidget.", "C": "Theme.of không liên quan.", "D": "Card hợp lệ trong ListView."},
+      "reference_url": "https://api.flutter.dev/flutter/widgets/ParentDataWidget-class.html"
+    },
+    {
+      "id": "flutter_l2_layout_q011",
+      "type": "single_choice",
+      "area": "tooling",
+      "challenge_type": "fix_code",
+      "language": "vi",
+      "difficulty": "medium",
+      "points": 2,
+      "content_markdown": "Widget nào phù hợp hơn `Row` khi các chip có thể xuống dòng trên màn hình hẹp?",
+      "options": [
+        {"key": "A", "text": "Wrap"},
+        {"key": "B", "text": "SizedBox"},
+        {"key": "C", "text": "Divider"},
+        {"key": "D", "text": "Opacity"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "Wrap tự động chuyển child sang run mới khi không còn đủ không gian theo trục chính.",
+      "distractor_explanations": {"B": "SizedBox chỉ áp constraint/kích thước.", "C": "Divider tạo đường phân cách.", "D": "Opacity điều chỉnh độ trong suốt."},
+      "reference_url": "https://api.flutter.dev/flutter/widgets/Wrap-class.html"
+    },
+    {
+      "id": "flutter_l2_layout_q012",
+      "type": "single_choice",
+      "area": "errors",
+      "challenge_type": "spot_bug",
+      "language": "vi",
+      "difficulty": "hard",
+      "points": 3,
+      "content_markdown": "Một `Container` trong `Center` không có width/height nhưng child cũng không có kích thước rõ ràng. Cách sửa nào đáng tin cậy nhất?",
+      "options": [
+        {"key": "A", "text": "Cung cấp constraint rõ ràng bằng SizedBox, ConstrainedBox hoặc kích thước của parent"},
+        {"key": "B", "text": "Thêm nhiều Key hơn"},
+        {"key": "C", "text": "Đổi Container thành Text bất kỳ"},
+        {"key": "D", "text": "Bật debugPaintSizeEnabled trong production"}
+      ],
+      "correct_keys": ["A"],
+      "explanation": "Widget cần nhận được constraint hữu hạn hoặc child có intrinsic size để Flutter tính layout.",
+      "distractor_explanations": {"B": "Key phục vụ identity, không tạo kích thước.", "C": "Đổi widget không phải giải pháp tổng quát.", "D": "debugPaint chỉ hỗ trợ quan sát layout."},
+      "reference_url": "https://docs.flutter.dev/ui/layout/constraints"
+    }
+  ]
+}
